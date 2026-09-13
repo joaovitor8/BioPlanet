@@ -1,0 +1,1735 @@
+[
+  {
+    "slug": "ailuropoda-melanoleuca",
+    "nomeCientifico": "Ailuropoda melanoleuca",
+    "autoria": "David, 1869",
+    "nomesPopulares": [
+      "Panda-gigante"
+    ],
+    "grupo": "mamiferos",
+    "status": "VU",
+    "biomas": [
+      "floresta-temperada",
+      "montanha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Carnivora",
+      "familia": "Ursidae",
+      "genero": "Ailuropoda"
+    },
+    "resumo": "Um urso carnívoro por anatomia que resolveu comer bambu, e paga por essa escolha todos os dias.",
+    "descricao": "Urso de 70 a 125 kg com o padrão preto e branco mais reconhecível da fauna mundial. Guarda o trato digestivo curto e simples de um carnívoro, sem os compartimentos de fermentação de um herbívoro, o que o obriga a compensar no volume. O osso sesamoide do punho é alongado e funciona como um sexto dedo oponível, usado para segurar o caule de bambu. A função da coloração seguiu discutida por décadas; a hipótese mais aceita combina camuflagem sobre neve e rocha com sinalização entre indivíduos.",
+    "habitat": "Floresta temperada de montanha entre 1.200 e 3.400 metros, com sub-bosque denso de bambu. Precisa de árvores velhas e ocas para parir, o que torna floresta secundária um habitat incompleto mesmo quando o bambu está presente.",
+    "distribuicao": "Restrito a seis cadeias de montanha nas províncias chinesas de Sichuan, Shaanxi e Gansu. São cerca de 1.860 indivíduos adultos na natureza, distribuídos em mais de trinta subpopulações — muitas delas pequenas demais e isoladas entre si.",
+    "alimentacao": "Mais de 99% da dieta é bambu, de umas 60 espécies, das quais come folha, caule e broto conforme a estação. Como digere pouco do que ingere, passa de 10 a 16 horas por dia comendo e consome de 12 a 38 kg diários. Eventualmente come carniça, ovo e pequenos roedores.",
+    "reproducao": "A fêmea entra no cio uma vez por ano, com janela fértil de dois a três dias. A gestação envolve implantação tardia e dura de 95 a 160 dias. Nasce um filhote de cerca de 100 gramas, algo perto de 1/900 do peso da mãe — uma das menores proporções entre mamíferos. Quando nascem dois, normalmente só um é criado.",
+    "ameacas": "O habitat foi cortado por estradas, ferrovias e hidrelétricas em fragmentos que impedem a troca genética. Espécies de bambu florescem e morrem em sincronia a cada algumas décadas, e sem corredor o panda não consegue migrar para outra mancha. A caça direta caiu muito, mas armadilhas montadas para outras espécies continuam matando.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/712"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Giant_panda"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1280px-Grosser_Panda.JPG",
+      "largura": 1280,
+      "altura": 853,
+      "alt": "Panda-gigante preto e branco sentado, segurando um caule de bambu com as patas dianteiras",
+      "autor": "J. Patrick Fischer",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG"
+    }
+  },
+  {
+    "slug": "amanita-muscaria",
+    "nomeCientifico": "Amanita muscaria",
+    "autoria": "(L.) Lam., 1783",
+    "nomesPopulares": [
+      "Amanita-matamoscas",
+      "Mata-moscas"
+    ],
+    "grupo": "fungos",
+    "status": "NE",
+    "biomas": [
+      "floresta-boreal",
+      "floresta-temperada"
+    ],
+    "taxonomia": {
+      "reino": "Fungi",
+      "filo": "Basidiomycota",
+      "classe": "Agaricomycetes",
+      "ordem": "Agaricales",
+      "familia": "Amanitaceae",
+      "genero": "Amanita"
+    },
+    "resumo": "O cogumelo dos contos de fada é real, é tóxico, e a maioria dos livros erra ao chamá-lo de alucinógeno comum.",
+    "descricao": "Basidiomiceto de chapéu vermelho a alaranjado, de 8 a 20 cm, coberto por verrugas brancas que são restos do véu universal — e que a chuva remove, o que já enganou muito coletor. As lamelas são brancas e livres, e há anel no estipe e volva em forma de anéis concêntricos na base. Os princípios ativos são o ácido ibotênico e o muscimol, que agem no sistema GABAérgico; ao contrário do que o nome sugere, a muscarina está presente apenas em traços. O uso ritual documentado entre povos da Sibéria é a origem de boa parte do folclore associado.",
+    "habitat": "Forma ectomicorriza com raízes de bétula, pinheiro, abeto e carvalho, e frutifica no chão de floresta do fim do verão ao outono. Não é decompositor: depende de uma árvore parceira viva, com quem troca nutrientes minerais por açúcares.",
+    "distribuicao": "Nativa das florestas temperadas e boreais do Hemisfério Norte, hoje introduzida com mudas de coníferas em todos os continentes, exceto a Antártida — incluindo o sul do Brasil, a Austrália e a Nova Zelândia, onde se associa a árvores exóticas e, em alguns casos, a nativas.",
+    "alimentacao": "Simbionte ectomicorrízico. O micélio envolve as raízes finas da árvore hospedeira, amplia enormemente a superfície de absorção de fósforo e nitrogênio do solo e recebe em troca carbono fotossintetizado.",
+    "reproducao": "Reprodução sexuada por basídios nas lamelas, que liberam esporos brancos dispersos pelo vento. O corpo de frutificação é efêmero, mas o micélio no solo é perene e pode ocupar dezenas de metros quadrados ao redor da árvore parceira.",
+    "ameacas": "Não avaliada pela IUCN e sem sinal de declínio: é abundante e ainda em expansão fora da distribuição nativa. O caso é interessante pelo avesso — introduzida junto com plantios florestais, pode competir com fungos micorrízicos nativos em ecossistemas que não a tinham.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Amanita_muscaria"
+      },
+      {
+        "titulo": "IUCN Red List — busca de avaliações",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/1280px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg",
+      "largura": 1280,
+      "altura": 960,
+      "alt": "Cogumelo vermelho de amanita-matamoscas com verrugas brancas no chapéu, sobre folhagem",
+      "autor": "Onderwijsgek",
+      "licenca": "CC BY-SA 3.0 nl",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Amanita_muscaria_3_vliegenzwammen_op_rij.jpg"
+    }
+  },
+  {
+    "slug": "amblyrhynchus-cristatus",
+    "nomeCientifico": "Amblyrhynchus cristatus",
+    "autoria": "Bell, 1825",
+    "nomesPopulares": [
+      "Iguana-marinha"
+    ],
+    "grupo": "repteis",
+    "status": "VU",
+    "biomas": [
+      "costa-marinha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Reptilia",
+      "ordem": "Squamata",
+      "familia": "Iguanidae",
+      "genero": "Amblyrhynchus"
+    },
+    "resumo": "O único lagarto do mundo que forrageia no mar — e que encolhe de tamanho quando a comida acaba.",
+    "descricao": "Iguana de 60 cm a 1,5 metro, de coloração escura que acelera o reaquecimento sobre a rocha depois do mergulho. O focinho é curto e achatado, feito para raspar alga rente ao substrato, e a cauda é lateralmente comprimida, usada como remo. Glândulas nasais concentram e expelem o excesso de sal em jatos, deixando crostas brancas na cabeça. Em anos de El Niño, quando a alga verde desaparece, indivíduos adultos chegam a reduzir o comprimento do esqueleto em até 20% e voltam a crescer quando a comida retorna — algo sem paralelo em vertebrados adultos.",
+    "habitat": "Costa rochosa vulcânica das Galápagos, entre a zona de arrebentação e alguns metros terra adentro. Forrageia na zona entremarés e, no caso de machos grandes, mergulhando a até 20 metros.",
+    "distribuicao": "Endêmica do arquipélago de Galápagos, no Equador, com subespécies reconhecidas em ilhas diferentes e tamanhos corporais muito distintos entre elas.",
+    "alimentacao": "Algas marinhas vermelhas e verdes, raspadas da rocha com os dentes tricúspides. Machos maiores mergulham para alcançar algas submersas; fêmeas e jovens ficam na faixa exposta pela maré, onde o risco térmico é menor.",
+    "reproducao": "Machos defendem pequenos territórios de exibição na estação reprodutiva e mudam de cor, ganhando tons de verde e vermelho. A fêmea cava um túnel na areia ou no cascalho e põe de um a seis ovos, que incubam por três a quatro meses. A postura é anual ou bienal, conforme a condição corporal.",
+    "ameacas": "Predadores introduzidos — gato, cão e rato — matam ovos e jovens em várias ilhas. Eventos de El Niño causam mortalidade em massa por fome e devem ficar mais intensos com o aquecimento. Derramamentos de óleo e perturbação em áreas de desova completam o quadro.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/1086"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Marine_iguana"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Amblyrhynchus_cristatus_%283838137696%29.jpg/1280px-Amblyrhynchus_cristatus_%283838137696%29.jpg",
+      "largura": 1280,
+      "altura": 853,
+      "alt": "Iguana-marinha escura sobre rocha vulcânica junto ao mar",
+      "autor": "RAF-YYC from Calgary, Canada",
+      "licenca": "CC BY-SA 2.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Amblyrhynchus_cristatus_(3838137696).jpg"
+    }
+  },
+  {
+    "slug": "ambystoma-mexicanum",
+    "nomeCientifico": "Ambystoma mexicanum",
+    "autoria": "Shaw & Nodder, 1798",
+    "nomesPopulares": [
+      "Axolote"
+    ],
+    "grupo": "anfibios",
+    "status": "CR",
+    "biomas": [
+      "rio-e-lago",
+      "area-alagada"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Amphibia",
+      "ordem": "Urodela",
+      "familia": "Ambystomatidae",
+      "genero": "Ambystoma"
+    },
+    "resumo": "Uma salamandra que nunca cresce: fica larva a vida toda, e regenera membros, medula e partes do cérebro.",
+    "descricao": "Anfíbio de 15 a 30 cm que exibe neotenia obrigatória — atinge a maturidade sexual mantendo brânquias externas, nadadeira caudal e hábito inteiramente aquático, sem passar pela metamorfose que os parentes do gênero fazem. A metamorfose pode ser induzida com hormônio tireoidiano em laboratório, mas não ocorre na natureza. A capacidade regenerativa é excepcional entre vertebrados: reconstitui membros completos com osso, músculo e nervo, além de trechos de medula espinhal e de coração, sem formar cicatriz.",
+    "habitat": "Canais e corpos d'água remanescentes do sistema lacustre do vale do México, com vegetação submersa abundante e água fria. Depende de água permanente e relativamente limpa.",
+    "distribuicao": "Endêmico do lago Xochimilco e arredores, na Cidade do México — o lago Chalco, a outra localidade histórica, foi drenado. Levantamentos recentes encontram menos de 1 indivíduo por quilômetro quadrado, contra 6 mil por km² em 1998. Há milhões de indivíduos em cativeiro, mas eles não contam para o status de conservação.",
+    "alimentacao": "Carnívoro por sucção: abre a boca rapidamente e aspira a presa com a água. Come vermes, insetos aquáticos, moluscos, crustáceos pequenos e alevinos. Não morde para cortar — os dentes servem para segurar.",
+    "reproducao": "O macho deposita espermatóforos no fundo e a fêmea os recolhe com a cloaca. Ela põe de 100 a 1.000 ovos individualmente presos a plantas aquáticas, e a eclosão ocorre em duas a três semanas. Não há cuidado parental.",
+    "ameacas": "Urbanização e poluição degradaram Xochimilco; a introdução de tilápia e carpa, que comem ovos e jovens e competem por alimento, foi devastadora. Somam-se captura para consumo e para o comércio de aquarismo e a redução da vazão de água limpa. É um caso extremo do descompasso entre abundância em cativeiro e colapso na natureza.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/1095"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Axolotl"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/1280px-Axolotl_ganz.jpg",
+      "largura": 1280,
+      "altura": 714,
+      "alt": "Axolote claro visto de lado, com brânquias externas ramificadas atrás da cabeça",
+      "autor": "LoKiLeCh",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg"
+    }
+  },
+  {
+    "slug": "andrias-davidianus",
+    "nomeCientifico": "Andrias davidianus",
+    "autoria": "Blanchard, 1871",
+    "nomesPopulares": [
+      "Salamandra-gigante-da-china"
+    ],
+    "grupo": "anfibios",
+    "status": "CR",
+    "biomas": [
+      "rio-e-lago",
+      "montanha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Amphibia",
+      "ordem": "Urodela",
+      "familia": "Cryptobranchidae",
+      "genero": "Andrias"
+    },
+    "resumo": "O maior anfíbio do mundo respira quase inteiro pela pele — por isso as dobras, que aumentam a superfície de troca.",
+    "descricao": "Chega a 1,8 metro e 50 kg, embora indivíduos desse porte sejam hoje quase inexistentes. Os pulmões são pouco funcionais para troca gasosa e servem sobretudo para flutuação; a respiração ocorre pela pele, e as dobras laterais enrugadas existem para ampliar a área disponível. Os olhos são minúsculos e sem pálpebra, e a caça se dá por detecção de vibração através de nódulos sensoriais na cabeça e no corpo. A linhagem dos criptobranquídeos tem registro fóssil de mais de 160 milhões de anos.",
+    "habitat": "Rios frios, rápidos e bem oxigenados de montanha, com fundo rochoso e cavidades sob pedras grandes, entre 300 e 1.500 metros de altitude. A oxigenação alta da água é condição estrita, pela dependência de respiração cutânea.",
+    "distribuicao": "Bacias dos rios Amarelo, Yangtzé e das Pérolas, na China central e meridional. Levantamentos de campo entre 2013 e 2016, com dezenas de milhares de horas de busca, encontraram pouquíssimos indivíduos selvagens. Estudos genéticos indicam que o que se chamava de uma espécie é na verdade um complexo de várias linhagens, misturadas pela criação comercial.",
+    "alimentacao": "Emboscada noturna: peixes, crustáceos, insetos aquáticos, anfíbios menores e o que passar ao alcance. Captura com movimento lateral rápido da cabeça e sucção.",
+    "reproducao": "Reprodução externa. O macho ocupa e defende uma cavidade sob rocha, onde a fêmea deposita de 400 a 500 ovos em cordão; ele os fertiliza e guarda o ninho por 50 a 60 dias até a eclosão, sendo um dos poucos anfíbios com cuidado parental paterno prolongado.",
+    "ameacas": "A captura para consumo humano, considerada iguaria de luxo, esvaziou as populações selvagens. Fazendas de criação alimentam o mercado, mas as solturas que fazem espalham linhagens e patógenos entre bacias, prejudicando as populações locais remanescentes. Barragens, mineração e poluição completam a perda de habitat.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/1272"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Chinese_giant_salamander"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg/1280px-Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg",
+      "largura": 1280,
+      "altura": 854,
+      "alt": "Salamandra-gigante-da-china em água rasa, com cabeça larga e achatada e pele enrugada",
+      "autor": "Petr Hamerník",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg"
+    }
+  },
+  {
+    "slug": "aptenodytes-forsteri",
+    "nomeCientifico": "Aptenodytes forsteri",
+    "autoria": "Gray, 1844",
+    "nomesPopulares": [
+      "Pinguim-imperador"
+    ],
+    "grupo": "aves",
+    "status": "NT",
+    "biomas": [
+      "mar-polar"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Aves",
+      "ordem": "Sphenisciformes",
+      "familia": "Spheniscidae",
+      "genero": "Aptenodytes"
+    },
+    "resumo": "Choca o ovo sobre os pés, em pleno inverno antártico, a 60 graus negativos e sem comer por dois meses.",
+    "descricao": "O maior e mais pesado pinguim vivo: até 1,2 metro e 45 kg. Tem a plumagem mais densa entre as aves e uma camada de gordura de até 3 cm, além de trocadores de calor contracorrente nas narinas e nas patas que recuperam boa parte do calor que sairia do corpo. Mergulha mais fundo que qualquer outra ave — há registro acima de 500 metros — e aguenta mais de 20 minutos submerso, com a frequência cardíaca caindo a poucos batimentos por minuto.",
+    "habitat": "Gelo marinho fixo da Antártida, o chamado gelo rápido, preso ao continente ou a icebergs encalhados. A colônia precisa que esse gelo se mantenha estável do outono até o fim da primavera — se ele quebra cedo, a safra inteira de filhotes morre.",
+    "distribuicao": "Circumantártico, com mais de 60 colônias conhecidas, boa parte delas descoberta por satélite através das manchas de guano no gelo. A população global é estimada em cerca de 250 mil casais reprodutores.",
+    "alimentacao": "Peixe antártico, krill e lula, capturados em mergulhos profundos sob o gelo. A dieta varia muito com a estação e com a distância entre a colônia e a água aberta.",
+    "reproducao": "É a única ave que se reproduz no inverno antártico. A fêmea põe um único ovo em maio e parte para o mar; o macho o mantém sobre os pés, sob uma prega de pele ventral, por cerca de 65 dias sem se alimentar, perdendo até 45% do peso. Os machos se amontoam em rodízio, com os de fora migrando para o centro do grupo.",
+    "ameacas": "A ameaça central é a perda do gelo marinho fixo por aquecimento — projeções de fim de século indicam colapso da maior parte das colônias nos cenários de emissão alta. Eventos de quebra precoce do gelo já causaram perda total de filhotes em várias colônias do mar de Bellingshausen.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22697752"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Emperor_penguin"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
+      "largura": 872,
+      "altura": 1400,
+      "alt": "Pinguim-imperador adulto de pé sobre neve, com manchas amarelas nas laterais do pescoço",
+      "autor": "Ian Duffy from UK",
+      "licenca": "CC BY 2.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg"
+    }
+  },
+  {
+    "slug": "arapaima-gigas",
+    "nomeCientifico": "Arapaima gigas",
+    "autoria": "Schinz, 1822",
+    "nomesPopulares": [
+      "Pirarucu",
+      "Paiche"
+    ],
+    "grupo": "peixes",
+    "status": "DD",
+    "biomas": [
+      "rio-e-lago",
+      "area-alagada",
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Actinopterygii",
+      "ordem": "Osteoglossiformes",
+      "familia": "Arapaimidae",
+      "genero": "Arapaima"
+    },
+    "resumo": "Um dos maiores peixes de água doce do mundo — e ele se afoga se não puder subir para respirar ar.",
+    "descricao": "Chega a 3 metros e 200 kg. A bexiga natatória é altamente vascularizada e funciona como pulmão: o pirarucu é um respirador aéreo obrigatório e precisa emergir a cada 5 a 20 minutos, o que o torna previsível e fácil de arpoar. As escamas são grandes e têm estrutura em camadas cuja resistência mecânica é estudada para o desenho de materiais — são duras o bastante para resistir à mordida de piranha. O nome vem do tupi e se refere ao vermelho das escamas posteriores.",
+    "habitat": "Lagos de várzea, canais e igapós da bacia amazônica, com água parada ou de corrente fraca. A tolerância a água pobre em oxigênio, graças à respiração aérea, dá vantagem justamente nos ambientes onde outros peixes grandes não sobrevivem.",
+    "distribuicao": "Bacia amazônica no Brasil, Peru, Colômbia, Guiana e Bolívia; introduzido em outras bacias sul-americanas e no sudeste asiático. A taxonomia do gênero está em revisão — há evidência de várias espécies confundidas sob o nome Arapaima gigas, o que é parte do motivo pelo qual a IUCN classifica a espécie como Dados insuficientes.",
+    "alimentacao": "Principalmente peixes, além de crustáceos, insetos e, ocasionalmente, pequenos vertebrados que caiam na água. A língua é ossificada e áspera, e junto ao teto da boca funciona como uma superfície de trituração.",
+    "reproducao": "Reproduz-se no início da estação de cheia. O casal escava um ninho circular no fundo de areia ou lama, em água rasa, e defende ativamente a prole. O macho guarda os filhotes junto à cabeça por até três meses e libera um feromônio pela glândula cefálica que mantém o cardume de jovens agregado a ele.",
+    "ameacas": "A sobrepesca é a pressão histórica e chegou a eliminar a espécie de trechos inteiros da várzea. O manejo comunitário no Brasil, com contagem anual de indivíduos e cota de captura, reverteu o quadro em várias reservas e virou referência. A classificação de Dados insuficientes reflete tanto a confusão taxonômica quanto a falta de avaliação global — não significa que a espécie esteja segura.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/1991"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Arapaima_gigas"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Arapaima_gigas_at_Beijing_aquarium.JPG/1280px-Arapaima_gigas_at_Beijing_aquarium.JPG",
+      "largura": 1280,
+      "altura": 644,
+      "alt": "Pirarucu nadando, com corpo alongado escuro e escamas avermelhadas na região posterior",
+      "autor": "Shizhao",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Arapaima_gigas_at_Beijing_aquarium.JPG"
+    }
+  },
+  {
+    "slug": "balaenoptera-musculus",
+    "nomeCientifico": "Balaenoptera musculus",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Baleia-azul"
+    ],
+    "grupo": "mamiferos",
+    "status": "EN",
+    "biomas": [
+      "oceano-aberto",
+      "mar-polar"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Artiodactyla",
+      "familia": "Balaenopteridae",
+      "genero": "Balaenoptera"
+    },
+    "resumo": "O maior animal que já existiu — maior que qualquer dinossauro conhecido — e ainda assim come uma presa do tamanho de um dedo.",
+    "descricao": "Chega a 30 metros e a 150 toneladas, superando em massa qualquer animal do registro fóssil. O coração pesa cerca de 180 kg. O corpo é azul-acinzentado com mosqueado claro, padrão individual o bastante para servir de identificação em foto. O canto de baixa frequência, abaixo de 20 Hz, viaja centenas de quilômetros na água e está entre os sons mais intensos produzidos por um animal.",
+    "habitat": "Oceano aberto, com deslocamento sazonal entre áreas de alimentação em alta latitude e áreas de reprodução em água mais quente. Concentra-se onde a ressurgência traz nutriente à superfície e adensa o krill.",
+    "distribuicao": "Todos os oceanos, com subespécies reconhecidas no Atlântico Norte, no Pacífico Norte, no Hemisfério Sul e no norte do Oceano Índico. A caça industrial do século XX abateu mais de 380 mil indivíduos só no Hemisfério Sul; restam algo entre 5 e 15 mil adultos no mundo.",
+    "alimentacao": "Quase exclusivamente krill, pequenos crustáceos de poucos centímetros. Alimenta-se por investida: acelera contra o cardume, abre a boca e engole um volume de água maior que o próprio corpo, filtrando-a depois pelas cerdas de barbatana. Pode consumir 4 toneladas de krill por dia na estação de alimentação.",
+    "reproducao": "A gestação dura de 10 a 12 meses e nasce um filhote de cerca de 7 metros e 2,5 toneladas. O leite tem mais de 35% de gordura e o filhote ganha em torno de 90 kg por dia nos primeiros meses. A maturidade sexual chega entre 5 e 15 anos, e o intervalo entre partos é de dois a três anos.",
+    "ameacas": "A caça comercial cessou, mas a recuperação é lenta por causa do ciclo reprodutivo longo. Hoje as pressões são colisão com navio em rotas de tráfego intenso, ruído submarino que mascara a comunicação, emalhe em arte de pesca e a redução do krill por aquecimento e acidificação do oceano.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/2477"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Blue_whale"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/1280px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "largura": 1280,
+      "altura": 886,
+      "alt": "Baleia-azul nadando logo abaixo da superfície, vista de cima, com o dorso azul-acinzentado",
+      "autor": "NOAA Photo Library",
+      "licenca": "Public domain",
+      "licencaUrl": null,
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
+    }
+  },
+  {
+    "slug": "birgus-latro",
+    "nomeCientifico": "Birgus latro",
+    "autoria": "Linnaeus, 1767",
+    "nomesPopulares": [
+      "Caranguejo-dos-coqueiros",
+      "Caranguejo-ladrão"
+    ],
+    "grupo": "artropodes",
+    "status": "VU",
+    "biomas": [
+      "floresta-tropical-umida",
+      "costa-marinha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Arthropoda",
+      "classe": "Malacostraca",
+      "ordem": "Decapoda",
+      "familia": "Coenobitidae",
+      "genero": "Birgus"
+    },
+    "resumo": "O maior artrópode terrestre do mundo, com pinça forte o bastante para abrir um coco — e ele se afoga na água.",
+    "descricao": "Alcança 1 metro entre as pontas das pernas e 4 kg. É um ermitão que abandonou a concha na fase adulta e endureceu o próprio abdome. A força da pinça maior chega a cerca de 3.300 newtons, a maior já medida em um crustáceo em relação ao peso corporal. Respira por brânquias modificadas em um órgão chamado pulmão branquial, que precisa ser mantido úmido mas exige ar: um adulto submerso morre em poucas horas. Tem olfato apurado e órgãos sensoriais nas antenas que funcionam como os de um inseto, não como os de um caranguejo aquático.",
+    "habitat": "Florestas e matas costeiras de ilhas tropicais, em tocas escavadas no solo ou em fendas de rocha forradas com fibra de coco, que mantêm a umidade. Ativo à noite.",
+    "distribuicao": "Ilhas do Indo-Pacífico, do leste da África à Polinésia, com populações notáveis na ilha Christmas, nas Ilhas Cook e no arquipélago de Chagos. Desapareceu ou ficou raro em ilhas habitadas por humanos.",
+    "alimentacao": "Onívoro: polpa de coco, frutas carnosas, sementes, carniça, cascas de outros crustáceos e, eventualmente, predação de aves e de caranguejos menores. Abre cocos por um processo demorado, rasgando a fibra e martelando o olho da casca com a pinça.",
+    "reproducao": "O ciclo continua preso ao mar. A fêmea carrega os ovos sob o abdome e desce à arrebentação para liberar as larvas, que passam de três a quatro semanas em vida planctônica. As pós-larvas voltam à praia, ocupam uma concha de gastrópode como qualquer ermitão e só depois de alguns anos a abandonam. A maturidade chega por volta dos cinco anos e o animal pode viver mais de sessenta.",
+    "ameacas": "Consumido como iguaria em boa parte da distribuição, com pressão de coleta maior sobre os indivíduos grandes, que são justamente os reprodutores. Somam-se perda de mata costeira, atropelamento em ilhas com estradas e predação de jovens por ratos introduzidos. A IUCN o classificou como Vulnerável em 2018, após décadas sem avaliação.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/2811"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Coconut_crab"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/1280px-Coconut_Crab_Birgus_latro.jpg",
+      "largura": 1280,
+      "altura": 960,
+      "alt": "Caranguejo-dos-coqueiros de coloração alaranjada sobre solo de folhagem",
+      "autor": "Drew Avery",
+      "licenca": "CC BY 2.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg"
+    }
+  },
+  {
+    "slug": "cantharellus-cibarius",
+    "nomeCientifico": "Cantharellus cibarius",
+    "autoria": "Fr., 1821",
+    "nomesPopulares": [
+      "Cantarelo",
+      "Chanterelle"
+    ],
+    "grupo": "fungos",
+    "status": "NE",
+    "biomas": [
+      "floresta-temperada",
+      "floresta-boreal"
+    ],
+    "taxonomia": {
+      "reino": "Fungi",
+      "filo": "Basidiomycota",
+      "classe": "Agaricomycetes",
+      "ordem": "Cantharellales",
+      "familia": "Cantharellaceae",
+      "genero": "Cantharellus"
+    },
+    "resumo": "Não tem lamelas de verdade: o que parece lamela são pregas rombas, e é esse detalhe que o separa de um sósia tóxico.",
+    "descricao": "Corpo de frutificação amarelo-ovo em forma de funil ou trombeta, de 3 a 10 cm, com carne firme, esbranquiçada e fibrosa. Sob o chapéu não há lamelas verdadeiras: há pregas rombas, bifurcadas e decorrentes, que descem pelo estipe. O aroma lembra damasco. O sósia perigoso é Omphalotus olearius, o cogumelo-jack-o-lantern, que tem lamelas finas e afiadas, cresce em madeira e é bioluminescente — comê-lo causa intoxicação gastrointestinal severa.",
+    "habitat": "Ectomicorrízico em florestas de coníferas e de folhosas, associado sobretudo a pinheiro, abeto, faia e carvalho, em solos com musgo e boa umidade. Frutifica do verão ao outono e costuma reaparecer no mesmo ponto por anos.",
+    "distribuicao": "Europa, Ásia e América do Norte, com complexo taxonômico ainda em revisão — várias populações antes reunidas sob esse nome já foram separadas em espécies próprias. É um dos cogumelos silvestres mais comercializados do mundo, quase todo o volume vindo de coleta e não de cultivo.",
+    "alimentacao": "Simbionte ectomicorrízico, como a amanita. A tentativa de cultivá-lo comercialmente esbarra justamente nisso: sem a árvore parceira e a comunidade de solo adequada, o fungo não frutifica.",
+    "reproducao": "Esporada branca a amarelo-pálida, liberada pelas pregas e dispersa pelo vento. O micélio perene forma associações duradouras com as raízes, e a colheita do corpo de frutificação, se feita sem revolver o solo, não elimina o indivíduo.",
+    "ameacas": "Não avaliada globalmente pela IUCN. Há preocupação registrada em vários países europeus com o efeito cumulativo da coleta comercial intensiva, da acidificação do solo por deposição de nitrogênio e da substituição de florestas maduras por plantios de ciclo curto.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Cantharellus_cibarius"
+      },
+      {
+        "titulo": "IUCN Red List — busca de avaliações",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Chanterelle_Cantharellus_cibarius.jpg/1280px-Chanterelle_Cantharellus_cibarius.jpg",
+      "largura": 1280,
+      "altura": 961,
+      "alt": "Cantarelos amarelos em forma de funil, com pregas decorrentes sob o chapéu",
+      "autor": "undefined (Wikimedia Commons)",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Chanterelle_Cantharellus_cibarius.jpg"
+    }
+  },
+  {
+    "slug": "carcharodon-carcharias",
+    "nomeCientifico": "Carcharodon carcharias",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Tubarão-branco"
+    ],
+    "grupo": "peixes",
+    "status": "VU",
+    "biomas": [
+      "costa-marinha",
+      "oceano-aberto"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Chondrichthyes",
+      "ordem": "Lamniformes",
+      "familia": "Lamnidae",
+      "genero": "Carcharodon"
+    },
+    "resumo": "É parcialmente endotérmico: mantém estômago, músculo e cérebro acima da temperatura da água em que nada.",
+    "descricao": "Chega a 6 metros e mais de 1.100 kg, com fêmeas maiores que machos. Possui redes de vasos chamadas retia mirabilia, que recuperam o calor gerado pela musculatura antes que ele se perca nas brânquias — o resultado é manter regiões do corpo de 3 a 14 °C acima da água, o que sustenta arranque muscular e digestão rápida em água fria. Os dentes triangulares serrilhados são repostos continuamente ao longo da vida, e o ampolas de Lorenzini detectam campos elétricos da ordem de bilionésimos de volt por centímetro.",
+    "habitat": "Águas costeiras e oceânicas temperadas e subtropicais, da superfície a centenas de metros. Concentra-se junto a colônias de pinípedes e faz travessias oceânicas longas, incluindo mergulhos repetidos em mar aberto.",
+    "distribuicao": "Todos os oceanos temperados, com concentrações conhecidas na Califórnia, na África do Sul, no sul da Austrália, na Nova Zelândia e no Mediterrâneo, onde a população é criticamente reduzida.",
+    "alimentacao": "Juvenis comem sobretudo peixe e raia; a passagem para presas de sangue quente ocorre por volta dos 3 metros, quando a dentição muda de forma. Adultos predam foca, leão-marinho, golfinho e carniça de baleia, atacando de baixo em investida vertical rápida.",
+    "reproducao": "Vivíparo com oofagia: os embriões consomem ovos não fertilizados dentro do útero. A gestação dura cerca de 12 a 18 meses e nascem de 2 a 14 filhotes com mais de 1,2 metro. A maturidade chega aos 26 anos nos machos e por volta dos 33 nas fêmeas, e a longevidade passa de 70 anos.",
+    "ameacas": "Captura incidental em espinhel e rede de emalhe é a principal fonte de mortalidade, somada à pesca de troféu e às redes de proteção de praias instaladas na Austrália e na África do Sul. O crescimento lento e a maturidade tardíssima fazem qualquer mortalidade adicional pesar muito. A espécie está no Apêndice II da CITES.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/3855"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Great_white_shark"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg",
+      "largura": 1200,
+      "altura": 835,
+      "alt": "Tubarão-branco nadando, visto de lado, com dorso cinza e ventre branco",
+      "autor": "Pterantula (Terry Goss) at en.wikipedia",
+      "licenca": "CC BY 2.5",
+      "licencaUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:White_shark.jpg"
+    }
+  },
+  {
+    "slug": "chelonia-mydas",
+    "nomeCientifico": "Chelonia mydas",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Tartaruga-verde",
+      "Aruanã"
+    ],
+    "grupo": "repteis",
+    "status": "LC",
+    "biomas": [
+      "costa-marinha",
+      "recife-de-coral",
+      "oceano-aberto"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Reptilia",
+      "ordem": "Testudines",
+      "familia": "Cheloniidae",
+      "genero": "Chelonia"
+    },
+    "resumo": "O verde do nome não está no casco: está na gordura, e é consequência da dieta de algas.",
+    "descricao": "Tartaruga marinha grande, de 1 a 1,2 metro de casco e 110 a 190 kg. O casco é oliváceo a castanho com padrão radiado; o verde que dá nome à espécie é a cor da camada de gordura sob ele, resultado dos pigmentos das algas que consome. É a única tartaruga marinha essencialmente herbívora na fase adulta, e o intestino longo e a flora microbiana associada refletem essa mudança de dieta ao longo da vida.",
+    "habitat": "Águas costeiras rasas com pradarias de capim-marinho e algas, recifes e baías protegidas. Os filhotes passam anos em mar aberto, associados a bancos de sargaço, antes de recrutar para as áreas costeiras de alimentação.",
+    "distribuicao": "Circumglobal em águas tropicais e subtropicais, com áreas de desova em mais de 80 países. Ascensão, Tortuguero, a costa do Omã e o Atol das Rocas estão entre as maiores. A IUCN reavaliou a espécie em 2023 e a moveu para Pouco preocupante, refletindo a recuperação de várias populações protegidas.",
+    "alimentacao": "Adultos comem algas e capim-marinho, pastando repetidamente nas mesmas manchas e mantendo-as curtas e produtivas. Filhotes e juvenis de mar aberto são onívoros, consumindo também águas-vivas, moluscos e crustáceos.",
+    "reproducao": "Migra milhares de quilômetros entre a área de alimentação e a praia onde nasceu. A fêmea sobe à areia à noite, cava a câmara com as nadadeiras traseiras e põe cerca de 100 ovos, repetindo o processo várias vezes por temporada e voltando só a cada dois a cinco anos. O sexo depende da temperatura da areia: ninhos mais quentes produzem fêmeas.",
+    "ameacas": "A melhora global não vale para todas as populações. Seguem pesando a captura incidental em rede e espinhel, a ocupação e a iluminação artificial de praias de desova, a coleta de ovos, a ingestão de plástico e a fibropapilomatose, doença tumoral associada a águas costeiras degradadas. A feminização dos ninhos por aquecimento da areia já é mensurável em algumas colônias.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/4615"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Green_sea_turtle"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/1280px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg",
+      "largura": 1280,
+      "altura": 853,
+      "alt": "Tartaruga-verde nadando sobre fundo de recife, com casco oliváceo e nadadeiras estendidas",
+      "autor": "Charles J. Sharp",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg"
+    }
+  },
+  {
+    "slug": "chrysocyon-brachyurus",
+    "nomeCientifico": "Chrysocyon brachyurus",
+    "autoria": "Illiger, 1815",
+    "nomesPopulares": [
+      "Lobo-guará",
+      "Aguará-guaçu"
+    ],
+    "grupo": "mamiferos",
+    "status": "NT",
+    "biomas": [
+      "savana",
+      "campo-temperado",
+      "area-alagada"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Carnivora",
+      "familia": "Canidae",
+      "genero": "Chrysocyon"
+    },
+    "resumo": "Não é lobo nem raposa: é o único representante vivo do gênero, e metade da sua dieta é fruta.",
+    "descricao": "O maior canídeo da América do Sul, com quase 1 metro de altura na cernelha e pouco mais de 20 kg — leve demais para o tamanho, porque quase toda a altura está nas pernas. Elas são uma adaptação ao campo alto: elevam a cabeça acima do capim para enxergar e ouvir. A pelagem é ruiva, com crina escura eriçável no dorso e meias pretas. Análises moleculares o colocam isolado na árvore dos canídeos, sem parente próximo vivo.",
+    "habitat": "Campo sujo, campo cerrado e veredas do Cerrado, além de campos naturais e bordas de área alagada. Evita floresta fechada. Tolera pastagem e plantio de soja, mas depende de fragmentos nativos para abrigo e fruta.",
+    "distribuicao": "Centro do Brasil, leste da Bolívia, Paraguai, nordeste da Argentina e, mais recentemente, o extremo sul do Peru e o Uruguai. A expansão agrícola do Cerrado tanto abriu habitat aberto quanto cortou a conectividade entre manchas nativas.",
+    "alimentacao": "Onívoro, com dieta perto de meio a meio entre animal e vegetal. A lobeira (Solanum lycocarpum) é o item mais constante, e o guará é seu principal dispersor de sementes. Complementa com pequenos roedores, tatu, ave, réptil e inseto, caçando sozinho.",
+    "reproducao": "Monogâmico, com par que divide território de 20 a 100 km² mas caça separado. A gestação dura cerca de 65 dias e nascem de dois a seis filhotes, quase sempre entre junho e setembro. Ambos os pais regurgitam alimento para os filhotes.",
+    "ameacas": "Atropelamento em rodovias que cortam o Cerrado é hoje a principal causa de morte de adultos. Somam-se a conversão de campo em lavoura, doenças transmitidas por cães domésticos — cinomose e parvovirose — e o abate por suspeita de ataque a galinheiro.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/4819"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Maned_wolf"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Lobo_Guar%C3%A1_andando.jpg/1280px-Lobo_Guar%C3%A1_andando.jpg",
+      "largura": 1280,
+      "altura": 828,
+      "alt": "Lobo-guará de pelagem ruiva e pernas longas e escuras, de perfil em área gramada",
+      "autor": "Jonathan Wilkins",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Lobo_Guar%C3%A1_andando.jpg"
+    }
+  },
+  {
+    "slug": "crocodylus-porosus",
+    "nomeCientifico": "Crocodylus porosus",
+    "autoria": "Schneider, 1801",
+    "nomesPopulares": [
+      "Crocodilo-de-água-salgada",
+      "Crocodilo-marinho"
+    ],
+    "grupo": "repteis",
+    "status": "LC",
+    "biomas": [
+      "manguezal",
+      "rio-e-lago",
+      "costa-marinha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Reptilia",
+      "ordem": "Crocodilia",
+      "familia": "Crocodylidae",
+      "genero": "Crocodylus"
+    },
+    "resumo": "O maior réptil vivo, e o dono da mordida mais forte já medida em um animal atual.",
+    "descricao": "Machos passam de 6 metros e 1.000 kg; fêmeas raramente chegam a 3 metros. A força de mordida medida em adultos grandes ultrapassa 16 mil newtons, a maior registrada em qualquer animal vivo — mas os músculos de abertura são fracos o bastante para serem contidos à mão. Tem glândulas de sal na língua, que permitem excretar o excesso absorvido em água marinha, e sensores de pressão em cada escama da mandíbula que detectam ondulação na superfície no escuro.",
+    "habitat": "Estuários, manguezais, rios de maré e trechos de costa. Adultos dominantes ocupam os melhores trechos de rio; subadultos expulsos acabam no mar, o que explica registros a centenas de quilômetros da terra.",
+    "distribuicao": "Do leste da Índia e Sri Lanka ao sudeste asiático, à Nova Guiné e ao norte da Austrália, com registros ocasionais no Pacífico ocidental. A população australiana se recuperou de menos de 3 mil indivíduos nos anos 1970 para mais de 100 mil após a proibição da caça.",
+    "alimentacao": "Generalista oportunista ao longo da vida: começa com inseto, crustáceo e peixe pequeno e passa, com o tamanho, a búfalo, javali, macaco e outros crocodilos. Usa a rotação axial — o giro de morte — para arrancar pedaços de presas grandes demais para engolir inteiras.",
+    "reproducao": "A fêmea constrói um monte de vegetação em decomposição junto à água e põe de 40 a 60 ovos. O sexo dos filhotes é determinado pela temperatura do ninho, com machos predominando perto de 31 a 33 °C. Ela guarda o ninho por cerca de 90 dias e carrega os recém-nascidos até a água na boca.",
+    "ameacas": "Classificado como Pouco preocupante graças à recuperação na Austrália, mas há populações locais extintas ou quase, sobretudo no sudeste asiático, por caça e perda de manguezal. O conflito com pessoas é real onde a espécie voltou a ser abundante, e a retirada de indivíduos-problema é fonte permanente de tensão.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/5668"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Saltwater_crocodile"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/1280px-SaltwaterCrocodile%28%27Maximo%27%29.jpg",
+      "largura": 1280,
+      "altura": 960,
+      "alt": "Crocodilo-de-água-salgada adulto em repouso à beira da água, com a boca entreaberta",
+      "autor": "Obtained from Molly Ebersold of the St. Augustine Alligator Farm",
+      "licenca": "Public domain",
+      "licencaUrl": null,
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:SaltwaterCrocodile(%27Maximo%27).jpg"
+    }
+  },
+  {
+    "slug": "cyanopsitta-spixii",
+    "nomeCientifico": "Cyanopsitta spixii",
+    "autoria": "Wagler, 1832",
+    "nomesPopulares": [
+      "Ararinha-azul",
+      "Ararinha-de-spix"
+    ],
+    "grupo": "aves",
+    "status": "EW",
+    "biomas": [
+      "floresta-tropical-seca"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Aves",
+      "ordem": "Psittaciformes",
+      "familia": "Psittacidae",
+      "genero": "Cyanopsitta"
+    },
+    "resumo": "Sumiu da natureza em 2000 com um único macho conhecido; voltou ao campo em 2022 vinda de criadouros europeus.",
+    "descricao": "Psitacídeo de porte médio, cerca de 56 cm e 300 gramas, de plumagem azul-acinzentada com cabeça mais clara e anel perioftálmico nu escuro. É a única espécie do gênero Cyanopsitta. Toda a história natural conhecida vem de poucos indivíduos observados na década de 1990 e do plantel cativo — não existe registro amplo de comportamento em população selvagem estabelecida.",
+    "habitat": "Caatinga arbórea associada a galerias de caraibeira (Tabebuia aurea) ao longo de riachos intermitentes do interior da Bahia. A dependência dessa árvore específica, usada para ninho e poleiro, é a razão de a distribuição histórica ser tão estreita.",
+    "distribuicao": "Endêmica de uma faixa mínima do norte da Bahia, no vale do rio São Francisco. Declarada Extinta na Natureza em 2019. Desde junho de 2022, indivíduos nascidos em cativeiro vêm sendo soltos na região de Curaçá, com reprodução em liberdade já registrada — mas a categoria de ameaça só muda depois de anos de população autossustentável.",
+    "alimentacao": "Sementes e frutos de plantas da caatinga, com destaque para espécies de Euphorbiaceae como pinhão-bravo e favela. O bico forte abre sementes duras que poucas aves da região conseguem processar.",
+    "reproducao": "Nidifica em ocos de caraibeira viva ou morta. A postura tem de um a três ovos, incubados por cerca de 25 dias, com os filhotes deixando o ninho por volta das 9 semanas. O casal reutiliza a mesma cavidade em anos seguidos.",
+    "ameacas": "O desaparecimento na natureza resultou da combinação de captura para o tráfico de animais e destruição da mata ciliar de caraibeira por desmatamento e barragens. A população reintroduzida enfrenta as mesmas pressões, somadas ao risco de base genética estreita: todo o plantel descende de poucos fundadores.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22685533"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Spix%27s_macaw"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Cyanopsitta_spixii_-Vogelpark_Walsrode%2C_Walsrode%2C_Germany-1980.jpg/1280px-Cyanopsitta_spixii_-Vogelpark_Walsrode%2C_Walsrode%2C_Germany-1980.jpg",
+      "largura": 1280,
+      "altura": 855,
+      "alt": "Ararinha-azul empoleirada, com plumagem azul-acinzentada e face cinza-clara",
+      "autor": "Rüdiger Stehn from Kiel, Deutschland",
+      "licenca": "CC BY-SA 2.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Cyanopsitta_spixii_-Vogelpark_Walsrode,_Walsrode,_Germany-1980.jpg"
+    }
+  },
+  {
+    "slug": "dendrobates-tinctorius",
+    "nomeCientifico": "Dendrobates tinctorius",
+    "autoria": "Cuvier, 1797",
+    "nomesPopulares": [
+      "Sapo-flecha-azul",
+      "Rã-de-dardo-envenenado"
+    ],
+    "grupo": "anfibios",
+    "status": "LC",
+    "biomas": [
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Amphibia",
+      "ordem": "Anura",
+      "familia": "Dendrobatidae",
+      "genero": "Dendrobates"
+    },
+    "resumo": "O veneno não é dele: vem das formigas e ácaros que come, e some em cativeiro.",
+    "descricao": "Anuro de 4 a 5 cm, entre os maiores dendrobatídeos, com padrões de cor que variam drasticamente entre populações — do azul quase puro do morfo azureus ao amarelo e preto das formas do interior. A coloração é aposemática: anuncia toxicidade a predadores visuais. Os alcaloides da pele não são sintetizados pelo animal, e sim sequestrados da dieta de artrópodes; indivíduos criados com grilos de criadouro nascem e permanecem atóxicos.",
+    "habitat": "Serapilheira e sub-bosque de floresta tropical úmida de terras baixas, com preferência por afloramentos rochosos e áreas próximas a riachos. Ativo de dia, o que é possível justamente pela defesa química.",
+    "distribuicao": "Escudo das Guianas: Guiana Francesa, Suriname, Guiana e norte do Brasil, no Amapá e no norte do Pará. Distribuição ampla, com populações locais muito distintas entre si em padrão e cor.",
+    "alimentacao": "Formigas, ácaros oribatídeos, colêmbolos e outros artrópodes pequenos da serapilheira. Formigas e ácaros são a origem dos alcaloides lipofílicos que a rã concentra na pele.",
+    "reproducao": "O macho atrai a fêmea com trinado e a conduz a um sítio de postura em folha ou cavidade. São poucos ovos, de 2 a 6, guardados por ele, que os umedece. Depois da eclosão, carrega os girinos nas costas, um a um, até poças em bromélias ou ocos de árvore, onde cada um se desenvolve isolado — separá-los evita o canibalismo.",
+    "ameacas": "Classificada como Pouco preocupante pela distribuição ampla e pela população estável. As pressões locais são desmatamento, garimpo de ouro nas Guianas e coleta para o comércio de aquarismo, além do risco geral que o fungo quitrídio representa para anfíbios.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/55204"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Dyeing_poison_dart_frog"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg/1280px-Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg",
+      "largura": 1280,
+      "altura": 873,
+      "alt": "Sapo-flecha de padrão amarelo e preto sobre folha, com patas azuladas",
+      "autor": "H. Zell",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg"
+    }
+  },
+  {
+    "slug": "diceros-bicornis",
+    "nomeCientifico": "Diceros bicornis",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Rinoceronte-negro"
+    ],
+    "grupo": "mamiferos",
+    "status": "CR",
+    "biomas": [
+      "savana",
+      "deserto",
+      "floresta-tropical-seca"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Perissodactyla",
+      "familia": "Rhinocerotidae",
+      "genero": "Diceros"
+    },
+    "resumo": "Não é negro, e o chifre não é osso: é queratina, a mesma proteína de uma unha — e é por ela que a espécie quase acabou.",
+    "descricao": "Herbívoro de 800 a 1.400 kg com dois chifres, o anterior maior, de cerca de 50 cm. O nome opõe-se ao do rinoceronte-branco, mas nenhum dos dois descreve cor: a distinção real está na boca. O rinoceronte-negro tem lábio superior preênsil e pontudo, feito para puxar ramos, enquanto o branco tem boca larga e quadrada, feita para pastar rente ao chão. A visão é ruim, mas o olfato e a audição são excelentes.",
+    "habitat": "Savana arbustiva, mata seca e semideserto, sempre com acesso a água a cada dois ou três dias. Alcança densidades maiores onde o arbusto é denso e a diversidade de plantas lenhosas é alta.",
+    "distribuicao": "Populações fragmentadas na África austral e oriental — África do Sul, Namíbia, Zimbábue e Quênia concentram a maioria. A população caiu de cerca de 65 mil indivíduos em 1970 para 2.400 em 1995. A recuperação desde então é real, mas a espécie segue em uma fração do que já foi.",
+    "alimentacao": "Ramoneador estrito: folhas, ramos e brotos de mais de 200 espécies lenhosas, apanhados com o lábio preênsil. Não pasta capim. Consome cerca de 23 kg de matéria vegetal por dia.",
+    "reproducao": "Solitário, com fêmeas parindo a cada dois anos e meio a cinco anos. A gestação dura de 15 a 16 meses e nasce um único filhote de 35 a 50 kg. O filhote segue a mãe por dois a três anos e, diferente do rinoceronte-branco, costuma andar atrás dela e não à frente.",
+    "ameacas": "A caça para o comércio ilegal de chifre é a ameaça dominante e continua ativa. O chifre é queratina e não tem propriedade medicinal comprovada, mas alcança preços por quilo comparáveis aos do ouro. Populações pequenas e cercadas ainda enfrentam perda de variabilidade genética.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/6557"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Black_rhinoceros"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Black_Rhino_at_Working_with_Wildlife.jpg/1280px-Black_Rhino_at_Working_with_Wildlife.jpg",
+      "largura": 1280,
+      "altura": 720,
+      "alt": "Rinoceronte-negro adulto de perfil em vegetação seca de savana, com os dois chifres visíveis",
+      "autor": "AfricanConservation",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg"
+    }
+  },
+  {
+    "slug": "dionaea-muscipula",
+    "nomeCientifico": "Dionaea muscipula",
+    "autoria": "Sol. ex J.Ellis, 1768",
+    "nomesPopulares": [
+      "Dioneia",
+      "Papa-moscas"
+    ],
+    "grupo": "plantas",
+    "status": "VU",
+    "biomas": [
+      "area-alagada",
+      "campo-temperado"
+    ],
+    "taxonomia": {
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "classe": "Magnoliopsida",
+      "ordem": "Caryophyllales",
+      "familia": "Droseraceae",
+      "genero": "Dionaea"
+    },
+    "resumo": "A armadilha conta: só fecha no segundo toque, e conta de novo para decidir se vale digerir.",
+    "descricao": "Planta herbácea pequena, com roseta de folhas cujas pontas formam armadilhas de dois lobos. Cada lobo tem três cerdas sensíveis; um único toque não faz nada, mas dois toques num intervalo de cerca de 20 segundos disparam o fechamento em menos de um décimo de segundo. Estímulos subsequentes contam de novo: por volta do quinto, a planta começa a secretar enzimas digestivas e a produzir os transportadores para absorver o nitrogênio. Esse mecanismo de contagem baseado em sinais elétricos evita gastar a digestão com uma gota de chuva. Cada armadilha suporta poucos ciclos antes de morrer.",
+    "habitat": "Savanas úmidas de pinheiro e bordas de brejo, em solo arenoso encharcado, ácido e extremamente pobre em nitrogênio — daí o carnivorismo. Depende de queimadas frequentes que impedem arbustos de sombreá-la.",
+    "distribuicao": "Endêmica de uma faixa estreita da planície costeira da Carolina do Norte e da Carolina do Sul, nos Estados Unidos, com raio de cerca de 120 km em torno de Wilmington. Restam algo em torno de 300 mil plantas na natureza, em pouco mais de 70 localidades.",
+    "alimentacao": "Fotossintetizante, com suplementação de nitrogênio e fósforo obtidos da digestão de presas. Captura sobretudo formigas, aranhas, besouros e gafanhotos — insetos rastejantes, não moscas, apesar do nome popular. A digestão leva de cinco a doze dias.",
+    "reproducao": "Floresce na primavera, com hastes de 15 a 35 cm que mantêm as flores brancas bem acima das armadilhas — distância que evita matar os próprios polinizadores. A polinização é feita por abelhas e besouros. Também se propaga vegetativamente por divisão do rizoma.",
+    "ameacas": "A supressão de incêndios deixa a vegetação fechar e sombrear as plantas, e a drenagem de brejos para silvicultura e loteamento elimina habitat. O extrativismo ilegal é intenso o bastante para que a Carolina do Norte o tenha transformado em crime grave em 2014. O cultivo comercial é amplo, mas não reduz a pressão sobre as populações naturais remanescentes.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/39636"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Venus_flytrap"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Venus_Flytrap_showing_trigger_hairs.jpg/1280px-Venus_Flytrap_showing_trigger_hairs.jpg",
+      "largura": 1280,
+      "altura": 1400,
+      "alt": "Armadilhas abertas de dioneia, com cerdas na borda e interior avermelhado",
+      "autor": "Noah Elhardt",
+      "licenca": "CC BY-SA 2.5",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Venus_Flytrap_showing_trigger_hairs.jpg"
+    }
+  },
+  {
+    "slug": "harpia-harpyja",
+    "nomeCientifico": "Harpia harpyja",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Gavião-real",
+      "Harpia",
+      "Uiruuetê"
+    ],
+    "grupo": "aves",
+    "status": "VU",
+    "biomas": [
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Aves",
+      "ordem": "Accipitriformes",
+      "familia": "Accipitridae",
+      "genero": "Harpia"
+    },
+    "resumo": "A garra traseira tem o tamanho de uma garra de urso-pardo, e ela arranca um bugio do galho em pleno voo.",
+    "descricao": "A águia mais pesada das Américas: fêmeas de 6 a 9 kg, cerca do dobro do peso dos machos, com envergadura de até 2 metros. As asas são relativamente curtas e largas — não servem para planar sobre campo aberto, servem para manobrar entre troncos dentro da floresta. Os tarsos são grossos como um pulso humano e a garra do hálux passa de 7 cm. A crista dupla de penas na cabeça se ergue quando a ave está alerta, e o disco facial que ela forma ajuda a direcionar som, como em uma coruja.",
+    "habitat": "Dossel e sub-dossel de floresta tropical úmida contínua, de terras baixas até cerca de 900 metros. Depende de árvores emergentes de grande porte, sobretudo castanheiras e sumaúmas, para nidificar — o ninho pode ter 1,5 metro de diâmetro e é reutilizado por anos.",
+    "distribuicao": "Do sul do México ao norte da Argentina, com a maior parte da população remanescente na Amazônia. Foi praticamente eliminada da Mata Atlântica e da América Central, onde restam núcleos isolados no Panamá e na Costa Rica.",
+    "alimentacao": "Caça sobretudo mamíferos arborícolas: bugio, macaco-prego, preguiça e quati respondem pela maior parte da biomassa consumida. Também captura tamanduá-mirim, aves grandes e iguana. Ataca de poleiro, em investida curta e silenciosa dentro da mata.",
+    "reproducao": "Forma casal de longa duração e cria um filhote a cada dois ou três anos — uma das taxas mais baixas entre aves de rapina. A fêmea põe dois ovos, mas apenas o primeiro filhote costuma sobreviver. O jovem voa aos 6 meses e continua dependente dos pais por mais de um ano.",
+    "ameacas": "O desmatamento e a derrubada seletiva de árvores emergentes destroem os sítios de nidificação mais rápido do que a floresta como um todo. O abate a tiro, por curiosidade ou por medo, é frequente e pesa muito em uma espécie com reprodução tão lenta. A IUCN passou a espécie de Quase ameaçada para Vulnerável em 2021.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22695998"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Harpy_eagle"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Harpia_harpyja_001_800.jpg",
+      "largura": 800,
+      "altura": 870,
+      "alt": "Gavião-real pousado, com crista de penas eriçada e peito branco cruzado por faixa escura",
+      "autor": "http://www.birdphotos.com",
+      "licenca": "CC BY 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Harpia_harpyja_001_800.jpg"
+    }
+  },
+  {
+    "slug": "latimeria-chalumnae",
+    "nomeCientifico": "Latimeria chalumnae",
+    "autoria": "Smith, 1939",
+    "nomesPopulares": [
+      "Celacanto"
+    ],
+    "grupo": "peixes",
+    "status": "CR",
+    "biomas": [
+      "oceano-profundo",
+      "costa-marinha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Actinistia",
+      "ordem": "Coelacanthiformes",
+      "familia": "Latimeriidae",
+      "genero": "Latimeria"
+    },
+    "resumo": "Dado como extinto há 66 milhões de anos até 1938, quando um apareceu na rede de um pesqueiro sul-africano.",
+    "descricao": "Peixe de até 2 metros e 90 kg, de escamas espessas azul-escuras com manchas claras individuais. As nadadeiras pares são lobadas, sustentadas por um esqueleto interno articulado que as aproxima do plano do membro dos tetrápodes — e que ele move em padrão alternado, como um quadrúpede andando. Tem uma articulação intracraniana que permite levantar a parte frontal do crânio ao abrir a boca, e um órgão rostral gelatinoso que funciona como eletrorreceptor. O pulmão é vestigial e preenchido de gordura.",
+    "habitat": "Encostas vulcânicas íngremes entre 150 e 250 metros de profundidade, com cavernas onde grupos passam o dia em repouso. Sobe à noite para forragear em deriva passiva. A faixa de temperatura tolerada é estreita, em torno de 14 a 22 °C.",
+    "distribuicao": "Oceano Índico ocidental: Comores, Tanzânia, Moçambique, Madagascar e África do Sul. A população é estimada em poucas centenas a menos de dez mil indivíduos maduros. A espécie irmã, Latimeria menadoensis, vive na Indonésia e foi descrita apenas em 1999.",
+    "alimentacao": "Peixes de fundo e cefalópodes, capturados durante a deriva noturna. A articulação do crânio amplia a abertura da boca e permite sucção poderosa a curta distância.",
+    "reproducao": "Vivíparo aplacentário, com a maior gestação conhecida entre vertebrados — estimada em cerca de cinco anos. Nascem poucos filhotes já grandes, de cerca de 35 cm. Estudos com anéis de crescimento em escamas indicam maturidade sexual por volta dos 40 a 60 anos e longevidade próxima de um século.",
+    "ameacas": "Captura incidental em pesca artesanal de profundidade é a principal ameaça, especialmente nas Comores, onde mudanças na arte de pesca levaram barcos a áreas mais fundas. Somam-se a distribuição restrita, a população minúscula e um ciclo de vida tão lento que nenhuma reposição rápida é possível.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/11375"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/West_Indian_Ocean_coelacanth"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast%2C_South_Africa%2C_on_22_November_2019.png",
+      "largura": 963,
+      "altura": 578,
+      "alt": "Exemplar de celacanto preservado, com nadadeiras lobadas e escamas azuladas",
+      "autor": "Bruce A.S. Henderson",
+      "licenca": "CC BY 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast,_South_Africa,_on_22_November_2019.png"
+    }
+  },
+  {
+    "slug": "lynx-pardinus",
+    "nomeCientifico": "Lynx pardinus",
+    "autoria": "Temminck, 1827",
+    "nomesPopulares": [
+      "Lince-ibérico"
+    ],
+    "grupo": "mamiferos",
+    "status": "VU",
+    "biomas": [
+      "mediterraneo",
+      "floresta-tropical-seca"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Carnivora",
+      "familia": "Felidae",
+      "genero": "Lynx"
+    },
+    "resumo": "Chegou a 94 indivíduos em 2002 e passou de 2.000 em 2023 — a recuperação mais bem documentada de um felino.",
+    "descricao": "Felino de porte médio, 10 a 15 kg, com pelagem malhada, tufos pretos nas pontas das orelhas e costeletas laterais pronunciadas. As patas são largas e as pernas traseiras longas, e a cauda é curta, com ponta preta. É o felino mais especializado do mundo em uma única presa: o coelho-europeu responde por algo entre 80% e 95% da dieta, e a população de lince acompanha de perto o ciclo da população de coelho.",
+    "habitat": "Matagal mediterrâneo denso intercalado com clareiras e pastagens abertas — o arbusto serve de abrigo e de local de reprodução, e a clareira é onde o coelho pasta. Também ocupa montado e dehesa, o sistema agrossilvipastoril de sobreiro e azinheira.",
+    "distribuicao": "Endêmico da Península Ibérica. Ocupava Espanha e Portugal inteiros até o século XIX; em 2002 restavam duas populações isoladas em Doñana e Andújar-Cardeña, somando 94 indivíduos. Programas de cria em cativeiro e reintrodução levaram a espécie a mais de 2.000 indivíduos em 2023, distribuídos por várias áreas da Espanha e por Portugal.",
+    "alimentacao": "Especialista em coelho-europeu, caçado por espreita e bote curto. Um adulto consome cerca de um coelho por dia, e uma fêmea com filhotes chega a três. Quando o coelho escasseia, recorre a perdiz, pato, roedor e cervídeo jovem, mas nenhuma dessas alternativas sustenta a reprodução.",
+    "reproducao": "O cio ocorre entre dezembro e fevereiro e a gestação dura cerca de 65 dias. Nascem de dois a quatro filhotes em toca dentro de tronco oco ou arbusto denso. A agressão entre irmãos é intensa por volta das seis semanas e às vezes letal. Os jovens dispersam entre os 8 e os 23 meses, e a dispersão exige corredores de mato — sem eles, ficam na área natal e não se reproduzem.",
+    "ameacas": "O colapso original veio do desaparecimento do coelho, derrubado por duas epizootias — mixomatose nos anos 1950 e doença hemorrágica viral a partir de 1988 — somado à perda de matagal e à caça. Hoje a maior causa de morte é o atropelamento em rodovia, seguido de caça ilegal e de novos surtos na população de coelho. A IUCN reclassificou a espécie de Em perigo para Vulnerável em 2024, mas a dependência de uma presa única mantém o risco alto.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/12520"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Iberian_lynx"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Almuradiel%2C_Ciudad_Real%2C_Espa%C3%B1a%2C_2021-12-19%2C_DD_07.jpg/1280px-Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Almuradiel%2C_Ciudad_Real%2C_Espa%C3%B1a%2C_2021-12-19%2C_DD_07.jpg",
+      "largura": 1280,
+      "altura": 1280,
+      "alt": "Lince-ibérico de perfil em vegetação seca, com pelagem malhada e tufos escuros nas orelhas",
+      "autor": "Diego Delso",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Lince_ib%C3%A9rico_(Lynx_pardinus),_Almuradiel,_Ciudad_Real,_Espa%C3%B1a,_2021-12-19,_DD_07.jpg"
+    }
+  },
+  {
+    "slug": "morpho-menelaus",
+    "nomeCientifico": "Morpho menelaus",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Borboleta-azul",
+      "Morfo-azul"
+    ],
+    "grupo": "artropodes",
+    "status": "NE",
+    "biomas": [
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Arthropoda",
+      "classe": "Insecta",
+      "ordem": "Lepidoptera",
+      "familia": "Nymphalidae",
+      "genero": "Morpho"
+    },
+    "resumo": "Esse azul não é pigmento: são lamelas de quitina interferindo na luz, e some se você molhar a asa com álcool.",
+    "descricao": "Borboleta grande, de 12 a 15 cm de envergadura. O azul da face superior é cor estrutural — as escamas têm lamelas empilhadas em escala nanométrica que refletem seletivamente comprimentos de onda curtos por interferência. Não há pigmento azul envolvido, e por isso a cor muda com o ângulo e desaparece quando o espaço entre lamelas é preenchido por um líquido de índice de refração diferente do ar. A face inferior é críptica, marrom com ocelos: em voo, o inseto pisca entre azul berrante e folha seca a cada batida de asa.",
+    "habitat": "Interior e bordas de floresta tropical úmida, com machos patrulhando clareiras e cursos d'água em voo alto e errático, sobretudo nas horas de sol forte.",
+    "distribuicao": "Bacia amazônica e Guianas, do Brasil à Venezuela. O gênero Morpho tem dezenas de espécies distribuídas do México ao sul do Brasil, muitas delas de identificação difícil no campo.",
+    "alimentacao": "Adultos não visitam flor: alimentam-se de fruta em fermentação, seiva, exsudato de árvore e fluidos de carniça e fezes, de onde tiram sais e aminoácidos. As lagartas comem folhas de leguminosas, com preferência por Fabaceae do gênero Machaerium e afins.",
+    "reproducao": "O macho patrulha em busca de fêmeas, que respondem à cor estrutural azul a dezenas de metros. Os ovos são postos isoladamente na planta hospedeira. As lagartas são gregárias quando jovens, com tufos de pelos urticantes e glândula que libera odor repelente quando incomodadas.",
+    "ameacas": "Não avaliada pela IUCN — como a maior parte dos invertebrados tropicais, nunca passou por avaliação global, o que não equivale a estar segura. As pressões conhecidas são desmatamento e coleta comercial para quadros decorativos e artesanato, boa parte dela abastecida hoje por criadouros.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Morpho_menelaus"
+      },
+      {
+        "titulo": "IUCN Red List — busca por invertebrados avaliados",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg/1280px-Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg",
+      "largura": 1280,
+      "altura": 1025,
+      "alt": "Borboleta morfo com asas abertas, mostrando o azul metálico iridescente",
+      "autor": "Didier Descouens",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg"
+    }
+  },
+  {
+    "slug": "ophiocordyceps-unilateralis",
+    "nomeCientifico": "Ophiocordyceps unilateralis",
+    "autoria": "(Tul. & C.Tul.) Petch, 1931",
+    "nomesPopulares": [],
+    "grupo": "fungos",
+    "status": "NE",
+    "biomas": [
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Fungi",
+      "filo": "Ascomycota",
+      "classe": "Sordariomycetes",
+      "ordem": "Hypocreales",
+      "familia": "Ophiocordycipitaceae",
+      "genero": "Ophiocordyceps"
+    },
+    "resumo": "Faz a formiga morder uma folha na altura e na hora certas, e só então a mata.",
+    "descricao": "Fungo entomopatogênico que manipula o comportamento do hospedeiro. Após a infecção, o micélio se espalha pelo corpo da formiga e envolve fibras musculares sem invadir o cérebro — a manipulação parece ser química, não por controle direto do sistema nervoso central. A formiga abandona a trilha, desce do dossel, sobe a uma folha a cerca de 25 cm do solo, orienta-se no lado norte e crava as mandíbulas na nervura central por volta do meio-dia. Ali morre. Do occipício brota um estroma que libera esporos sobre as trilhas abaixo. A altura e a umidade desse ponto são as ideais para a frutificação, não para a formiga.",
+    "habitat": "Sub-bosque de floresta tropical úmida, onde a umidade alta e constante permite o desenvolvimento do estroma. Cada linhagem do complexo é em geral específica de uma espécie de formiga hospedeira.",
+    "distribuicao": "Florestas tropicais do mundo todo, com registros na Amazônia, na África e no sudeste asiático. O que se chamava de uma única espécie é hoje reconhecido como um complexo de dezenas de espécies, cada uma adaptada a um hospedeiro.",
+    "alimentacao": "Parasita. Consome os tecidos internos da formiga preservando por mais tempo os músculos usados na mordida, e só depois da morte converte o que resta em massa fúngica.",
+    "reproducao": "O estroma emerge da cabeça da formiga morta e leva de duas a três semanas para amadurecer. Peritécios na lateral do estroma liberam ascósporos que caem sobre a trilha; se não atingirem uma formiga diretamente, produzem esporos secundários que aguardam a passagem de uma. Registros fósseis de folhas com marcas de mordida idênticas datam de 48 milhões de anos.",
+    "ameacas": "Não avaliada pela IUCN. Depende inteiramente da integridade da floresta e da presença do hospedeiro específico, de modo que a fragmentação florestal ameaça linhagens locais antes mesmo de elas serem descritas. Colônias de formigas mantêm o fungo sob controle removendo indivíduos infectados, num equilíbrio que a perturbação do habitat pode romper nos dois sentidos.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis"
+      },
+      {
+        "titulo": "IUCN Red List — busca de avaliações",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ophiocordyceps_unilateralis.png",
+      "largura": 996,
+      "altura": 1434,
+      "alt": "Formiga morta presa a uma folha com um corpo de frutificação do fungo emergindo da cabeça",
+      "autor": "David P. Hughes, Maj-Britt Pontoppidan",
+      "licenca": "CC BY 2.5",
+      "licencaUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Ophiocordyceps_unilateralis.png"
+    }
+  },
+  {
+    "slug": "ornithoptera-alexandrae",
+    "nomeCientifico": "Ornithoptera alexandrae",
+    "autoria": "Rothschild, 1907",
+    "nomesPopulares": [
+      "Borboleta-rainha-alexandra"
+    ],
+    "grupo": "artropodes",
+    "status": "EN",
+    "biomas": [
+      "floresta-tropical-umida"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Arthropoda",
+      "classe": "Insecta",
+      "ordem": "Lepidoptera",
+      "familia": "Papilionidae",
+      "genero": "Ornithoptera"
+    },
+    "resumo": "A maior borboleta do mundo, com 28 cm de envergadura — e o primeiro exemplar conhecido foi derrubado a tiro de espingarda.",
+    "descricao": "A fêmea, maior, alcança 28 cm de envergadura e é marrom-escura com manchas brancas e creme; o macho é menor e tem as asas anteriores verde-azuladas iridescentes sobre preto, com abdome amarelo vivo. O dimorfismo sexual é dos mais acentuados entre lepidópteros. O tipo foi coletado em 1906 por Albert Stewart Meek com carga leve de chumbo, porque os exemplares voavam alto demais para a rede — os furos ainda são visíveis no espécime.",
+    "habitat": "Floresta tropical úmida de terras baixas, até cerca de 800 metros, sobre solos derivados de cinza vulcânica. Depende da presença da planta hospedeira, o cipó Pararistolochia dielsiana, no sub-bosque.",
+    "distribuicao": "Endêmica de uma área estimada em cerca de 100 km² na província de Oro, no leste de Papua-Nova Guiné. A erupção do monte Lamington, em 1951, destruiu boa parte do habitat original e reduziu drasticamente a distribuição.",
+    "alimentacao": "Adultos tomam néctar de flores do dossel, sobretudo de Hibiscus. A lagarta come exclusivamente folhas e caules de Pararistolochia, sequestrando os ácidos aristolóquicos da planta e ficando tóxica para predadores — toxicidade anunciada pelos tubérculos vermelhos do corpo.",
+    "reproducao": "A fêmea põe cerca de 27 ovos ao longo da vida, número baixíssimo para um lepidóptero, sempre na planta hospedeira. O ciclo completo leva cerca de quatro meses, e o adulto vive até três meses, longevidade alta para uma borboleta.",
+    "ameacas": "A conversão de floresta em plantio de dendê e a extração de madeira eliminam a planta hospedeira. A coleta ilegal para colecionadores persiste, com exemplares alcançando milhares de dólares no mercado negro. A espécie está no Apêndice I da CITES, e a distribuição minúscula a deixa exposta a qualquer evento vulcânico ou climático local.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/15513"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Queen_Alexandra%27s_birdwing"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Ornithoptera_alexandrae.png",
+      "largura": 691,
+      "altura": 900,
+      "alt": "Exemplar de borboleta-rainha-alexandra com asas estendidas, mostrando o padrão verde e preto do macho",
+      "autor": "MP_-_Ornithoptera_alexandrae_3.jpg: Mark Pellegrini (Raul654) Ornithoptera_alexandrae_nash.jpg: Robert Nash &lt;robert.nash at magni.org.uk&gt; derivative work: Bruno P. Ramos (talk)",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Ornithoptera_alexandrae.png"
+    }
+  },
+  {
+    "slug": "panthera-onca",
+    "nomeCientifico": "Panthera onca",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Onça-pintada",
+      "Jaguar"
+    ],
+    "grupo": "mamiferos",
+    "status": "NT",
+    "biomas": [
+      "floresta-tropical-umida",
+      "savana",
+      "area-alagada",
+      "floresta-tropical-seca"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Carnivora",
+      "familia": "Felidae",
+      "genero": "Panthera"
+    },
+    "resumo": "O maior felino das Américas, e o único grande predador que mata perfurando o crânio da presa.",
+    "descricao": "Terceiro maior felino do mundo, atrás apenas de tigre e leão, com machos de até 120 kg no Pantanal. A pelagem amarelada é marcada por rosetas com pintas internas — detalhe que a separa do leopardo, cujas rosetas são vazias. Cerca de 6% dos indivíduos são melânicos, a chamada onça-preta, que é a mesma espécie com uma variante genética dominante; sob luz rasante as rosetas continuam visíveis. A mordida é a mais forte entre os felinos em relação ao tamanho do crânio, e ela a usa de um jeito que nenhum outro grande felino usa: perfurando o osso temporal da presa em vez de sufocá-la pela garganta.",
+    "habitat": "Prefere floresta densa com água corrente por perto e raramente se afasta de rios, lagoas e áreas alagadas. Ocupa também cerrado, caatinga e floresta seca, mas em densidade muito menor. É excelente nadadora e caça dentro da água com frequência.",
+    "distribuicao": "Do norte do México ao norte da Argentina. Perdeu cerca de metade da distribuição histórica: sumiu de El Salvador e do Uruguai e restam populações mínimas nos Estados Unidos. Os núcleos maiores e mais conectados estão na Amazônia e no Pantanal.",
+    "alimentacao": "Predadora generalista, com mais de 85 presas registradas. Come capivara, queixada, veado, jacaré, tatu, tartaruga e peixe; a carapaça de quelônio e o couro de jacaré não são obstáculo para a mordida. Um adulto consome de 1,2 a 1,5 kg de carne por dia.",
+    "reproducao": "Não tem estação reprodutiva fixa em boa parte da distribuição. A gestação dura cerca de 100 dias e nascem de um a quatro filhotes, normalmente dois. Eles abrem os olhos com duas semanas, seguem a mãe por até dois anos e só então dispersam; o macho não participa da criação.",
+    "ameacas": "A perda e a fragmentação de floresta são a pressão principal, seguidas do abate por retaliação a ataques ao gado. Cresceu na última década o tráfico de presas e crânios para o mercado asiático, substituindo partes de tigre. Populações isoladas fora da Amazônia sofrem com endogamia.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/15953"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Jaguar"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg",
+      "largura": 727,
+      "altura": 501,
+      "alt": "Onça-pintada de pelagem amarelada com rosetas escuras, de pé sobre folhagem seca",
+      "autor": "USFWS",
+      "licenca": "Public domain",
+      "licencaUrl": null,
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg"
+    }
+  },
+  {
+    "slug": "paubrasilia-echinata",
+    "nomeCientifico": "Paubrasilia echinata",
+    "autoria": "(Lam.) Gagnon, H.C.Lima & G.P.Lewis, 2016",
+    "nomesPopulares": [
+      "Pau-brasil",
+      "Ibirapitanga",
+      "Pau-de-pernambuco"
+    ],
+    "grupo": "plantas",
+    "status": "EN",
+    "biomas": [
+      "floresta-tropical-umida",
+      "floresta-tropical-seca"
+    ],
+    "taxonomia": {
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "classe": "Magnoliopsida",
+      "ordem": "Fabales",
+      "familia": "Fabaceae",
+      "genero": "Paubrasilia"
+    },
+    "resumo": "Deu nome ao país, foi a primeira commodity brasileira — e hoje é uma árvore ameaçada que sobrevive em fragmentos.",
+    "descricao": "Árvore de 8 a 30 metros, de tronco com acúleos e casca que se desprende em placas. As folhas são bipinadas e as flores amarelas têm uma mancha vermelha na pétala central; o fruto é uma vagem eriçada de espinhos, de onde vem o epíteto echinata. O cerne é denso e vermelho-alaranjado, e dele se extraía a brasilina, corante que moveu o comércio europeu no século XVI. A mesma madeira é até hoje a matéria-prima preferida para arcos de violino, por uma combinação rara de densidade, elasticidade e amortecimento.",
+    "habitat": "Floresta ombrófila e estacional da Mata Atlântica, em terras baixas e encostas até cerca de 600 metros, sobre solos arenosos ou argilosos. Cresce devagar e tolera sombra parcial na fase juvenil.",
+    "distribuicao": "Endêmica da Mata Atlântica brasileira, do Rio Grande do Norte ao Rio de Janeiro, hoje em populações pequenas e isoladas. Estima-se que menos de 5% da área original da Mata Atlântica dentro da distribuição histórica da espécie permaneça em pé.",
+    "alimentacao": "Autotrófica. Como leguminosa, associa-se a bactérias fixadoras de nitrogênio em nódulos radiculares, o que lhe permite ocupar solos pobres.",
+    "reproducao": "Floresce entre setembro e outubro, com polinização por abelhas de médio e grande porte. As vagens secam na árvore e se abrem explosivamente, lançando as sementes a poucos metros — dispersão de curto alcance que agrava o isolamento entre fragmentos. A germinação é rápida, mas a semente perde viabilidade em poucas semanas.",
+    "ameacas": "A exploração colonial intensiva, seguida pela conversão da Mata Atlântica em cana, pasto e cidade, reduziu a espécie a remanescentes. O corte ilegal para arcos de violino persiste, e a espécie foi elevada ao Apêndice I da CITES em 2022. A dispersão curta e a semente de vida breve dificultam a recolonização natural entre fragmentos.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/33974"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Paubrasilia"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Caesalpinia-echinata.jpg/1280px-Caesalpinia-echinata.jpg",
+      "largura": 1280,
+      "altura": 1047,
+      "alt": "Galho de pau-brasil com folhas compostas e flores amarelas",
+      "autor": "Der Kolonist",
+      "licenca": "CC BY 2.5",
+      "licencaUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Caesalpinia-echinata.jpg"
+    }
+  },
+  {
+    "slug": "rhincodon-typus",
+    "nomeCientifico": "Rhincodon typus",
+    "autoria": "Smith, 1828",
+    "nomesPopulares": [
+      "Tubarão-baleia"
+    ],
+    "grupo": "peixes",
+    "status": "EN",
+    "biomas": [
+      "oceano-aberto",
+      "costa-marinha",
+      "recife-de-coral"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Chondrichthyes",
+      "ordem": "Orectolobiformes",
+      "familia": "Rhincodontidae",
+      "genero": "Rhincodon"
+    },
+    "resumo": "O maior peixe do mundo filtra plâncton com uma boca de um metro e meio — e o padrão de pontos é único como uma digital.",
+    "descricao": "Alcança 12 a 18 metros e mais de 20 toneladas. A boca terminal, de até 1,5 metro, abre à frente e não por baixo como na maioria dos tubarões. Filtra por meio de almofadas branquiais que retêm partículas milimétricas, num mecanismo de fluxo cruzado que evita entupimento. O padrão de pontos e listras claras atrás das brânquias é individual e estável ao longo da vida; algoritmos originalmente criados para catalogar estrelas em fotos astronômicas são usados para identificar indivíduos em bancos de fotos.",
+    "habitat": "Águas tropicais e temperadas quentes, em geral acima de 30 °C na superfície, mas mergulha rotineiramente abaixo de 1.000 metros. Agrega-se sazonalmente onde há explosão de produtividade.",
+    "distribuicao": "Circumglobal entre cerca de 30 °N e 35 °S. Agregações previsíveis ocorrem em Ningaloo, na Austrália, em Isla Holbox, no México, em Mafia, na Tanzânia, e no Golfo de Tadjoura. A população global caiu mais da metade nos últimos 75 anos.",
+    "alimentacao": "Zooplâncton, krill, ovos e larvas de peixe, cardumes de peixes pequenos e lula. Alimenta-se por filtração passiva enquanto nada e também por sucção ativa, posicionando-se vertical e bombeando água pela boca — é comum vê-lo fazendo isso em desovas de coral e de peixes.",
+    "reproducao": "Vivíparo aplacentário: os ovos eclodem dentro da fêmea. Uma única fêmea capturada em Taiwan em 1995 carregava cerca de 300 embriões em estágios diferentes, o que sugere armazenamento de esperma e partos escalonados. Locais de nascimento e berçários seguem em boa parte desconhecidos; a maturidade só chega por volta dos 25 a 30 anos.",
+    "ameacas": "Pesca dirigida por carne e barbatana, ainda ativa em parte da Ásia, e captura incidental em rede de cerco de atum, onde o tubarão é usado como indicador de cardume. Somam-se colisão com embarcações em rotas que cruzam áreas de agregação e o turismo mal regulado de mergulho. A maturidade tardia torna a recuperação muito lenta.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/19488"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Whale_shark"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Similan_Dive_Center_-_great_whale_shark.jpg",
+      "largura": 1000,
+      "altura": 500,
+      "alt": "Tubarão-baleia nadando perto da superfície, com o padrão de pontos claros no dorso escuro",
+      "autor": "Abe Khao Lak",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Similan_Dive_Center_-_great_whale_shark.jpg"
+    }
+  },
+  {
+    "slug": "sequoiadendron-giganteum",
+    "nomeCientifico": "Sequoiadendron giganteum",
+    "autoria": "(Lindl.) J.Buchholz, 1939",
+    "nomesPopulares": [
+      "Sequoia-gigante"
+    ],
+    "grupo": "plantas",
+    "status": "EN",
+    "biomas": [
+      "floresta-temperada",
+      "montanha"
+    ],
+    "taxonomia": {
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "classe": "Pinopsida",
+      "ordem": "Cupressales",
+      "familia": "Cupressaceae",
+      "genero": "Sequoiadendron"
+    },
+    "resumo": "O maior organismo do planeta em volume — e precisa de incêndio para que a semente germine.",
+    "descricao": "Conífera que passa de 80 metros de altura e 8 metros de diâmetro na base; o exemplar General Sherman, com cerca de 1.487 m³ de madeira, é o maior ser vivo conhecido em volume. A casca é fibrosa, pobre em resina e chega a 90 cm de espessura, o que a torna resistente ao fogo e ao ataque de insetos. Indivíduos maduros ultrapassam 3.000 anos. A relação com o fogo é de dependência, não de mera tolerância: o calor da copa em chamas abre os cones serotinosos, e a queima do folhiço expõe o solo mineral de que a plântula precisa.",
+    "habitat": "Bosques isolados na encosta oeste da Sierra Nevada, entre 1.400 e 2.400 metros de altitude, em solos profundos e bem drenados com umidade de subsuperfície constante. Não forma floresta contínua: ocorre em cerca de 75 manchas separadas.",
+    "distribuicao": "Endêmica da Califórnia, Estados Unidos, numa faixa de cerca de 420 km ao longo da Sierra Nevada. É amplamente plantada como ornamental na Europa e na Nova Zelândia, mas isso não conta para o estado de conservação da população natural.",
+    "alimentacao": "Autotrófica. A água chega ao topo por coesão e tensão no xilema, e uma árvore adulta pode transpirar centenas de litros por dia; parte da demanda no verão seco é suprida por neblina e por reservas profundas de solo.",
+    "reproducao": "Monoica, com cones masculinos e femininos na mesma árvore. Os cones levam dois anos para amadurecer e permanecem fechados e verdes na copa por até vinte anos. Cada cone guarda em média 200 sementes minúsculas, liberadas pelo calor do fogo ou pela ação de esquilos e de um besouro do gênero Phymatodes que rói o pedúnculo.",
+    "ameacas": "Um século de supressão de incêndios acumulou combustível no sub-bosque e trocou o fogo rasteiro histórico por incêndios de copa que matam até árvores milenares — os de 2020 e 2021 mataram algo entre 13% e 19% de todas as sequoias-gigantes maduras do mundo. Somam-se seca prolongada e ataque de besouros-de-casca em árvores já debilitadas.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/34023"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Sequoiadendron_giganteum"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Grizzly_Giant_Mariposa_Grove.jpg/1280px-Grizzly_Giant_Mariposa_Grove.jpg",
+      "largura": 1280,
+      "altura": 2364,
+      "alt": "Tronco maciço de sequoia-gigante visto de baixo, com casca avermelhada e fissurada",
+      "autor": "Mike Murphy (talk · contribs)",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant_Mariposa_Grove.jpg"
+    }
+  },
+  {
+    "slug": "spheniscus-demersus",
+    "nomeCientifico": "Spheniscus demersus",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Pinguim-africano",
+      "Pinguim-do-cabo"
+    ],
+    "grupo": "aves",
+    "status": "CR",
+    "biomas": [
+      "costa-marinha"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Aves",
+      "ordem": "Sphenisciformes",
+      "familia": "Spheniscidae",
+      "genero": "Spheniscus"
+    },
+    "resumo": "O único pinguim que nidifica na África, e a população caiu mais de 95% em um século.",
+    "descricao": "Pinguim de porte médio, 60 a 70 cm e 2 a 4 kg, com faixa preta em ferradura cruzando o peito branco e pontos pretos individuais — tão individuais que servem para identificar cada ave, como uma impressão digital. A mancha rosada acima do olho é uma glândula de termorregulação: quanto mais calor, mais sangue ela recebe e mais rosa fica. O chamado alto e áspero rendeu à espécie o antigo nome de pinguim-jumento.",
+    "habitat": "Ilhas e trechos de costa do sul da África, com colônias em praias e afloramentos rochosos. Historicamente cavava ninho em depósitos de guano, que davam abrigo térmico; sem eles, nidifica exposto ao sol ou sob vegetação rala.",
+    "distribuicao": "Namíbia e África do Sul, com cerca de 28 colônias reprodutivas. A população passou de mais de um milhão de casais no início do século XX para algo em torno de 10 mil casais hoje. A IUCN elevou a espécie a Criticamente em perigo em 2024.",
+    "alimentacao": "Peixes pelágicos cardumeiros, principalmente sardinha e anchova, complementados por lula. Mergulha em geral a menos de 30 metros, mas alcança 130. Caça em grupo, cercando o cardume.",
+    "reproducao": "Monogâmico, com casais que voltam ao mesmo ninho por vários anos. A postura é de dois ovos, incubados alternadamente por cerca de 38 dias. Os filhotes deixam a colônia entre 60 e 130 dias, e passam de um a dois anos no mar antes de retornar.",
+    "ameacas": "A pesca industrial de sardinha e anchova compete diretamente pelo alimento e desloca os cardumes para longe das colônias. A remoção histórica do guano eliminou os melhores sítios de ninho. Somam-se derramamentos de óleo, gripe aviária e aquecimento da água, que altera a distribuição das presas.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22697810"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/African_penguin"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg/1280px-Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg",
+      "largura": 1280,
+      "altura": 1516,
+      "alt": "Pinguim-africano de pé na praia, com faixa preta em ferradura no peito branco",
+      "autor": "Matti Blume",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Wikimania_2018,_Cape_Town_(_1050602),_crop.jpg"
+    }
+  },
+  {
+    "slug": "struthio-camelus",
+    "nomeCientifico": "Struthio camelus",
+    "autoria": "Linnaeus, 1758",
+    "nomesPopulares": [
+      "Avestruz"
+    ],
+    "grupo": "aves",
+    "status": "LC",
+    "biomas": [
+      "savana",
+      "deserto"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Aves",
+      "ordem": "Struthioniformes",
+      "familia": "Struthionidae",
+      "genero": "Struthio"
+    },
+    "resumo": "A maior ave viva, o maior ovo do mundo animal e a única com dois dedos em cada pé.",
+    "descricao": "Chega a 2,8 metros e 150 kg. O pé reduzido a dois dedos, com uma unha grande no interno, é único entre as aves e funciona como um casco: sustenta corrida sustentada a 60 km/h e picos acima disso, a maior velocidade terrestre entre bípedes. O olho tem cerca de 5 cm de diâmetro, o maior entre vertebrados terrestres. Não voa, e o esterno não tem quilha — as asas servem para equilíbrio nas curvas e para exibição.",
+    "habitat": "Savana aberta, campo semiárido e deserto com vegetação rala, onde a visão de longo alcance é mais útil que esconderijo. Evita mata fechada e areia solta profunda.",
+    "distribuicao": "África subsaariana, em populações fragmentadas do Sahel à África austral. A subespécie do norte da África está muito reduzida, e a subespécie árabe foi extinta em meados do século XX. É criada comercialmente em dezenas de países.",
+    "alimentacao": "Herbívoro predominante — sementes, folhas, raízes e flores — com inseto e pequeno vertebrado ocasionais. Engole pedras que ficam na moela e trituram o alimento. Consegue passar dias sem beber, obtendo água da vegetação.",
+    "reproducao": "Vive em grupos com um macho territorial e várias fêmeas. Todas põem no mesmo ninho raso escavado no chão, que pode acumular mais de 20 ovos; a fêmea principal empurra para a borda os ovos que não reconhece como seus. Cada ovo pesa cerca de 1,4 kg. O macho incuba à noite e a fêmea de dia, por cerca de 42 dias.",
+    "ameacas": "A espécie como um todo é classificada como Pouco preocupante, mas isso esconde variação regional grande: as populações do norte da África estão em colapso por caça e perda de habitat. A criação comercial reduziu a pressão sobre populações selvagens pela pena e pelo couro.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/45020636"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Common_ostrich"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/1280px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
+      "largura": 1280,
+      "altura": 854,
+      "alt": "Avestruz macho adulto caminhando em campo seco, com plumagem preta e cauda clara",
+      "autor": "Yathin S Krishnappa",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg"
+    }
+  },
+  {
+    "slug": "thylacinus-cynocephalus",
+    "nomeCientifico": "Thylacinus cynocephalus",
+    "autoria": "Harris, 1808",
+    "nomesPopulares": [
+      "Tilacino",
+      "Tigre-da-tasmânia",
+      "Lobo-marsupial"
+    ],
+    "grupo": "mamiferos",
+    "status": "EX",
+    "biomas": [
+      "floresta-temperada",
+      "campo-temperado"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Dasyuromorphia",
+      "familia": "Thylacinidae",
+      "genero": "Thylacinus"
+    },
+    "resumo": "Um marsupial que convergiu para a forma de um cão — e cujo último indivíduo morreu em um zoológico, em 1936.",
+    "descricao": "Maior carnívoro marsupial dos tempos históricos, com cerca de 1,6 metro do focinho à ponta da cauda e 20 a 30 kg. O crânio e a silhueta lembravam tanto os de um canídeo que a espécie virou o exemplo didático de evolução convergente, mas a cauda rígida na base, a bolsa marsupial — presente nos dois sexos, voltada para trás na fêmea — e a abertura de mandíbula acima de 80 graus a separam de qualquer cão. Tinha de 15 a 20 listras escuras da metade do dorso até a cauda.",
+    "habitat": "Floresta esclerófila seca, campo aberto e bordas de floresta úmida da Tasmânia. Caçava sobretudo ao amanhecer e ao entardecer e abrigava-se em tocas de rocha e troncos ocos.",
+    "distribuicao": "No Holoceno ocorria em toda a Austrália continental e na Nova Guiné; desapareceu desses dois territórios há cerca de 3.000 anos, provavelmente por competição com o dingo e por pressão humana. Restou apenas na Tasmânia, onde foi extinto no século XX.",
+    "alimentacao": "Predador de cangurus pequenos, wallabies, aves terrestres e gambás australianos. Os relatos de que sangrava rebanhos em massa nunca se sustentaram: a mandíbula era relativamente fraca e o animal caçava presas de porte médio, sozinho ou em par.",
+    "reproducao": "A fêmea tinha quatro tetas na bolsa e criava de dois a quatro filhotes por ninhada, nascidos após gestação curta, como em todo marsupial. Os jovens permaneciam na bolsa por cerca de três meses e seguiam dependentes por vários meses depois disso.",
+    "ameacas": "Extinta. O governo da Tasmânia pagou recompensa por mais de 2.100 carcaças entre 1888 e 1909, sob a acusação mal fundamentada de ataque a ovelhas. Doença, perda de habitat e concorrência com cães introduzidos completaram o quadro. O último indivíduo conhecido morreu no zoológico de Hobart em 7 de setembro de 1936; a proteção legal havia sido concedida 59 dias antes.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/21866"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Thylacine"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Thylacinus_cropped.png",
+      "largura": 1124,
+      "altura": 800,
+      "alt": "Tilacino fotografado em cativeiro, de perfil, com listras escuras na porção posterior do dorso",
+      "autor": "E.J. Keller",
+      "licenca": "Public domain",
+      "licencaUrl": null,
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Thylacinus_cropped.png"
+    }
+  },
+  {
+    "slug": "ursus-maritimus",
+    "nomeCientifico": "Ursus maritimus",
+    "autoria": "Phipps, 1774",
+    "nomesPopulares": [
+      "Urso-polar"
+    ],
+    "grupo": "mamiferos",
+    "status": "VU",
+    "biomas": [
+      "mar-polar",
+      "tundra"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Mammalia",
+      "ordem": "Carnivora",
+      "familia": "Ursidae",
+      "genero": "Ursus"
+    },
+    "resumo": "A pele por baixo do pelo é preta, e o pelo não é branco: é oco e sem pigmento.",
+    "descricao": "O maior carnívoro terrestre atual, com machos de 350 a 700 kg. O epíteto maritimus é literal: a IUCN o classifica como mamífero marinho, porque ele depende do gelo marinho, e não da terra, para caçar. Cada pelo do velo é translúcido e oco; o branco aparente vem do espalhamento da luz, e a pele sob ele é preta, para absorver calor. As patas dianteiras são largas e parcialmente palmadas, funcionando como remo, e a planta tem papilas que dão aderência no gelo.",
+    "habitat": "Gelo marinho sobre a plataforma continental e entre ilhas do Ártico, onde a água rasa sustenta mais foca. Passa boa parte do ano sobre gelo à deriva; usa a terra sobretudo para parir e para esperar o congelamento.",
+    "distribuicao": "Circumpolar ártico, em 19 subpopulações reconhecidas distribuídas por Canadá, Groenlândia, Noruega, Rússia e Estados Unidos. A estimativa global fica entre 22 e 31 mil indivíduos, com tendência de queda nas subpopulações do sul.",
+    "alimentacao": "Especialista em foca-anelada e foca-barbuda, caçadas na espera junto a buracos de respiração no gelo. A gordura é o alvo: em época de fartura come a banha e deixa a carcaça. Em terra come ovo, ave, carniça de baleia e vegetação, mas nada disso repõe o valor energético da foca.",
+    "reproducao": "O acasalamento ocorre sobre o gelo entre abril e junho, com implantação tardia do embrião. A fêmea cava uma toca de neve no outono e pare, entre novembro e janeiro, de um a três filhotes de menos de 700 gramas. Eles saem da toca na primavera e ficam com a mãe por cerca de dois anos e meio.",
+    "ameacas": "A redução da extensão e da duração do gelo marinho é a ameaça central: encurta a temporada de caça e força jejuns cada vez mais longos em terra. Somam-se acúmulo de poluentes organoclorados na gordura, exploração de petróleo no Ártico e aumento de encontros com humanos à medida que os ursos buscam alimento em povoados.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22823"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Polar_bear"
+      }
+    ],
+    "imagem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
+      "largura": 563,
+      "altura": 565,
+      "alt": "Urso-polar adulto caminhando sobre gelo, com pelagem branco-amarelada",
+      "autor": "Alan Wilson",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg"
+    }
+  },
+  {
+    "slug": "varanus-komodoensis",
+    "nomeCientifico": "Varanus komodoensis",
+    "autoria": "Ouwens, 1912",
+    "nomesPopulares": [
+      "Dragão-de-komodo"
+    ],
+    "grupo": "repteis",
+    "status": "EN",
+    "biomas": [
+      "floresta-tropical-seca",
+      "savana"
+    ],
+    "taxonomia": {
+      "reino": "Animalia",
+      "filo": "Chordata",
+      "classe": "Reptilia",
+      "ordem": "Squamata",
+      "familia": "Varanidae",
+      "genero": "Varanus"
+    },
+    "resumo": "O maior lagarto vivo, e o veneno que se achou por décadas ser bactéria de boca suja.",
+    "descricao": "Chega a 3 metros e 70 a 90 kg. Por muito tempo se explicou a morte das presas horas após a mordida como septicemia causada pela flora bacteriana da boca; desde 2009 sabe-se que a espécie tem glândulas de veneno na mandíbula inferior, cujo conteúdo impede a coagulação e derruba a pressão arterial. A língua bifurcada coleta partículas do ar e as leva ao órgão vomeronasal, que compara os dois lados e dá direção ao cheiro — permite localizar carniça a vários quilômetros.",
+    "habitat": "Floresta tropical seca, savana e encosta arbustiva de ilhas, do nível do mar até cerca de 800 metros. Jovens passam os primeiros anos em árvores, fugindo dos adultos, que praticam canibalismo.",
+    "distribuicao": "Endêmico de cinco ilhas da Indonésia: Komodo, Rinca, Flores, Gili Motang e Nusa Kode. A população total gira em torno de 3.500 indivíduos, dos quais menos de 1.400 são adultos reprodutores.",
+    "alimentacao": "Carniça e predação de veado-de-timor, javali, búfalo-asiático e presas menores. Ataca de emboscada, morde e deixa a presa se afastar, seguindo-a até ela sucumbir. Um adulto pode ingerir até 80% do próprio peso em uma única refeição.",
+    "reproducao": "A fêmea põe cerca de 20 ovos, muitas vezes em ninhos abandonados de aves megapodídeas, e a incubação dura de 7 a 8 meses. A espécie é capaz de partenogênese: fêmeas isoladas já produziram descendentes viáveis, todos machos, pelo sistema de determinação sexual ZW dos varanídeos.",
+    "ameacas": "Distribuição minúscula e população pequena tornam a espécie vulnerável a qualquer evento local. A elevação do nível do mar deve reduzir o habitat de baixada nas ilhas, e a caça ilegal do veado-de-timor esvazia a base de presas. A IUCN a reclassificou de Vulnerável para Em perigo em 2021.",
+    "fontes": [
+      {
+        "titulo": "IUCN Red List — avaliação da espécie",
+        "url": "https://www.iucnredlist.org/species/22884"
+      },
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/1280px-202306_Varanus_komodoensis.jpg",
+      "largura": 1280,
+      "altura": 914,
+      "alt": "Dragão-de-komodo caminhando em solo seco, com a língua bifurcada para fora",
+      "autor": "James Jolokia (james1203)",
+      "licenca": "CC BY 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg"
+    }
+  },
+  {
+    "slug": "victoria-amazonica",
+    "nomeCientifico": "Victoria amazonica",
+    "autoria": "(Poepp.) J.C.Sowerby, 1850",
+    "nomesPopulares": [
+      "Vitória-régia",
+      "Uapé",
+      "Jaçanã"
+    ],
+    "grupo": "plantas",
+    "status": "NE",
+    "biomas": [
+      "area-alagada",
+      "rio-e-lago"
+    ],
+    "taxonomia": {
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "classe": "Magnoliopsida",
+      "ordem": "Nymphaeales",
+      "familia": "Nymphaeaceae",
+      "genero": "Victoria"
+    },
+    "resumo": "A folha aguenta dezenas de quilos porque é uma treliça — e a flor sequestra o besouro que a poliniza por uma noite.",
+    "descricao": "Planta aquática com folhas circulares de até 3 metros de diâmetro e borda erguida de 5 a 10 cm. A face inferior é percorrida por nervuras radiais e transversais espinhosas que formam uma estrutura de treliça com câmaras de ar: distribuem a carga e permitem sustentar dezenas de quilos bem distribuídos. Esse arranjo foi observado por Joseph Paxton e inspirou o projeto estrutural do Crystal Palace, em 1851. Os espinhos da face inferior defendem contra peixes e manatis.",
+    "habitat": "Lagos de várzea, igapós e braços mansos de rio, em água parada a 25 a 34 °C e com sedimento profundo onde o rizoma se fixa. Morre nos trechos onde o nível baixa demais na vazante.",
+    "distribuicao": "Bacia amazônica no Brasil, na Bolívia, no Peru, na Colômbia e nas Guianas. É cultivada em jardins botânicos do mundo inteiro, o que a torna muito mais conhecida do que avaliada.",
+    "alimentacao": "Autotrófica. O rizoma ancorado no sedimento absorve nutrientes, e pecíolos de até 8 metros levam ar às partes submersas por um sistema de canais internos.",
+    "reproducao": "A flor abre por duas noites e muda de sexo entre elas. Na primeira, é branca, libera um aroma forte de abacaxi e aquece até cerca de 11 °C acima do ambiente, atraindo besouros do gênero Cyclocephala; ao amanhecer ela se fecha e os prende. Na segunda noite, já rosada e agora funcionalmente masculina, reabre e solta os besouros cobertos de pólen, que voam para outra flor branca. A flor rosada afunda em seguida e o fruto amadurece debaixo d'água.",
+    "ameacas": "Não avaliada globalmente pela IUCN. As pressões documentadas são assoreamento e poluição de lagos de várzea, alteração do regime de cheia por barragens e coleta para ornamentação. A ausência de avaliação formal em uma planta tão emblemática é um bom lembrete de que Não avaliada nunca quer dizer fora de risco.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Victoria_amazonica"
+      },
+      {
+        "titulo": "IUCN Red List — busca de avaliações",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Victoria_amazonica_edit_1.jpg/1280px-Victoria_amazonica_edit_1.jpg",
+      "largura": 1280,
+      "altura": 1536,
+      "alt": "Folhas circulares de vitória-régia com bordas erguidas, flutuando na superfície de um lago",
+      "autor": "Bilby",
+      "licenca": "CC BY 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Victoria_amazonica_edit_1.jpg"
+    }
+  },
+  {
+    "slug": "welwitschia-mirabilis",
+    "nomeCientifico": "Welwitschia mirabilis",
+    "autoria": "Hook.f., 1863",
+    "nomesPopulares": [
+      "Welwitschia",
+      "Tumbo"
+    ],
+    "grupo": "plantas",
+    "status": "NE",
+    "biomas": [
+      "deserto"
+    ],
+    "taxonomia": {
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "classe": "Gnetopsida",
+      "ordem": "Welwitschiales",
+      "familia": "Welwitschiaceae",
+      "genero": "Welwitschia"
+    },
+    "resumo": "Produz apenas duas folhas na vida inteira, e elas continuam crescendo por mais de mil anos.",
+    "descricao": "Única espécie de sua ordem, família e gênero — um fóssil vivo sem parente próximo. Depois dos cotilédones, o meristema apical morre e a planta produz exatamente duas folhas, que nunca são substituídas: elas crescem continuamente a partir da base, a poucos centímetros por ano, enquanto as pontas se desfiam e morrem. O emaranhado aparente de dezenas de fitas é só essas duas folhas rasgadas ao longo do tempo. Indivíduos datados por radiocarbono passam de 1.500 anos, e há estimativas acima de 2.000.",
+    "habitat": "Deserto do Namibe, em leitos secos de rio e planícies de cascalho até cerca de 150 km da costa. A chuva é quase irrelevante: a planta depende da neblina costeira que avança à noite e do lençol freático alcançado por uma raiz pivotante profunda.",
+    "distribuicao": "Faixa costeira da Namíbia e do sudoeste de Angola. A distribuição é naturalmente descontínua, concentrada onde a neblina chega com regularidade.",
+    "alimentacao": "Autotrófica, com metabolismo CAM facultativo — abre os estômatos à noite para reduzir a perda de água. Absorve parte da umidade da neblina diretamente pelos estômatos da superfície foliar.",
+    "reproducao": "Dioica: há plantas masculinas e femininas, com estróbilos avermelhados. A polinização envolve insetos atraídos por néctar produzido nos cones, sobretudo moscas e percevejos do gênero Probergrothius. As sementes são aladas e dispersas pelo vento, mas a germinação bem-sucedida exige anos excepcionalmente chuvosos, o que faz o recrutamento acontecer em pulsos separados por décadas.",
+    "ameacas": "Não avaliada globalmente pela IUCN, embora seja protegida por lei na Namíbia e conste no Apêndice II da CITES. As pressões conhecidas são coleta ilegal de sementes e de plantas, tráfego de veículos fora de estrada sobre plântulas, mineração e herbivoria por zebras e rinocerontes em anos secos.",
+    "fontes": [
+      {
+        "titulo": "Wikipédia (en) — verbete da espécie",
+        "url": "https://en.wikipedia.org/wiki/Welwitschia"
+      },
+      {
+        "titulo": "IUCN Red List — busca de avaliações",
+        "url": "https://www.iucnredlist.org/search"
+      }
+    ],
+    "imagem": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Welwitschia_mirabilis%282%29.jpg/1280px-Welwitschia_mirabilis%282%29.jpg",
+      "largura": 1280,
+      "altura": 960,
+      "alt": "Welwitschia no deserto, com duas folhas longas retorcidas e rasgadas espalhadas sobre a areia",
+      "autor": "Thomas Schoch",
+      "licenca": "CC BY-SA 3.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonteUrl": "https://commons.wikimedia.org/wiki/File:Welwitschia_mirabilis(2).jpg"
+    }
+  }
+]

@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ---------------------------------------------------------------------------
+   Design system — guia de campo (guia.md §3, §4, §6)
+
+   Cor é dado: só grupo taxonômico e status de conservação carregam cor.
+   Links e botões se distinguem por peso e sublinhado, nunca por cor de marca.
+
+   O refinamento desta versão vem de tipografia e ritmo, não de ornamento:
+   eixo óptico da Literata, entrelinha e tracking por tamanho, hairlines em
+   dois pesos e um motivo de curvas de nível monocromático. Segue sem sombra
+   (salvo a gaveta, que precisa de elevação para ler como sobreposição) e sem
+   gradiente decorativo.
+--------------------------------------------------------------------------- */
+
+@theme {
+  /* Base — valores do guia, verificados em contraste; não mexer sem revalidar */
+  --color-papel: #fafaf7;
+  --color-papel-fundo: #f0f0ea;
+  --color-tinta: #243b31;
+  --color-tinta-suave: #5c6b63;
+  --color-linha: #d8d8d0;
+
+  /* Hairline interna: divide sem cortar. Só para divisões dentro de um bloco. */
+  --color-linha-sutil: #e7e7e0;
+
+  /* Foco e ação — única cor que nunca aparece em conteúdo */
+  --color-foco: #1554d1;
+
+  /* Tipografia */
+  --font-leitura: var(--fonte-leitura), Georgia, "Times New Roman", serif;
+  --font-interface: var(--fonte-interface), system-ui, -apple-system, sans-serif;
+
+  /*
+    Escala: base 17px, razão 1.25. Entrelinha aperta e tracking fica negativo
+    conforme o tamanho sobe — o que um tipo grande precisa é de menos ar entre
+    as letras, não de mais.
+  */
+  --text-display: clamp(2rem, 1.35rem + 2.6vw, 2.625rem);
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.023em;
+
+  --text-titulo: clamp(1.5rem, 1.2rem + 1.3vw, 2.0625rem);
+  --text-titulo--line-height: 1.12;
+  --text-titulo--letter-spacing: -0.016em;
+
+  --text-subtitulo: 1.625rem;
+  --text-subtitulo--line-height: 1.22;
+  --text-subtitulo--letter-spacing: -0.012em;
+
+  --text-destaque: 1.3125rem;
+  --text-destaque--line-height: 1.48;
+  --text-destaque--letter-spacing: -0.006em;
+
+  --text-corpo: 1.0625rem;
+  --text-corpo--line-height: 1.62;
+  --text-corpo--letter-spacing: 0;
+
+  --text-apoio: 0.875rem;
+  --text-apoio--line-height: 1.45;
+  --text-apoio--letter-spacing: 0.002em;
+
+  --text-dado: 0.75rem;
+  --text-dado--line-height: 1.4;
+  --text-dado--letter-spacing: 0.012em;
+
+  /* Forma: 3px em controles, 0 em imagens */
+  --radius-controle: 3px;
+
+  /* Medida máxima do contêiner */
+  --container-medida: 1160px;
+
+  /* Abaixo de 900px a coluna tabular da ficha vira bloco acima do texto (§5) */
+  --breakpoint-ficha: 900px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* --- Reset e base ------------------------------------------------------- */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background-color: var(--color-papel);
+  color: var(--color-tinta);
+  -webkit-text-size-adjust: 100%;
+  /* A Literata traz o eixo `opsz`: deixa o próprio tipo se ajustar ao corpo. */
+  font-optical-sizing: auto;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-interface);
+  font-size: var(--text-corpo);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Título não deve deixar uma palavra órfã na última linha; parágrafo, idem. */
+h1,
+h2,
+h3,
+figcaption,
+caption {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd {
+  text-wrap: pretty;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-tinta) 16%, transparent);
+}
+
+/* Foco de teclado visível em todo controle (§10) */
+:focus-visible {
+  outline: 2px solid var(--color-foco);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+/* Nome científico: itálico verdadeiro da Literata, sempre (§4) */
+.cientifico {
+  font-family: var(--font-leitura);
+  font-style: italic;
+}
+
+/* Link no corpo de texto: tinta + sublinhado fino que engrossa no hover (§3) */
+.link-texto {
+  color: var(--color-tinta);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-tinta) 28%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-skip-ink: auto;
+  transition: text-decoration-color 120ms ease, text-decoration-thickness 120ms ease;
+}
+
+.link-texto:hover {
+  text-decoration-color: var(--color-tinta);
+  text-decoration-thickness: 2px;
+}
+
+/* Coluna de leitura (§4) */
+.medida-leitura {
+  max-width: 66ch;
+}
+
+/*
+  Rubrica: rótulo curto de metadado. Caixa de sentença, nunca caixa alta
+  espaçada — o guia é explícito quanto a isso (§4).
+*/
+.rubrica {
+  font-family: var(--font-interface);
+  font-size: var(--text-dado);
+  letter-spacing: 0.02em;
+  color: var(--color-tinta-suave);
+}
+
+/* Números tabulares onde a coluna precisa alinhar */
+.numero {
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+  Gaveta de filtro: a única sombra do sistema. Não é ornamento — sem elevação
+  a gaveta não lê como camada sobre a página.
+*/
+.sombra-gaveta {
+  box-shadow: 1px 0 0 var(--color-linha), 24px 0 48px -24px rgb(36 59 49 / 0.28);
+}
+
+/* Movimento só como resposta a uma ação; respeitado sempre (§6) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
