@@ -1,0 +1,211 @@
+import type { Species } from "./types";
+
+// Dados de EXEMPLO para montar as telas. Antes de publicar, tudo isso deve
+// vir das fontes (Catalogue of Life, IUCN, SALVE, Flora/Fauna do Brasil, GBIF).
+// Campos sem valor confirmado ficam vazios e a tela mostra um aviso.
+
+const animal = (classe: string, ordem: string, familia: string, genero: string) => ({
+  reino: "Animalia",
+  filo: "Chordata",
+  classe,
+  ordem,
+  familia,
+  genero,
+});
+
+const planta = (classe: string, ordem: string, familia: string, genero: string) => ({
+  reino: "Plantae",
+  filo: "Tracheophyta",
+  classe,
+  ordem,
+  familia,
+  genero,
+});
+
+export const species: Species[] = [
+  {
+    slug: "panthera-onca",
+    scientificName: "Panthera onca",
+    authorship: "(Linnaeus, 1758)",
+    commonName: "Onça-pintada",
+    otherNames: ["jaguar", "jaguaretê"],
+    kingdom: "fauna",
+    group: "Mamífero",
+    taxonomy: animal("Mammalia", "Carnivora", "Felidae", "Panthera"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["amazonia", "cerrado", "pantanal", "mata-atlantica", "caatinga"] },
+      { countryCode: "MX", biomeSlugs: [] },
+      { countryCode: "CO", biomeSlugs: [] },
+      { countryCode: "PE", biomeSlugs: [] },
+      { countryCode: "AR", biomeSlugs: [] },
+    ],
+    conservation: { global: "NT", national: { BR: "VU" } },
+    summary:
+      "O maior felino das Américas. Predador de topo, depende de áreas grandes e conectadas de vegetação nativa.",
+  },
+  {
+    slug: "victoria-amazonica",
+    scientificName: "Victoria amazonica",
+    commonName: "Vitória-régia",
+    kingdom: "flora",
+    group: "Planta aquática",
+    taxonomy: planta("Magnoliopsida", "Nymphaeales", "Nymphaeaceae", "Victoria"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["amazonia"] },
+      { countryCode: "PE", biomeSlugs: [] },
+    ],
+    conservation: { national: {} },
+  },
+  {
+    slug: "chrysocyon-brachyurus",
+    scientificName: "Chrysocyon brachyurus",
+    authorship: "(Illiger, 1815)",
+    commonName: "Lobo-guará",
+    kingdom: "fauna",
+    group: "Mamífero",
+    taxonomy: animal("Mammalia", "Carnivora", "Canidae", "Chrysocyon"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["cerrado", "pantanal", "pampa"] },
+      { countryCode: "AR", biomeSlugs: [] },
+      { countryCode: "PE", biomeSlugs: [] },
+    ],
+    conservation: { global: "NT", national: { BR: "VU" } },
+  },
+  {
+    slug: "araucaria-angustifolia",
+    scientificName: "Araucaria angustifolia",
+    commonName: "Araucária",
+    otherNames: ["pinheiro-do-paraná"],
+    kingdom: "flora",
+    group: "Árvore",
+    taxonomy: planta("Pinopsida", "Pinales", "Araucariaceae", "Araucaria"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["mata-atlantica"] },
+      { countryCode: "AR", biomeSlugs: [] },
+    ],
+    conservation: { global: "CR", national: { BR: "EN" } },
+  },
+  {
+    slug: "myrmecophaga-tridactyla",
+    scientificName: "Myrmecophaga tridactyla",
+    authorship: "Linnaeus, 1758",
+    commonName: "Tamanduá-bandeira",
+    kingdom: "fauna",
+    group: "Mamífero",
+    taxonomy: animal("Mammalia", "Pilosa", "Myrmecophagidae", "Myrmecophaga"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["cerrado", "pantanal", "amazonia"] },
+      { countryCode: "CO", biomeSlugs: [] },
+      { countryCode: "PE", biomeSlugs: [] },
+      { countryCode: "AR", biomeSlugs: [] },
+    ],
+    conservation: { global: "VU", national: { BR: "VU" } },
+  },
+  {
+    slug: "cereus-jamacaru",
+    scientificName: "Cereus jamacaru",
+    commonName: "Mandacaru",
+    kingdom: "flora",
+    group: "Cacto",
+    taxonomy: planta("Magnoliopsida", "Caryophyllales", "Cactaceae", "Cereus"),
+    occurrences: [{ countryCode: "BR", biomeSlugs: ["caatinga"] }],
+    conservation: { national: {} },
+  },
+  {
+    slug: "anodorhynchus-hyacinthinus",
+    scientificName: "Anodorhynchus hyacinthinus",
+    authorship: "(Latham, 1790)",
+    commonName: "Arara-azul-grande",
+    kingdom: "fauna",
+    group: "Ave",
+    taxonomy: animal("Aves", "Psittaciformes", "Psittacidae", "Anodorhynchus"),
+    occurrences: [{ countryCode: "BR", biomeSlugs: ["pantanal", "cerrado", "amazonia"] }],
+    conservation: { global: "VU", national: {} },
+  },
+  {
+    slug: "rhea-americana",
+    scientificName: "Rhea americana",
+    authorship: "(Linnaeus, 1758)",
+    commonName: "Ema",
+    kingdom: "fauna",
+    group: "Ave",
+    taxonomy: animal("Aves", "Rheiformes", "Rheidae", "Rhea"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["cerrado", "pampa", "pantanal"] },
+      { countryCode: "AR", biomeSlugs: [] },
+    ],
+    conservation: { national: {} },
+  },
+  {
+    slug: "caryocar-brasiliense",
+    scientificName: "Caryocar brasiliense",
+    commonName: "Pequizeiro",
+    otherNames: ["pequi"],
+    kingdom: "flora",
+    group: "Árvore",
+    taxonomy: planta("Magnoliopsida", "Malpighiales", "Caryocaraceae", "Caryocar"),
+    occurrences: [{ countryCode: "BR", biomeSlugs: ["cerrado"] }],
+    conservation: { national: {} },
+  },
+  {
+    slug: "mauritia-flexuosa",
+    scientificName: "Mauritia flexuosa",
+    commonName: "Buriti",
+    kingdom: "flora",
+    group: "Palmeira",
+    taxonomy: planta("Liliopsida", "Arecales", "Arecaceae", "Mauritia"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["cerrado", "amazonia"] },
+      { countryCode: "CO", biomeSlugs: [] },
+      { countryCode: "PE", biomeSlugs: [] },
+    ],
+    conservation: { national: {} },
+  },
+  {
+    slug: "cariama-cristata",
+    scientificName: "Cariama cristata",
+    commonName: "Seriema",
+    kingdom: "fauna",
+    group: "Ave",
+    taxonomy: animal("Aves", "Cariamiformes", "Cariamidae", "Cariama"),
+    occurrences: [
+      { countryCode: "BR", biomeSlugs: ["cerrado", "caatinga", "pantanal"] },
+      { countryCode: "AR", biomeSlugs: [] },
+    ],
+    conservation: { national: {} },
+  },
+  {
+    slug: "handroanthus-ochraceus",
+    scientificName: "Handroanthus ochraceus",
+    commonName: "Ipê-amarelo-do-cerrado",
+    kingdom: "flora",
+    group: "Árvore",
+    taxonomy: planta("Magnoliopsida", "Lamiales", "Bignoniaceae", "Handroanthus"),
+    occurrences: [{ countryCode: "BR", biomeSlugs: ["cerrado"] }],
+    conservation: { national: {} },
+  },
+  {
+    slug: "stryphnodendron-adstringens",
+    scientificName: "Stryphnodendron adstringens",
+    commonName: "Barbatimão",
+    kingdom: "flora",
+    group: "Árvore",
+    taxonomy: planta("Magnoliopsida", "Fabales", "Fabaceae", "Stryphnodendron"),
+    occurrences: [{ countryCode: "BR", biomeSlugs: ["cerrado"] }],
+    conservation: { national: {} },
+  },
+];
+
+/** Espécies em destaque na página do país (ordem de exibição). */
+export const featuredSlugs: Record<string, string[]> = {
+  BR: [
+    "panthera-onca",
+    "victoria-amazonica",
+    "chrysocyon-brachyurus",
+    "araucaria-angustifolia",
+    "myrmecophaga-tridactyla",
+    "cereus-jamacaru",
+    "anodorhynchus-hyacinthinus",
+    "rhea-americana",
+  ],
+};

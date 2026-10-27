@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Cores e fontes do BioPlanet. Viram classes do Tailwind:
+   bg-forest, text-muted, border-line, font-display etc. */
+@theme {
+  --color-forest: #0e2a20; /* fundo escuro do topo e do rodapé */
+  --color-forest-2: #163828; /* cartões sobre o fundo escuro */
+  --color-forest-line: #3a5a4a; /* bordas sobre o fundo escuro */
+  --color-leaf: #1f5a3d; /* verde dos links e destaques */
+  --color-ink: #13241b; /* texto principal */
+  --color-muted: #4f5e55; /* texto secundário */
+  --color-paper: #f5f6f1; /* fundo da página */
+  --color-sage: #e8ede3; /* faixas de seção */
+  --color-line: #dde3d8; /* bordas de cartão */
+  --color-line-strong: #c5cec0; /* bordas de botões e campos */
+  --color-mist: #c9d3c8; /* texto secundário sobre fundo escuro */
+  --color-accent: #e9b23a; /* amarelo de ipê */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Listras usadas no lugar de fotos e mapas enquanto eles não existem. */
+.placeholder-light {
+  background: repeating-linear-gradient(135deg, #d9e0d4 0 14px, #cfd8ca 14px 28px);
+}
+.placeholder-dark {
+  background: repeating-linear-gradient(135deg, #163828 0 14px, #1b4130 14px 28px);
 }
