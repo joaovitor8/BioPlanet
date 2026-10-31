@@ -46,7 +46,11 @@ export function Breadcrumbs({
                 {item.label}
               </Link>
             ) : (
-              <span aria-current="page" className={dark ? "text-[#f2f4ee]" : "text-ink"}>
+              // Só o último item é a página atual. Os outros sem link (ex.: "Fauna") são só texto.
+              <span
+                aria-current={i === items.length - 1 ? "page" : undefined}
+                className={dark ? "text-[#f2f4ee]" : "text-ink"}
+              >
                 {item.label}
               </span>
             )}
@@ -129,10 +133,13 @@ export function SearchForm({
   id,
   label,
   placeholder,
+  defaultValue,
 }: {
   id: string;
   label: string;
   placeholder: string;
+  /** Termo já buscado, para a pessoa poder ajustar a busca. */
+  defaultValue?: string;
 }) {
   return (
     <form action="/busca" className="flex max-w-[560px] flex-col gap-2">
@@ -144,6 +151,7 @@ export function SearchForm({
           id={id}
           name="q"
           type="search"
+          defaultValue={defaultValue}
           required
           placeholder={placeholder}
           className="h-[52px] min-w-0 flex-[1_1_240px] rounded-[10px] border border-forest-line bg-forest-2 px-4 text-base text-[#f2f4ee] placeholder:text-[#9fb0a3]"

@@ -7,15 +7,23 @@ import { searchAll } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Busca" };
 
-// A parte fixa da página (topo e formulário) é gerada no build.
-// Os resultados dependem da URL (?q=...), então ficam dentro do <Suspense>.
+const searchFormProps = {
+  id: "busca-pagina",
+  label: "Buscar espécie ou país",
+  placeholder: "Ex.: onça, Araucaria, Brasil",
+};
+
+// A parte fixa da página (topo e formulário vazio) é gerada no build.
+// O que depende da URL (?q=...) fica dentro do <Suspense>: o termo no campo e os resultados.
 export default function SearchPage({ searchParams }: PageProps<"/busca">) {
   return (
     <>
       <section className="bg-forest text-[#f2f4ee]">
         <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pt-10 pb-12 sm:px-6">
           <h1 className="font-display text-4xl font-bold">Busca</h1>
-          <SearchForm id="busca-pagina" label="Buscar espécie ou país" placeholder="Ex.: onça, Araucaria, Brasil" />
+          <Suspense fallback={<SearchForm {...searchFormProps} />}>
+            <FilledSearchForm searchParams={searchParams} />
+          </Suspense>
         </div>
       </section>
       <section className="mx-auto max-w-[1200px] px-4 pt-10 pb-22 sm:px-6">
@@ -27,9 +35,19 @@ export default function SearchPage({ searchParams }: PageProps<"/busca">) {
   );
 }
 
-async function Results({ searchParams }: Pick<PageProps<"/busca">, "searchParams">) {
+async function readQuery(searchParams: PageProps<"/busca">["searchParams"]) {
   const { q } = await searchParams;
-  const query = (Array.isArray(q) ? q[0] : q)?.trim() ?? "";
+  return (Array.isArray(q) ? q[0] : q)?.trim() ?? "";
+}
+
+// O key troca o campo a cada busca nova, para ele mostrar o termo atual.
+async function FilledSearchForm({ searchParams }: Pick<PageProps<"/busca">, "searchParams">) {
+  const query = await readQuery(searchParams);
+  return <SearchForm key={query} {...searchFormProps} defaultValue={query} />;
+}
+
+async function Results({ searchParams }: Pick<PageProps<"/busca">, "searchParams">) {
+  const query = await readQuery(searchParams);
   if (!query) return <p className="text-muted">Digite um nome popular, científico ou de país.</p>;
 
   const { species, countries } = await searchAll(query);

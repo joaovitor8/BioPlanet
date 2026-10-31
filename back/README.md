@@ -10,7 +10,7 @@ API do BioPlanet. NestJS 12 + TypeORM + PostgreSQL.
    docker compose up -d
    ```
 
-   Também dá para usar Supabase ou Neon: pegue a connection string deles e use no passo 2, com `DATABASE_SSL=true`.
+   Também dá para usar Supabase ou Neon: pegue a connection string deles e use no passo 2, com `DATABASE_SSL=true`. No Supabase, baixe também o certificado SSL (Project Settings → Database) e aponte `DATABASE_SSL_CA` para o arquivo. Sem ele a conexão é recusada, porque a API confere o certificado do banco.
 
 2. **Crie o `.env`** copiando o exemplo:
 

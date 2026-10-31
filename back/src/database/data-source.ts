@@ -1,4 +1,6 @@
+import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import type { TlsOptions } from 'node:tls';
 import { fileURLToPath } from 'node:url';
 import { DataSource, type DataSourceOptions } from 'typeorm';
 import '../config/env.js';
@@ -23,8 +25,18 @@ export const dataSourceOptions: DataSourceOptions = {
   ],
   // Nunca deixe o TypeORM alterar as tabelas sozinho. Mudanças entram por migration.
   synchronize: false,
-  ssl:
-    process.env.DATABASE_SSL === 'true' ? { rejectUnauthorized: false } : false,
+  ssl: sslOptions(),
 };
+
+/**
+ * SSL sempre confere o certificado do servidor, para ninguém se passar pelo banco.
+ * O Supabase assina com a própria CA, que o Node não conhece: baixe o certificado
+ * no painel dele e aponte DATABASE_SSL_CA para o arquivo. O Neon não precisa disso.
+ */
+function sslOptions(): boolean | TlsOptions {
+  if (process.env.DATABASE_SSL !== 'true') return false;
+  const caPath = process.env.DATABASE_SSL_CA;
+  return caPath ? { ca: readFileSync(caPath, 'utf8') } : true;
+}
 
 export default new DataSource(dataSourceOptions);
