@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import { PageSkeleton } from "@/components/PageSkeleton";
 import { SpeciesByBiome } from "@/components/SpeciesByBiome";
 import { Breadcrumbs, Eyebrow, SearchForm, SectionTitle, StatCard, cardHover } from "@/components/ui";
 import { continents } from "@/data/countries";
+import type { Country } from "@/data/types";
 import {
   getCountries,
   getCountry,
@@ -25,10 +28,22 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]">): P
   return country ? { title: `Fauna e flora do ${country.name}`, description: country.intro } : {};
 }
 
+// A checagem de que o país existe fica fora do <Suspense>: depois que o
+// esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
+// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function CountryPage({ params }: PageProps<"/pais/[pais]">) {
   const { pais } = await params;
   const country = await getCountry(pais);
   if (!country || country.status !== "disponivel") notFound();
+
+  return (
+    <Suspense fallback={<PageSkeleton variant="pais" />}>
+      <CountryContent country={country} />
+    </Suspense>
+  );
+}
+
+async function CountryContent({ country }: { country: Country }) {
 
   const [biomes, globalBiomes, featured, sources] = await Promise.all([
     getNationalBiomes(country.code),

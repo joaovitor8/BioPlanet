@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import { PageSkeleton } from "@/components/PageSkeleton";
 import { BiomeSpeciesBrowser } from "@/components/BiomeSpeciesBrowser";
 import { Breadcrumbs, Eyebrow, Placeholder, SectionTitle, StatCard } from "@/components/ui";
 import { continents } from "@/data/countries";
 import { threatenedCodes } from "@/data/status";
+import type { Country, NationalBiome } from "@/data/types";
 import { getCountries, getCountry, getGlobalBiome, getNationalBiome, getNationalBiomes, getSpeciesInBiome } from "@/lib/data";
 
 export async function generateStaticParams() {
@@ -22,12 +25,24 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]/[biom
   return biome ? { title: `${biome.name} (${country.name})`, description: biome.description } : {};
 }
 
+// A checagem de que o país e o bioma existem fica fora do <Suspense>: depois que
+// o esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
+// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function BiomePage({ params }: PageProps<"/pais/[pais]/[bioma]">) {
   const { pais, bioma } = await params;
   const country = await getCountry(pais);
   if (!country || country.status !== "disponivel") notFound();
   const biome = await getNationalBiome(country.code, bioma);
   if (!biome) notFound();
+
+  return (
+    <Suspense fallback={<PageSkeleton variant="bioma" />}>
+      <BiomeContent country={country} biome={biome} />
+    </Suspense>
+  );
+}
+
+async function BiomeContent({ country, biome }: { country: Country; biome: NationalBiome }) {
 
   const [globalBiome, speciesList] = await Promise.all([
     getGlobalBiome(biome.globalBiomeId),

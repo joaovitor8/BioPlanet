@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import { PageSkeleton } from "@/components/PageSkeleton";
 import { NationalStatus, type NationalStatusOption } from "@/components/NationalStatus";
 import { SpeciesCard } from "@/components/SpeciesCard";
 import { Breadcrumbs, CountryCode, KingdomTag, Placeholder, StatusBadge } from "@/components/ui";
 import { statusLabels } from "@/data/status";
-import type { Taxonomy } from "@/data/types";
+import type { Species, Taxonomy } from "@/data/types";
 import {
   getAllSpecies,
   getCountryByCode,
@@ -36,10 +38,22 @@ const taxonomyLabels: { key: keyof Taxonomy; label: string }[] = [
   { key: "genero", label: "Gênero" },
 ];
 
+// A checagem de que a espécie existe fica fora do <Suspense>: depois que o
+// esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
+// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function SpeciesPage({ params }: PageProps<"/especie/[slug]">) {
   const { slug } = await params;
   const species = await getSpecies(slug);
   if (!species) notFound();
+
+  return (
+    <Suspense fallback={<PageSkeleton variant="especie" />}>
+      <SpeciesContent species={species} />
+    </Suspense>
+  );
+}
+
+async function SpeciesContent({ species }: { species: Species }) {
 
   // Países onde a espécie ocorre, com o que já sabemos de cada um.
   const places = await Promise.all(
