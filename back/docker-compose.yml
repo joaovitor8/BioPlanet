@@ -1,0 +1,16 @@
+# Postgres com PostGIS para desenvolvimento.
+# Subir:  docker compose up -d     Parar:  docker compose down
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: bioplanet
+      POSTGRES_PASSWORD: bioplanet
+      POSTGRES_DB: bioplanet
+    ports:
+      - "5432:5432"
+    volumes:
+      - bioplanet-db:/var/lib/postgresql/data
+
+volumes:
+  bioplanet-db:
