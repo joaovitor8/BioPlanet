@@ -1,5 +1,6 @@
 // Peças pequenas usadas em várias páginas: trilha de navegação, títulos, etiquetas,
 // selos de status, cartões de número, formulário de busca e botões de filtro.
+
 import Link from "next/link";
 import type { Kingdom, StatusCode } from "@/data/types";
 import { statusLabels } from "@/data/status";
@@ -68,14 +69,14 @@ export function SectionTitle({ title, subtitle }: { title: string; subtitle?: st
   return (
     <div>
       <h2 className="font-display text-3xl font-bold sm:text-4xl">{title}</h2>
-      {subtitle && <p className="mt-2 max-w-[720px] leading-relaxed text-muted">{subtitle}</p>}
+      {subtitle && <p className="mt-2 max-w-180 leading-relaxed text-muted">{subtitle}</p>}
     </div>
   );
 }
 
 export function StatCard({ value, label, source }: { value?: string; label: string; source: string }) {
   return (
-    <div className="flex flex-col gap-1 rounded-xl bg-forest-2 p-[18px]">
+    <div className="flex flex-col gap-1 rounded-xl bg-forest-2 p-4.5">
       <span className="font-display text-3xl font-bold">{value ?? "[N]"}</span>
       <span className="text-sm text-mist">{label}</span>
       <span className="text-xs text-[#9fb0a3]">{source}</span>
@@ -118,7 +119,7 @@ export function StatusBadge({ code }: { code: StatusCode }) {
   return (
     <span
       title={statusLabels[code]}
-      className={`flex h-[52px] w-[52px] flex-none items-center justify-center rounded-xl font-display text-[19px] font-bold text-white ${statusColors[code]}`}
+      className={`flex h-13 w-13 flex-none items-center justify-center rounded-xl font-display text-[19px] font-bold text-white ${statusColors[code]}`}
     >
       {code}
     </span>
@@ -137,7 +138,7 @@ export function SearchForm({
   defaultValue?: string;
 }) {
   return (
-    <form action="/busca" className="flex max-w-[560px] flex-col gap-2">
+    <form action="/busca" className="flex max-w-140 flex-col gap-2">
       <label htmlFor={id} className="text-sm text-mist">
         {label}
       </label>
@@ -149,11 +150,11 @@ export function SearchForm({
           defaultValue={defaultValue}
           required
           placeholder={placeholder}
-          className="h-[52px] min-w-0 flex-[1_1_240px] rounded-[10px] border border-forest-line bg-forest-2 px-4 text-base text-[#f2f4ee] placeholder:text-[#9fb0a3]"
+          className="h-13 min-w-0 flex-[1_1_240px] rounded-[10px] border border-forest-line bg-forest-2 px-4 text-base text-[#f2f4ee] placeholder:text-[#9fb0a3]"
         />
         <button
           type="submit"
-          className="h-[52px] cursor-pointer rounded-[10px] bg-accent px-6 text-base font-semibold text-forest hover:brightness-95"
+          className="h-13 cursor-pointer rounded-[10px] bg-accent px-6 text-base font-semibold text-forest hover:brightness-95"
         >
           Buscar
         </button>
@@ -176,7 +177,7 @@ export function FilterChip({
       type="button"
       aria-pressed={pressed}
       onClick={onClick}
-      className={`min-h-11 cursor-pointer rounded-full border px-[18px] text-[15px] font-medium ${
+      className={`min-h-11 cursor-pointer rounded-full border px-4.5 text-[15px] font-medium ${
         pressed ? "border-forest bg-forest text-[#f2f4ee]" : "border-line-strong bg-white text-ink hover:border-leaf"
       }`}
     >

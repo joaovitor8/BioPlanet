@@ -1,5 +1,6 @@
 // Nomes em português das categorias de risco (ex.: VU = Vulnerável)
 // e quais delas contam como ameaçadas.
+
 import type { StatusCode } from "./types";
 
 export const statusLabels: Record<StatusCode, string> = {

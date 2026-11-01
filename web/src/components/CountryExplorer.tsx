@@ -1,5 +1,6 @@
 // Grade de países da página inicial, com filtro por continente.
 // Só os países já disponíveis viram link.
+
 "use client";
 
 import Link from "next/link";

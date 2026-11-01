@@ -1,5 +1,6 @@
 // Status de conservação da espécie em cada país, com um seletor de país.
 // Usado na ficha da espécie.
+
 "use client";
 
 import { useState } from "react";

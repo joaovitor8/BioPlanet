@@ -88,7 +88,7 @@ export function BiomeSpeciesBrowser({ species }: { species: BrowserSpecies[] }) 
                 type="button"
                 aria-pressed={tab === t.id}
                 onClick={() => setTab(t.id)}
-                className={`min-h-10 cursor-pointer rounded-full px-[18px] text-[15px] font-medium ${tab === t.id ? "bg-forest text-[#f2f4ee]" : "text-ink hover:bg-white"}`}
+                className={`min-h-10 cursor-pointer rounded-full px-4.5 text-[15px] font-medium ${tab === t.id ? "bg-forest text-[#f2f4ee]" : "text-ink hover:bg-white"}`}
               >
                 {t.label}
               </button>
@@ -114,7 +114,7 @@ export function BiomeSpeciesBrowser({ species }: { species: BrowserSpecies[] }) 
           Mostrando {visible.length} de {species.length} espécies
         </p>
         {visible.length > 0 ? (
-          <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-[18px]">
+          <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-4.5">
             {visible.map((s) => (
               <li key={s.slug} className="grid">
                 <SpeciesCard species={s} tag="group" />
@@ -134,7 +134,7 @@ export function BiomeSpeciesBrowser({ species }: { species: BrowserSpecies[] }) 
 function Checkbox({ label, checked, onChange }: { label: string; checked: boolean; onChange: () => void }) {
   return (
     <label className="flex min-h-9 cursor-pointer items-center gap-2.5 text-[15px]">
-      <input type="checkbox" checked={checked} onChange={onChange} className="h-[18px] w-[18px] accent-leaf" />
+      <input type="checkbox" checked={checked} onChange={onChange} className="h-4.5 w-4.5 accent-leaf" />
       {label}
     </label>
   );

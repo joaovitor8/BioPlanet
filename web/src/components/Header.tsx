@@ -1,4 +1,5 @@
 // Cabeçalho de todas as páginas: logo, menu e seletor de idioma (por enquanto só português).
+
 import Link from "next/link";
 import { LeafIcon } from "./Logo";
 
@@ -12,7 +13,7 @@ const nav = [
 export function Header() {
   return (
     <header className="border-b border-[#234536] bg-forest text-[#f2f4ee]">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-300 flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link
           href="/"
           className="flex min-h-11 items-center gap-2.5 font-display text-[22px] font-bold text-[#f2f4ee]"

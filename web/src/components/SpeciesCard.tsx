@@ -1,4 +1,5 @@
 // Cartão de uma espécie (nome popular, nome científico e etiqueta) que leva para a ficha.
+
 import Link from "next/link";
 import type { Kingdom } from "@/data/types";
 import { KingdomTag, cardHover } from "./ui";
@@ -18,7 +19,7 @@ export function SpeciesCard({ species, tag = "kingdom" }: { species: SpeciesCard
       href={`/especie/${species.slug}`}
       className={`flex flex-col overflow-hidden rounded-[14px] border border-line bg-white text-ink ${cardHover}`}
     >
-      <div className="placeholder-light flex h-[170px] items-start p-3">
+      <div className="placeholder-light flex h-42.5 items-start p-3">
         {tag === "kingdom" ? (
           <KingdomTag kingdom={species.kingdom} />
         ) : (

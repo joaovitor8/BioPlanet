@@ -10,8 +10,8 @@ export function PageSkeleton({ variant }: { variant: "pais" | "bioma" | "especie
       <span className="sr-only">Carregando…</span>
 
       {variant === "especie" ? (
-        <div className="mx-auto flex max-w-[1200px] flex-wrap gap-10 px-4 pt-12 pb-12 text-ink sm:px-6">
-          <Bar className="h-[440px] min-w-0 flex-[1_1_520px] rounded-[18px]" />
+        <div className="mx-auto flex max-w-300 flex-wrap gap-10 px-4 pt-12 pb-12 text-ink sm:px-6">
+          <Bar className="h-110 min-w-0 flex-[1_1_520px] rounded-[18px]" />
           <div className="flex min-w-0 flex-[1_1_400px] flex-col gap-4">
             <Bar className="h-6 w-32" />
             <Bar className="h-12 w-3/4" />
@@ -23,14 +23,14 @@ export function PageSkeleton({ variant }: { variant: "pais" | "bioma" | "especie
       ) : (
         <>
           <div className="bg-forest text-[#f2f4ee]">
-            <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pt-8 pb-16 sm:px-6">
+            <div className="mx-auto flex max-w-300 flex-col gap-5 px-4 pt-8 pb-16 sm:px-6">
               <Bar className="h-4 w-56" />
               <Bar className="mt-4 h-4 w-40" />
               <Bar className="h-14 w-72" />
-              <Bar className="h-5 w-full max-w-[560px]" />
+              <Bar className="h-5 w-full max-w-140" />
             </div>
           </div>
-          <div className="mx-auto grid max-w-[1200px] grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-5 px-4 pt-16 pb-16 text-ink sm:px-6">
+          <div className="mx-auto grid max-w-300 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-5 px-4 pt-16 pb-16 text-ink sm:px-6">
             {Array.from({ length: 6 }, (_, i) => (
               <Bar key={i} className="h-64 rounded-2xl" />
             ))}

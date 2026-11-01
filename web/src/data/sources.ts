@@ -1,5 +1,6 @@
 // Dados de exemplo antigos das fontes (GBIF, IUCN, SALVE...).
 // O site não usa mais este arquivo: as fontes agora vêm da API.
+
 import type { Source } from "./types";
 
 export const sources: Source[] = [

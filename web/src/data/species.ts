@@ -1,5 +1,6 @@
 // Dados de exemplo antigos das espécies e dos destaques de cada país.
 // O site não usa mais este arquivo: as espécies agora vêm da API.
+
 import type { Species } from "./types";
 
 
