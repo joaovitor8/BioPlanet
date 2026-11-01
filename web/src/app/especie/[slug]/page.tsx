@@ -12,14 +12,7 @@ import { SpeciesCard } from "@/components/SpeciesCard";
 import { Breadcrumbs, CountryCode, KingdomTag, Placeholder, StatusBadge } from "@/components/ui";
 import { statusLabels } from "@/data/status";
 import type { Species, Taxonomy } from "@/data/types";
-import {
-  getAllSpecies,
-  getCountryByCode,
-  getNationalBiomes,
-  getRelatedSpecies,
-  getSources,
-  getSpecies,
-} from "@/lib/data";
+import { getAllSpecies, getCountryByCode, getNationalBiomes, getRelatedSpecies, getSources, getSpecies } from "@/lib/data";
 
 export async function generateStaticParams() {
   return (await getAllSpecies()).map((s) => ({ slug: s.slug }));
@@ -28,9 +21,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/especie/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const species = await getSpecies(slug);
-  return species
-    ? { title: `${species.commonName} (${species.scientificName})`, description: species.summary }
-    : {};
+  return species ? { title: `${species.commonName} (${species.scientificName})`, description: species.summary } : {};
 }
 
 const taxonomyLabels: { key: keyof Taxonomy; label: string }[] = [
@@ -103,13 +94,7 @@ async function SpeciesContent({ species }: { species: Species }) {
           <Placeholder className="h-110 rounded-[18px]" label="[Foto] © autor · CC-BY · via iNaturalist" />
           <div className="grid grid-cols-4 gap-3">
             {[1, 2, 3, 4].map((n) => (
-              <button
-                key={n}
-                type="button"
-                aria-label={`Foto ${n}`}
-                aria-pressed={n === 1}
-                className={`placeholder-light h-21 cursor-pointer rounded-[10px] ${n === 1 ? "border-[3px] border-forest" : "border border-line-strong"}`}
-              />
+              <button key={n} type="button" aria-label={`Foto ${n}`} aria-pressed={n === 1} className={`placeholder-light h-21 cursor-pointer rounded-[10px] ${n === 1 ? "border-[3px] border-forest" : "border border-line-strong"}`} />
             ))}
           </div>
         </div>
@@ -175,10 +160,8 @@ async function SpeciesContent({ species }: { species: Species }) {
           </span>
         </div>
         <div className="flex flex-wrap items-stretch gap-6">
-          <Placeholder
-            className="h-100 min-w-0 flex-[3_1_520px] rounded-2xl"
-            label="[Mapa] área de distribuição (IUCN) + pontos do GBIF"
-          />
+          <Placeholder className="h-100 min-w-0 flex-[3_1_520px] rounded-2xl" label="[Mapa] área de distribuição (IUCN) + pontos do GBIF" />
+
           <ul className="flex min-w-0 flex-[2_1_300px] flex-col gap-2.5">
             {home?.country && (
               <li>
@@ -205,11 +188,9 @@ async function SpeciesContent({ species }: { species: Species }) {
                 </div>
               </li>
             )}
+
             {others.map((p) => (
-              <li
-                key={p.code}
-                className="flex items-center gap-2.5 rounded-xl border border-dashed border-[#b7c2b2] bg-[#eef1ea] px-4 py-3"
-              >
+              <li key={p.code} className="flex items-center gap-2.5 rounded-xl border border-dashed border-[#b7c2b2] bg-[#eef1ea] px-4 py-3">
                 <CountryCode code={p.code} active={false} />
                 <span className="flex flex-col gap-0.5">
                   <span className="text-[15px] font-semibold text-[#3e4d44]">{p.country?.name ?? p.code}</span>
@@ -226,10 +207,7 @@ async function SpeciesContent({ species }: { species: Species }) {
       <section className="mx-auto flex max-w-300 flex-col gap-3.5 px-4 pb-14 sm:px-6">
         <h2 className="font-display text-[28px] font-bold">Sobre a espécie</h2>
         {species.summary && <p className="max-w-190 text-[17px] leading-[1.7]">{species.summary}</p>}
-        <p className="max-w-190 text-[17px] leading-[1.7] text-muted">
-          [Resumo de história natural, habitat e ameaças. Texto global de base + complemento da fonte nacional do país
-          selecionado.]
-        </p>
+        <p className="max-w-190 text-[17px] leading-[1.7] text-muted">&gt;Resumo de história natural, habitat e ameaças. Texto global de base + complemento da fonte nacional do país selecionado.&gt;</p>
       </section>
 
       <DataCredits sources={creditSources} />

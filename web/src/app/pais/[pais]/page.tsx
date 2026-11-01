@@ -1,5 +1,6 @@
 // Página de um país (/pais/br).
 // Mostra os biomas nacionais, as espécies em destaque e as fontes do país.
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -69,13 +70,13 @@ async function CountryContent({ country }: { country: Country }) {
   return (
     <>
       <section className="bg-forest text-[#f2f4ee]">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-7 px-4 pt-8 pb-16 sm:px-6">
+        <div className="mx-auto flex max-w-300 flex-col gap-7 px-4 pt-8 pb-16 sm:px-6">
           <Breadcrumbs dark items={[{ label: "Mundo", href: "/" }, { label: continentName, href: "/#paises" }, { label: country.name }]} />
           <div className="flex flex-wrap items-center gap-12">
             <div className="flex min-w-0 flex-[1_1_440px] flex-col gap-5">
               <Eyebrow>País · {continentName}</Eyebrow>
               <h1 className="font-display text-5xl leading-none font-bold sm:text-[64px]">{country.name}</h1>
-              {country.intro && <p className="max-w-[560px] text-lg leading-relaxed text-mist">{country.intro}</p>}
+              {country.intro && <p className="max-w-140 text-lg leading-relaxed text-mist">{country.intro}</p>}
               <SearchForm
                 id="busca-pais"
                 label={`Buscar espécie no ${country.name}`}
@@ -92,7 +93,7 @@ async function CountryContent({ country }: { country: Country }) {
         </div>
       </section>
 
-      <section className="mx-auto flex max-w-[1200px] flex-col gap-7 px-4 pt-18 pb-10 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-col gap-7 px-4 pt-18 pb-10 sm:px-6">
         <SectionTitle
           title={`Biomas do ${country.name}`}
           subtitle={`Classificação nacional (${country.biomeAuthority}). Barra = parte do território de cada bioma.`}
@@ -104,7 +105,7 @@ async function CountryContent({ country }: { country: Country }) {
                 href={`/pais/${country.slug}/${b.slug}`}
                 className={`flex flex-col overflow-hidden rounded-2xl border border-line bg-white text-ink ${cardHover}`}
               >
-                <div className="placeholder-light h-[120px]" />
+                <div className="placeholder-light h-30" />
                 <div className="flex flex-1 flex-col gap-2.5 p-5">
                   <div className="flex items-baseline justify-between gap-2">
                     <h3 className="font-display text-[22px] font-bold">{b.name}</h3>
@@ -126,13 +127,13 @@ async function CountryContent({ country }: { country: Country }) {
         </ul>
       </section>
 
-      <section className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 pt-10 pb-22 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-col gap-6 px-4 pt-10 pb-22 sm:px-6">
         <SectionTitle title="Espécies em destaque" subtitle="Filtre por bioma. Cada cartão abre a ficha completa." />
         <SpeciesByBiome species={featuredCards} biomes={biomes.map((b) => ({ slug: b.slug, name: b.name }))} />
       </section>
 
       <section className="bg-sage">
-        <div className="mx-auto flex max-w-[1200px] flex-wrap items-start gap-6 px-4 py-14 sm:px-6">
+        <div className="mx-auto flex max-w-300 flex-wrap items-start gap-6 px-4 py-14 sm:px-6">
           <div className="flex min-w-0 flex-[1_1_360px] flex-col gap-2">
             <h2 className="font-display text-[28px] font-bold">Fontes deste país</h2>
             <p className="text-[15px] leading-relaxed text-muted">

@@ -68,10 +68,7 @@ async function Results({ searchParams }: Pick<PageProps<"/busca">, "searchParams
             {countries.map((c) => (
               <li key={c.code}>
                 {c.status === "disponivel" ? (
-                  <Link
-                    href={`/pais/${c.slug}`}
-                    className="flex items-center gap-2.5 rounded-xl border-2 border-leaf bg-white px-4 py-3 font-semibold text-ink hover:text-leaf"
-                  >
+                  <Link href={`/pais/${c.slug}`} className="flex items-center gap-2.5 rounded-xl border-2 border-leaf bg-white px-4 py-3 font-semibold text-ink hover:text-leaf">
                     <CountryCode code={c.code} />
                     {c.name}
                   </Link>

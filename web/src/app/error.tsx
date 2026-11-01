@@ -17,24 +17,13 @@ export default function Error({ error, retry }: { error: unknown; retry: () => v
     <section className="mx-auto flex max-w-300 flex-col items-start gap-4 px-4 py-24 sm:px-6">
       <p className="font-display text-sm font-bold tracking-[0.08em] text-leaf uppercase">Erro</p>
       <h1 className="font-display text-4xl font-bold">Não deu para carregar esta página</h1>
-      <p className="max-w-140 text-lg leading-relaxed text-muted">
-        Os dados do BioPlanet não responderam agora. Tente de novo em instantes.
-      </p>
+      <p className="max-w-140 text-lg leading-relaxed text-muted">Os dados do BioPlanet não responderam agora. Tente de novo em instantes.</p>
+
       <div className="flex flex-wrap gap-3">
-        <button
-          type="button"
-          onClick={() => retry()}
-          className="cursor-pointer rounded-[10px] bg-forest px-5 py-3 font-semibold text-[#f2f4ee] hover:bg-leaf"
-        >
-          Tentar de novo
-        </button>
-        <Link
-          href="/"
-          className="rounded-[10px] border border-line-strong bg-white px-5 py-3 font-semibold text-ink hover:border-leaf"
-        >
-          Voltar ao início
-        </Link>
+        <button type="button" onClick={() => retry()} className="cursor-pointer rounded-[10px] bg-forest px-5 py-3 font-semibold text-[#f2f4ee] hover:bg-leaf">Tentar de novo</button>
+        <Link href="/" className="rounded-[10px] border border-line-strong bg-white px-5 py-3 font-semibold text-ink hover:border-leaf">Voltar ao início</Link>
       </div>
+      
       {digest && <p className="text-[13px] text-muted">Código do erro: {digest}</p>}
     </section>
   );

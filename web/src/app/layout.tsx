@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/space-grotesk";
 import "./globals.css";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 

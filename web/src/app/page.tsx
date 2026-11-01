@@ -1,15 +1,8 @@
 // Página inicial (/).
-// Mostra a busca, os países, os 14 biomas globais e as fontes dos dados.
 
 import { CountryExplorer } from "@/components/CountryExplorer";
 import { CountryCode, Eyebrow, Placeholder, SearchForm, SectionTitle } from "@/components/ui";
-import {
-  getContinents,
-  getCountries,
-  getGlobalBiomeIdsInCountry,
-  getGlobalBiomes,
-  getSources,
-} from "@/lib/data";
+import { getContinents, getCountries, getGlobalBiomeIdsInCountry, getGlobalBiomes, getSources } from "@/lib/data";
 
 export default async function Home() {
   const [countries, continents, globalBiomes, globalSources, inBrazil] = await Promise.all([
@@ -31,15 +24,11 @@ export default async function Home() {
         <div className="mx-auto flex max-w-300 flex-wrap items-center gap-12 px-4 pt-16 pb-20 sm:px-6">
           <div className="flex min-w-0 flex-[1_1_420px] flex-col gap-6">
             <Eyebrow>Atlas da biodiversidade</Eyebrow>
-            <h1 className="font-display text-4xl leading-[1.05] font-bold sm:text-[54px]">
-              Fauna e flora do planeta, país por país.
-            </h1>
-            <p className="max-w-135 text-lg leading-relaxed text-mist">
-              Começando pelo Brasil. Cada novo país entra com suas bases científicas nacionais, somadas a dados
-              globais de ocorrência e conservação.
-            </p>
+            <h1 className="font-display text-4xl leading-[1.05] font-bold sm:text-[54px]">Fauna e flora do planeta, país por país.</h1>
+            <p className="max-w-135 text-lg leading-relaxed text-mist"> Começando pelo Brasil. Cada novo país entra com suas bases científicas nacionais, somadas a dados globais de ocorrência e conservação.</p>
             <SearchForm id="busca" label="Buscar espécie ou país" placeholder="Ex.: Panthera onca, Brasil, lobo-guará" />
           </div>
+
           <div className="flex min-w-0 flex-[1_1_460px] flex-col gap-3">
             <Placeholder dark className="h-90 rounded-[20px]" label="[Mapa-múndi] países clicáveis · GeoJSON Natural Earth" />
             <ul className="flex flex-wrap gap-5 text-sm text-mist" aria-label="Legenda do mapa">
@@ -66,10 +55,8 @@ export default async function Home() {
       </section>
 
       <section id="biomas" className="mx-auto flex max-w-300 scroll-mt-4 flex-col gap-6 px-4 pt-12 pb-22 sm:px-6">
-        <SectionTitle
-          title="Biomas do planeta"
-          subtitle="Classificação global (WWF / RESOLVE, 14 biomas terrestres). Cada país também mostra sua classificação nacional, como os 6 biomas do IBGE no Brasil."
-        />
+        <SectionTitle title="Biomas do planeta" subtitle="Classificação global (WWF / RESOLVE, 14 biomas terrestres). Cada país também mostra sua classificação nacional, como os 6 biomas do IBGE no Brasil."/>
+
         <ul className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4">
           {globalBiomes.map((biome) => (
             <li key={biome.id} className="flex flex-col gap-2 rounded-[14px] border border-line bg-white p-4.5">
@@ -77,11 +64,10 @@ export default async function Home() {
                 <h3 className="font-display text-lg font-bold">{biome.name}</h3>
                 <span className="font-display text-sm font-bold text-muted">{biome.id}</span>
               </div>
+
               <p className="text-sm leading-relaxed text-muted">Ex.: {biome.examples}</p>
               {inBrazil.has(biome.id) && (
-                <span className="self-start rounded-full bg-forest px-2.5 py-1 text-xs font-semibold text-[#f2f4ee]">
-                  Presente no Brasil
-                </span>
+                <span className="self-start rounded-full bg-forest px-2.5 py-1 text-xs font-semibold text-[#f2f4ee]">Presente no Brasil</span>
               )}
             </li>
           ))}
@@ -90,24 +76,20 @@ export default async function Home() {
 
       <section id="fontes" className="scroll-mt-4 bg-sage">
         <div className="mx-auto flex max-w-300 flex-col gap-7 px-4 py-18 sm:px-6">
-          <SectionTitle
-            title="De onde vêm os dados"
-            subtitle="Duas camadas: fontes globais, que já cobrem todos os países, e fontes nacionais, que entram a cada país novo e trazem nomes locais, distribuição detalhada e listas oficiais de ameaça."
-          />
+          <SectionTitle title="De onde vêm os dados" subtitle="Duas camadas: fontes globais, que já cobrem todos os países, e fontes nacionais, que entram a cada país novo e trazem nomes locais, distribuição detalhada e listas oficiais de ameaça."/>
           <div className="flex flex-wrap items-start gap-6">
             <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-3">
               <h3 className="font-display text-xl font-bold">Globais</h3>
               <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-3">
                 {globalSources.map((s) => (
                   <li key={s.id} className="flex flex-col gap-1.5 rounded-xl border border-[#d3dbcd] bg-white p-4">
-                    <a href={s.url} className="font-semibold text-ink hover:text-leaf hover:underline" target="_blank" rel="noreferrer">
-                      {s.name}
-                    </a>
+                    <a href={s.url} className="font-semibold text-ink hover:text-leaf hover:underline" target="_blank" rel="noreferrer">{s.name}</a>
                     <span className="text-sm leading-relaxed text-muted">{s.what}</span>
                   </li>
                 ))}
               </ul>
             </div>
+            
             <div className="flex min-w-0 flex-[1_1_320px] flex-col gap-3">
               <h3 className="font-display text-xl font-bold">Nacionais</h3>
               {nationalSourcesByCountry.map(({ country, sources }) => (
@@ -123,6 +105,7 @@ export default async function Home() {
                   </span>
                 </div>
               ))}
+
               <div className="flex flex-col gap-1.5 rounded-xl border border-dashed border-[#b7c2b2] bg-paper p-4.5">
                 <span className="font-semibold text-[#3e4d44]">Próximo país</span>
                 <span className="text-sm leading-relaxed text-muted">
