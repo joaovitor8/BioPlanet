@@ -6,12 +6,18 @@ Feito com Next.js 16 (App Router), React 19, TypeScript e Tailwind CSS 4.
 
 ## Rodar
 
+Os dados vêm da API em `../back`. Suba ela antes (veja o README de lá); o `npm run build` também precisa dela no ar, porque é no build que as páginas são geradas.
+
 ```bash
 npm install
 npm run dev
 ```
 
 Abra http://localhost:3000.
+
+A API é procurada em `http://localhost:3333`. Para outro endereço, defina `API_URL` (ex.: num `.env.local`).
+
+Depois de mudar dados no banco, o site mostra a versão nova em até 1 hora, ou na hora com um novo build.
 
 ## Páginas
 
@@ -25,8 +31,9 @@ Abra http://localhost:3000.
 
 ## Organização
 
-- `src/data/` — dados de **exemplo** e seus tipos. Serão substituídos pelo banco.
-- `src/lib/data.ts` — única porta de entrada dos dados. As páginas só usam estas funções; quando o banco existir, muda só este arquivo.
+- `src/lib/data.ts` — única porta de entrada dos dados. As páginas só usam estas funções, que buscam na API com cache (`"use cache"`, renovado a cada hora).
+- `src/data/types.ts` — formato dos dados (o mesmo das respostas da API). Os outros arquivos de `src/data/` são os dados de exemplo antigos; o site não lê mais as espécies, países, biomas e fontes de lá.
+- `src/proxy.ts` — responde 404 para espécie, país ou bioma que não existe, perguntando à API antes de a página renderizar.
 - `src/components/` — peças de interface. Os arquivos com `"use client"` são os interativos (filtros, seletor de país).
 
 Fotos, mapas e números marcados com `[ ]` são espaços reservados até os dados reais serem importados.

@@ -15,6 +15,7 @@ import {
 import {
   biomasGlobais,
   biomasNacionais,
+  destaques,
   especies,
   fontes,
   paises,
@@ -86,6 +87,7 @@ await dataSource.transaction(async (db) => {
         // Só o Brasil tem lista nacional integrada. O SALVE cobre a fauna; a fonte da flora entra depois.
         fonteStatus:
           status && codigo === 'BR' && e.reino === Reino.Fauna ? salve : null,
+        destaque: destaques[codigo]?.includes(e.slug) ?? false,
       })),
     );
   }

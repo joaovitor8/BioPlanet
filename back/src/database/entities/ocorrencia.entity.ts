@@ -50,4 +50,8 @@ export class Ocorrencia {
   @ManyToOne(() => Fonte, { nullable: true, onDelete: 'SET NULL' })
   @JoinColumn({ name: 'fonte_status_id' })
   fonteStatus: Relation<Fonte> | null;
+
+  /** Aparece em "Espécies em destaque" na página do país. Também pertence ao par. */
+  @Column({ type: 'boolean', default: false })
+  destaque: boolean;
 }

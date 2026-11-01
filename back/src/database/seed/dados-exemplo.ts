@@ -506,3 +506,17 @@ export const especies: EspecieExemplo[] = [
     biomasBR: ['cerrado'],
   },
 ];
+
+/** Espécies em destaque na página de cada país (as mesmas de featuredSlugs no front). */
+export const destaques: Record<string, string[]> = {
+  BR: [
+    'panthera-onca',
+    'victoria-amazonica',
+    'chrysocyon-brachyurus',
+    'araucaria-angustifolia',
+    'myrmecophaga-tridactyla',
+    'cereus-jamacaru',
+    'anodorhynchus-hyacinthinus',
+    'rhea-americana',
+  ],
+};
