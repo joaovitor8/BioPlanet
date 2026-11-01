@@ -1,9 +1,10 @@
-// Testes dos endpoints contra o banco com os dados de exemplo.
-// Antes de rodar: docker compose up -d, npm run migration:run e npm run seed.
+// Testes dos endpoints contra o banco de testes com os dados de exemplo.
+// O banco de testes é preparado sozinho (test/preparar-banco.ts); só precisa do Postgres no ar.
 import { Test } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import request from 'supertest';
 import type { App } from 'supertest/types.js';
+import { DataSource } from 'typeorm';
 import { AppModule } from './../src/app.module.js';
 
 describe('API (e2e)', () => {
@@ -204,6 +205,51 @@ describe('API (e2e)', () => {
     it('responde 404 para espécie inexistente', async () => {
       const res = await get('/species/nao-existe').expect(404);
       expect(res.body.message).toBe('Espécie "nao-existe" não encontrada.');
+    });
+  });
+
+  describe('fotos', () => {
+    // O banco de testes não tem fotos; estas duas entram só para o teste.
+    beforeAll(async () => {
+      await app.get(DataSource).query(
+        `INSERT INTO foto (especie_id, url, url_miniatura, autor, licenca, link_original, fonte_id, ordem)
+         SELECT e.id, v.url, v.mini, v.autor, v.licenca, v.link, f.id, v.ordem
+         FROM especie e, fonte f, (VALUES
+           ('https://exemplo.org/2/large.jpg', 'https://exemplo.org/2/medium.jpg', 'Autora B', 'cc-by-sa', 'https://www.inaturalist.org/photos/2', 1),
+           ('https://exemplo.org/1/large.jpg', 'https://exemplo.org/1/medium.jpg', 'Autor A', 'cc-by-nc', 'https://www.inaturalist.org/photos/1', 0)
+         ) AS v(url, mini, autor, licenca, link, ordem)
+         WHERE e.slug = 'panthera-onca' AND f.slug = 'inaturalist'`,
+      );
+    });
+
+    it('a ficha traz todas as fotos, na ordem, com o crédito', async () => {
+      const res = await get('/species/panthera-onca').expect(200);
+      expect(res.body.photos).toEqual([
+        {
+          url: 'https://exemplo.org/1/large.jpg',
+          thumbnailUrl: 'https://exemplo.org/1/medium.jpg',
+          author: 'Autor A',
+          license: 'CC BY-NC',
+          licenseUrl: 'https://creativecommons.org/licenses/by-nc/4.0/',
+          sourceUrl: 'https://www.inaturalist.org/photos/1',
+          source: 'iNaturalist',
+        },
+        expect.objectContaining({ author: 'Autora B', license: 'CC BY-SA' }),
+      ]);
+    });
+
+    it('as listas trazem só a primeira foto; espécie sem foto vem com lista vazia', async () => {
+      const res = await get('/species?country=br&featured=true').expect(200);
+      const onca = res.body.find(
+        (s: { slug: string }) => s.slug === 'panthera-onca',
+      );
+      expect(onca.photos).toEqual([
+        expect.objectContaining({ author: 'Autor A' }),
+      ]);
+      const outra = res.body.find(
+        (s: { slug: string }) => s.slug === 'victoria-amazonica',
+      );
+      expect(outra.photos).toEqual([]);
     });
   });
 

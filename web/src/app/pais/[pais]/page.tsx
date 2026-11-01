@@ -31,16 +31,21 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]">): P
   return country ? { title: `Fauna e flora do ${country.name}`, description: country.intro } : {};
 }
 
-export default async function CountryPage({ params }: PageProps<"/pais/[pais]">) {
+// O endereço (params) só é lido dentro do <Suspense>, para a navegação mostrar o esqueleto na hora.
+// O 404 com status certo para país que não existe vem antes, do src/proxy.ts.
+export default function CountryPage({ params }: PageProps<"/pais/[pais]">) {
+  return (
+    <Suspense fallback={<PageSkeleton variant="pais" />}>
+      <CountryFromUrl params={params} />
+    </Suspense>
+  );
+}
+
+async function CountryFromUrl({ params }: Pick<PageProps<"/pais/[pais]">, "params">) {
   const { pais } = await params;
   const country = await getCountry(pais);
   if (!country || country.status !== "disponivel") notFound();
-
-  return (
-    <Suspense fallback={<PageSkeleton variant="pais" />}>
-      <CountryContent country={country} />
-    </Suspense>
-  );
+  return <CountryContent country={country} />;
 }
 
 async function CountryContent({ country }: { country: Country }) {
@@ -64,6 +69,7 @@ async function CountryContent({ country }: { country: Country }) {
       group: s.group,
       biomeSlugs,
       detail: biomeSlugs.map(biomeName).join(" · "),
+      photo: s.photos?.[0],
     };
   });
 

@@ -11,6 +11,7 @@ import {
 } from 'typeorm';
 import { Reino, StatusConservacao } from '../enums.js';
 import { BiomaNacional } from './bioma-nacional.entity.js';
+import { Foto } from './foto.entity.js';
 import { NomeAlternativo } from './nome-alternativo.entity.js';
 import { Ocorrencia } from './ocorrencia.entity.js';
 
@@ -80,6 +81,10 @@ export class Especie {
 
   @OneToMany(() => NomeAlternativo, (nome) => nome.especie)
   nomesAlternativos: Relation<NomeAlternativo[]>;
+
+  /** Fotos com crédito, na ordem em que aparecem (campo ordem). */
+  @OneToMany(() => Foto, (foto) => foto.especie)
+  fotos: Relation<Foto[]>;
 
   /** Países onde ocorre, com o status nacional de cada um. */
   @OneToMany(() => Ocorrencia, (ocorrencia) => ocorrencia.especie)

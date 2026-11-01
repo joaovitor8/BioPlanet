@@ -78,6 +78,27 @@ export interface Species {
     national: Partial<Record<string, StatusCode>>;
   };
   summary?: string;
+  /**
+   * Só na API. Na ficha (GET /species/:slug) vêm todas, na ordem certa;
+   * nas listas vem só a primeira. Lista vazia = espécie sem foto.
+   */
+  photos: Photo[];
+}
+
+/** Foto com o crédito que a licença exige. */
+export interface Photo {
+  /** Foto grande, para a ficha. */
+  url: string;
+  /** Versão menor, para cartões e miniaturas. */
+  thumbnailUrl: string;
+  author: string;
+  /** Ex.: "CC BY-NC". */
+  license: string;
+  licenseUrl?: string;
+  /** Página da foto na fonte. */
+  sourceUrl: string;
+  /** Ex.: "iNaturalist". */
+  source: string;
 }
 
 export interface Source {

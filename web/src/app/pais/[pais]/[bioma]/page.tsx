@@ -29,18 +29,23 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]/[biom
   return biome ? { title: `${biome.name} (${country.name})`, description: biome.description } : {};
 }
 
-export default async function BiomePage({ params }: PageProps<"/pais/[pais]/[bioma]">) {
+// O endereço (params) só é lido dentro do <Suspense>, para a navegação mostrar o esqueleto na hora.
+// O 404 com status certo para país ou bioma que não existe vem antes, do src/proxy.ts.
+export default function BiomePage({ params }: PageProps<"/pais/[pais]/[bioma]">) {
+  return (
+    <Suspense fallback={<PageSkeleton variant="bioma" />}>
+      <BiomeFromUrl params={params} />
+    </Suspense>
+  );
+}
+
+async function BiomeFromUrl({ params }: Pick<PageProps<"/pais/[pais]/[bioma]">, "params">) {
   const { pais, bioma } = await params;
   const country = await getCountry(pais);
   if (!country || country.status !== "disponivel") notFound();
   const biome = await getNationalBiome(country.code, bioma);
   if (!biome) notFound();
-
-  return (
-    <Suspense fallback={<PageSkeleton variant="bioma" />}>
-      <BiomeContent country={country} biome={biome} />
-    </Suspense>
-  );
+  return <BiomeContent country={country} biome={biome} />;
 }
 
 async function BiomeContent({ country, biome }: { country: Country; biome: NationalBiome }) {
@@ -59,6 +64,7 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
     kingdom: s.kingdom,
     group: s.group,
     nationalStatus: s.conservation.national[country.code],
+    photo: s.photos?.[0],
   }));
   const threatened = cards.filter((s) => s.nationalStatus && threatenedCodes.includes(s.nationalStatus)).length;
 

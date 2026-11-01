@@ -97,6 +97,7 @@ async function Results({ searchParams }: Pick<PageProps<"/busca">, "searchParams
                     scientificName: s.scientificName,
                     kingdom: s.kingdom,
                     group: s.group,
+                    photo: s.photos?.[0],
                   }}
                 />
               </li>

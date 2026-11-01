@@ -1,9 +1,15 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { In, Repository } from 'typeorm';
-import type { RelatedSpecies, Species } from '../common/api-types.js';
-import { BiomaNacional, Especie, Pais } from '../database/entities/index.js';
+import type { Photo, RelatedSpecies, Species } from '../common/api-types.js';
+import {
+  BiomaNacional,
+  Especie,
+  Foto,
+  Pais,
+} from '../database/entities/index.js';
 import { Reino, StatusPais } from '../database/enums.js';
+import { toPhoto, type LinhaDeFoto } from './photos.js';
 
 /** Relações que a ficha completa precisa. O TypeORM busca tudo com JOINs. */
 const FULL_RELATIONS = {
@@ -35,6 +41,7 @@ export class SpeciesService {
     @InjectRepository(Pais) private readonly paises: Repository<Pais>,
     @InjectRepository(BiomaNacional)
     private readonly biomasNacionais: Repository<BiomaNacional>,
+    @InjectRepository(Foto) private readonly fotos: Repository<Foto>,
   ) {}
 
   /**
@@ -105,7 +112,8 @@ export class SpeciesService {
     if (!especie) {
       throw new NotFoundException(`Espécie "${slug}" não encontrada.`);
     }
-    return this.toSpecies(especie);
+    const fotos = await this.photosOf([especie.id], 'todas');
+    return this.toSpecies(especie, fotos.get(especie.id) ?? []);
   }
 
   /**
@@ -147,19 +155,51 @@ export class SpeciesService {
     }));
   }
 
-  /** Busca as espécies com todas as relações, na mesma ordem dos ids. */
+  /** Busca as espécies com todas as relações, na mesma ordem dos ids. Para listas: só a primeira foto. */
   async findByIds(ids: number[]): Promise<Species[]> {
     if (ids.length === 0) return [];
-    const rows = await this.especies.find({
-      where: { id: In(ids) },
-      relations: FULL_RELATIONS,
-    });
+    const [rows, fotos] = await Promise.all([
+      this.especies.find({ where: { id: In(ids) }, relations: FULL_RELATIONS }),
+      this.photosOf(ids, 'primeira'),
+    ]);
     const porId = new Map(rows.map((e) => [e.id, e]));
-    return ids.map((id) => this.toSpecies(porId.get(id)!));
+    return ids.map((id) => this.toSpecies(porId.get(id)!, fotos.get(id) ?? []));
+  }
+
+  /**
+   * Fotos numa consulta separada: juntar com nomes, países e biomas no mesmo JOIN
+   * multiplicaria as linhas (5 nomes × 5 países × 5 biomas × 4 fotos = 500 linhas por espécie).
+   */
+  private async photosOf(ids: number[], quais: 'todas' | 'primeira') {
+    const linhas = await this.fotos
+      .createQueryBuilder('f')
+      .innerJoin('f.fonte', 'fonte')
+      .select([
+        'f.especie_id AS "especieId"',
+        'f.url AS url',
+        'f.url_miniatura AS "urlMiniatura"',
+        'f.autor AS autor',
+        'f.licenca AS licenca',
+        'f.link_original AS "linkOriginal"',
+        'fonte.nome AS fonte',
+      ])
+      .where('f.especie_id IN (:...ids)', { ids })
+      .orderBy('f.especie_id')
+      .addOrderBy('f.ordem')
+      .getRawMany<LinhaDeFoto>();
+
+    const porEspecie = new Map<number, Photo[]>();
+    for (const linha of linhas) {
+      const lista = porEspecie.get(linha.especieId) ?? [];
+      if (quais === 'primeira' && lista.length > 0) continue;
+      lista.push(toPhoto(linha));
+      porEspecie.set(linha.especieId, lista);
+    }
+    return porEspecie;
   }
 
   /** Monta o JSON da espécie. Precisa das relações de FULL_RELATIONS carregadas. */
-  toSpecies(e: Especie): Species {
+  toSpecies(e: Especie, photos: Photo[]): Species {
     const ocorrencias = [...e.ocorrencias].sort((a, b) =>
       porStatusENome(a.pais, b.pais),
     );
@@ -200,6 +240,7 @@ export class SpeciesService {
         national,
       },
       ...(e.resumo ? { summary: e.resumo } : {}),
+      photos,
     };
   }
 

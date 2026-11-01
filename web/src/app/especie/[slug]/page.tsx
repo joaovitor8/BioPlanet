@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { DataCredits } from "@/components/DataCredits";
 import { PageSkeleton } from "@/components/PageSkeleton";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import { NationalStatus, type NationalStatusOption } from "@/components/NationalStatus";
 import { SpeciesCard } from "@/components/SpeciesCard";
 import { Breadcrumbs, CountryCode, KingdomTag, Placeholder, StatusBadge } from "@/components/ui";
@@ -33,16 +34,21 @@ const taxonomyLabels: { key: keyof Taxonomy; label: string }[] = [
   { key: "genero", label: "Gênero" },
 ];
 
-export default async function SpeciesPage({ params }: PageProps<"/especie/[slug]">) {
+// O endereço (params) só é lido dentro do <Suspense>, para a navegação mostrar o esqueleto na hora.
+// O 404 com status certo para espécie que não existe vem antes, do src/proxy.ts.
+export default function SpeciesPage({ params }: PageProps<"/especie/[slug]">) {
+  return (
+    <Suspense fallback={<PageSkeleton variant="especie" />}>
+      <SpeciesFromUrl params={params} />
+    </Suspense>
+  );
+}
+
+async function SpeciesFromUrl({ params }: Pick<PageProps<"/especie/[slug]">, "params">) {
   const { slug } = await params;
   const species = await getSpecies(slug);
   if (!species) notFound();
-
-  return (
-    <Suspense fallback={<PageSkeleton variant="especie" />}>
-      <SpeciesContent species={species} />
-    </Suspense>
-  );
+  return <SpeciesContent species={species} />;
 }
 
 async function SpeciesContent({ species }: { species: Species }) {
@@ -90,14 +96,7 @@ async function SpeciesContent({ species }: { species: Species }) {
       </div>
 
       <section className="mx-auto flex max-w-300 flex-wrap items-start gap-10 px-4 pt-6 pb-12 sm:px-6">
-        <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-3">
-          <Placeholder className="h-110 rounded-[18px]" label="[Foto] © autor · CC-BY · via iNaturalist" />
-          <div className="grid grid-cols-4 gap-3">
-            {[1, 2, 3, 4].map((n) => (
-              <button key={n} type="button" aria-label={`Foto ${n}`} aria-pressed={n === 1} className={`placeholder-light h-21 cursor-pointer rounded-[10px] ${n === 1 ? "border-[3px] border-forest" : "border border-line-strong"}`} />
-            ))}
-          </div>
-        </div>
+        <PhotoGallery photos={species.photos ?? []} name={species.commonName} />
 
         <div className="flex min-w-0 flex-[1_1_400px] flex-col gap-6">
           <div className="flex flex-wrap gap-2">
@@ -227,6 +226,7 @@ async function SpeciesContent({ species }: { species: Species }) {
                       kingdom: s.kingdom,
                       group: s.group,
                       detail: reason,
+                      photo: s.photos?.[0],
                     }}
                   />
                 </li>

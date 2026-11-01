@@ -1,7 +1,10 @@
-// Cartão de uma espécie (nome popular, nome científico e etiqueta) que leva para a ficha.
+// Cartão de uma espécie (foto, nome popular, nome científico e etiqueta) que leva para a ficha.
+// Sem foto, mostra o fundo listrado no lugar.
 
+import Image from "next/image";
 import Link from "next/link";
-import type { Kingdom } from "@/data/types";
+import type { Kingdom, Photo } from "@/data/types";
+import { PhotoCredit } from "./PhotoCredit";
 import { KingdomTag, cardHover } from "./ui";
 
 export interface SpeciesCardData {
@@ -11,29 +14,47 @@ export interface SpeciesCardData {
   kingdom: Kingdom;
   group: string;
   detail?: string;
+  photo?: Photo;
 }
 
 export function SpeciesCard({ species, tag = "kingdom" }: { species: SpeciesCardData; tag?: "kingdom" | "group" }) {
+  const { photo } = species;
   return (
     <Link
       href={`/especie/${species.slug}`}
       className={`flex flex-col overflow-hidden rounded-[14px] border border-line bg-white text-ink ${cardHover}`}
     >
-      <div className="placeholder-light flex h-42.5 items-start p-3">
-        {tag === "kingdom" ? (
-          <KingdomTag kingdom={species.kingdom} />
-        ) : (
-          <span
-            className={`rounded-full px-2.5 py-1 text-xs font-semibold ${species.kingdom === "fauna" ? "bg-forest text-[#f2f4ee]" : "border border-leaf bg-white text-leaf"}`}
-          >
-            {species.group}
-          </span>
+      <div className={`relative flex h-42.5 items-start p-3 ${photo ? "bg-sage" : "placeholder-light"}`}>
+        {photo && (
+          <Image
+            src={photo.thumbnailUrl}
+            alt={`Foto de ${species.commonName}`}
+            fill
+            sizes="(max-width: 640px) 100vw, 320px"
+            className="object-cover"
+          />
         )}
+        <span className="relative">
+          {tag === "kingdom" ? (
+            <KingdomTag kingdom={species.kingdom} />
+          ) : (
+            <span
+              className={`rounded-full px-2.5 py-1 text-xs font-semibold ${species.kingdom === "fauna" ? "bg-forest text-[#f2f4ee]" : "border border-leaf bg-white text-leaf"}`}
+            >
+              {species.group}
+            </span>
+          )}
+        </span>
       </div>
       <div className="flex flex-col gap-1 p-4">
         <h3 className="font-display text-[19px] font-bold">{species.commonName}</h3>
         <p className="text-sm text-muted italic">{species.scientificName}</p>
         {species.detail && <p className="mt-2 text-[13px] leading-relaxed text-muted">{species.detail}</p>}
+        {photo && (
+          <div className="mt-2">
+            <PhotoCredit photo={photo} />
+          </div>
+        )}
       </div>
     </Link>
   );

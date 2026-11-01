@@ -65,6 +65,19 @@ export interface Species {
     national: Partial<Record<string, StatusCode>>;
   };
   summary?: string;
+  /** Na ficha vêm todas as fotos; nas listas, só a primeira. Vazio = sem foto. */
+  photos?: Photo[];
+}
+
+/** Foto com o crédito que a licença exige. */
+export interface Photo {
+  url: string;
+  thumbnailUrl: string;
+  author: string;
+  license: string;
+  licenseUrl?: string;
+  sourceUrl: string;
+  source: string;
 }
 
 export interface Source {
