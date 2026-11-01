@@ -1,3 +1,5 @@
+// Formato dos dados do site: país, bioma, espécie, fonte e status.
+// As respostas da API seguem este mesmo formato.
 
 export type Continent =
   | "america-do-sul"
@@ -71,4 +73,11 @@ export interface Source {
   what: string;
   url: string;
   scope: "global" | "nacional";
+  /** Crédito exigido pela licença. Só vem nas fontes que já foram importadas. */
+  credit?: {
+    citation: string;
+    license: string;
+    licenseUrl?: string;
+    version?: string;
+  };
 }

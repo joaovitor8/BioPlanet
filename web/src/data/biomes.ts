@@ -1,3 +1,5 @@
+// Dados de exemplo antigos dos biomas globais e nacionais.
+// O site não usa mais este arquivo: os biomas agora vêm da API.
 import type { GlobalBiome, NationalBiome } from "./types";
 
 export const globalBiomes: GlobalBiome[] = [

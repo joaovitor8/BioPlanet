@@ -1,3 +1,4 @@
+// Ícone de folha usado no logo do cabeçalho.
 export function LeafIcon({ className = "" }: { className?: string }) {
   return (
     <svg

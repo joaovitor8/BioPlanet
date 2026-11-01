@@ -1,3 +1,5 @@
+// Roda antes das páginas de espécie, país e bioma.
+// Pergunta à API se o endereço existe e, se não existir, responde 404.
 import { NextResponse, type NextRequest } from "next/server";
 import { API_URL } from "@/lib/api-url";
 

@@ -1,3 +1,5 @@
+// Peças pequenas usadas em várias páginas: trilha de navegação, títulos, etiquetas,
+// selos de status, cartões de número, formulário de busca e botões de filtro.
 import Link from "next/link";
 import type { Kingdom, StatusCode } from "@/data/types";
 import { statusLabels } from "@/data/status";

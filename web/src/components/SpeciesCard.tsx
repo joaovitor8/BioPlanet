@@ -1,3 +1,4 @@
+// Cartão de uma espécie (nome popular, nome científico e etiqueta) que leva para a ficha.
 import Link from "next/link";
 import type { Kingdom } from "@/data/types";
 import { KingdomTag, cardHover } from "./ui";

@@ -1,3 +1,4 @@
+// Grade das espécies em destaque de um país, com filtro por bioma.
 "use client";
 
 import { useState } from "react";

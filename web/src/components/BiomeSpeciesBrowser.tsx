@@ -1,3 +1,6 @@
+// Lista de espécies de um bioma, com abas (fauna/flora), filtros e ordenação.
+// Roda no navegador, para os filtros mudarem na hora.
+
 "use client";
 
 import { useState } from "react";

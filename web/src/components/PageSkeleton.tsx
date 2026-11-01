@@ -1,3 +1,4 @@
+// Esqueleto (blocos piscando) mostrado enquanto uma página de país, bioma ou espécie carrega.
 
 function Bar({ className = "" }: { className?: string }) {
   return <div className={`animate-pulse rounded-md bg-current opacity-15 ${className}`} />;

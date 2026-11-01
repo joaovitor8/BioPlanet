@@ -86,6 +86,16 @@ export interface Source {
   what: string;
   url: string;
   scope: 'global' | 'nacional';
+  /** Crédito exigido pela licença. Só aparece nas fontes que já foram importadas. */
+  credit?: {
+    /** Como citar, como o publicador pede. */
+    citation: string;
+    /** Ex.: "CC-BY 4.0". */
+    license: string;
+    licenseUrl?: string;
+    /** Versão do conjunto de dados importada, ex.: "393.433". */
+    version?: string;
+  };
 }
 
 // Respostas que juntam mais de um tipo.

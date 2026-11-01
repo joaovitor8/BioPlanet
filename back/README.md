@@ -32,7 +32,7 @@ API do BioPlanet. NestJS 12 + TypeORM + PostgreSQL.
    npm run start:dev
    ```
 
-   Abra http://localhost:3001/health. Deve aparecer `{"status":"ok","banco":"conectado"}`.
+   Abra http://localhost:3333/health. Deve aparecer `{"status":"ok","banco":"conectado"}`.
 
 ## Comandos do banco
 

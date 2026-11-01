@@ -1,3 +1,6 @@
+// Molde de todas as páginas: cabeçalho, conteúdo e rodapé.
+// Também carrega as fontes e define o título e a descrição padrão do site.
+
 import type { Metadata } from "next";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/space-grotesk";

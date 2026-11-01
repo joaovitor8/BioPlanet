@@ -1,3 +1,4 @@
+// Cabeçalho de todas as páginas: logo, menu e seletor de idioma (por enquanto só português).
 import Link from "next/link";
 import { LeafIcon } from "./Logo";
 

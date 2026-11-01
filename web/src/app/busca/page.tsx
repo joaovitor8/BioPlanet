@@ -1,3 +1,6 @@
+// Página de busca (/busca?q=...).
+// Mostra o formulário e as espécies e países que a API encontrou.
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -17,14 +20,14 @@ export default function SearchPage({ searchParams }: PageProps<"/busca">) {
   return (
     <>
       <section className="bg-forest text-[#f2f4ee]">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pt-10 pb-12 sm:px-6">
+        <div className="mx-auto flex max-w-300 flex-col gap-5 px-4 pt-10 pb-12 sm:px-6">
           <h1 className="font-display text-4xl font-bold">Busca</h1>
           <Suspense fallback={<SearchForm {...searchFormProps} />}>
             <FilledSearchForm searchParams={searchParams} />
           </Suspense>
         </div>
       </section>
-      <section className="mx-auto max-w-[1200px] px-4 pt-10 pb-22 sm:px-6">
+      <section className="mx-auto max-w-300 px-4 pt-10 pb-22 sm:px-6">
         <Suspense fallback={<p className="text-muted">Buscando…</p>}>
           <Results searchParams={searchParams} />
         </Suspense>

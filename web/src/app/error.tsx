@@ -1,3 +1,6 @@
+// Tela de erro do site, mostrada quando uma página quebra (ex.: API fora do ar).
+// Tem os botões "Tentar de novo" e "Voltar ao início".
+
 "use client";
 
 import Link from "next/link";
@@ -11,10 +14,10 @@ export default function Error({ error, retry }: { error: unknown; retry: () => v
   const digest = error instanceof Error && "digest" in error ? String(error.digest) : undefined;
 
   return (
-    <section className="mx-auto flex max-w-[1200px] flex-col items-start gap-4 px-4 py-24 sm:px-6">
+    <section className="mx-auto flex max-w-300 flex-col items-start gap-4 px-4 py-24 sm:px-6">
       <p className="font-display text-sm font-bold tracking-[0.08em] text-leaf uppercase">Erro</p>
       <h1 className="font-display text-4xl font-bold">Não deu para carregar esta página</h1>
-      <p className="max-w-[560px] text-lg leading-relaxed text-muted">
+      <p className="max-w-140 text-lg leading-relaxed text-muted">
         Os dados do BioPlanet não responderam agora. Tente de novo em instantes.
       </p>
       <div className="flex flex-wrap gap-3">

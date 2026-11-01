@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+# Arquivos baixados pelos importadores (npm run import:*)
+/.cache
+
 # TypeScript build cache
 *.tsbuildinfo
 

@@ -1,3 +1,5 @@
+// Lista dos continentes, usada nos filtros e nas páginas de país.
+// Os países deste arquivo são dados de exemplo antigos: o site agora busca da API.
 import type { Continent, Country } from "./types";
 
 export const continents: { id: Continent; name: string }[] = [

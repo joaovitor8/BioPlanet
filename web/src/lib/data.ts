@@ -1,3 +1,5 @@
+// Porta de entrada dos dados: as páginas buscam tudo por estas funções.
+// Elas chamam a API e guardam o resultado em cache por 1 hora.
 import { cacheLife, cacheTag } from "next/cache";
 import { continents } from "@/data/countries";
 import type { Country, GlobalBiome, NationalBiome, Source, Species } from "@/data/types";

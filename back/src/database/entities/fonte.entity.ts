@@ -22,4 +22,21 @@ export class Fonte {
 
   @Column({ type: 'enum', enum: EscopoFonte, enumName: 'escopo_fonte' })
   escopo: EscopoFonte;
+
+  // Crédito exigido pela licença dos dados. Preenchido pelos importadores (npm run import:*).
+
+  /** Como citar o conjunto de dados, como o próprio publicador pede. */
+  @Column({ type: 'text', nullable: true })
+  citacao: string | null;
+
+  /** Licença dos dados, ex.: "CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)". */
+  @Column({ type: 'text', nullable: true })
+  licenca: string | null;
+
+  /** Versão do conjunto de dados importada por último, ex.: "393.433". */
+  @Column({ type: 'text', nullable: true })
+  versao: string | null;
+
+  @Column({ name: 'importado_em', type: 'timestamptz', nullable: true })
+  importadoEm: Date | null;
 }

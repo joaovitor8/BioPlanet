@@ -1,3 +1,4 @@
+// Rodapé que aparece em todas as páginas.
 export function Footer() {
   return (
     <footer className="bg-forest text-mist">

@@ -1,7 +1,11 @@
+// Ficha de uma espécie (/especie/panthera-onca).
+// Mostra nomes, status de conservação, classificação, onde ocorre e espécies parecidas.
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { DataCredits } from "@/components/DataCredits";
 import { PageSkeleton } from "@/components/PageSkeleton";
 import { NationalStatus, type NationalStatusOption } from "@/components/NationalStatus";
 import { SpeciesCard } from "@/components/SpeciesCard";
@@ -78,10 +82,13 @@ async function SpeciesContent({ species }: { species: Species }) {
 
   const home = places.find((p) => p.country?.status === "disponivel");
   const others = places.filter((p) => p !== home);
+  const creditSources = [
+    ...new Map(places.flatMap((p) => (p.distributionSource ? [[p.distributionSource.id, p.distributionSource]] : []))).values(),
+  ];
 
   return (
     <>
-      <div className="mx-auto max-w-[1200px] px-4 pt-7 sm:px-6">
+      <div className="mx-auto max-w-300 px-4 pt-7 sm:px-6">
         <Breadcrumbs
           items={[
             { label: "Mundo", href: "/" },
@@ -91,9 +98,9 @@ async function SpeciesContent({ species }: { species: Species }) {
         />
       </div>
 
-      <section className="mx-auto flex max-w-[1200px] flex-wrap items-start gap-10 px-4 pt-6 pb-12 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-wrap items-start gap-10 px-4 pt-6 pb-12 sm:px-6">
         <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-3">
-          <Placeholder className="h-[440px] rounded-[18px]" label="[Foto] © autor · CC-BY · via iNaturalist" />
+          <Placeholder className="h-110 rounded-[18px]" label="[Foto] © autor · CC-BY · via iNaturalist" />
           <div className="grid grid-cols-4 gap-3">
             {[1, 2, 3, 4].map((n) => (
               <button
@@ -101,7 +108,7 @@ async function SpeciesContent({ species }: { species: Species }) {
                 type="button"
                 aria-label={`Foto ${n}`}
                 aria-pressed={n === 1}
-                className={`placeholder-light h-[84px] cursor-pointer rounded-[10px] ${n === 1 ? "border-[3px] border-forest" : "border border-line-strong"}`}
+                className={`placeholder-light h-21 cursor-pointer rounded-[10px] ${n === 1 ? "border-[3px] border-forest" : "border border-line-strong"}`}
               />
             ))}
           </div>
@@ -145,7 +152,7 @@ async function SpeciesContent({ species }: { species: Species }) {
             <NationalStatus options={statusOptions} />
           </div>
 
-          <div className="flex flex-col gap-3 rounded-[14px] border border-line bg-white p-[18px]">
+          <div className="flex flex-col gap-3 rounded-[14px] border border-line bg-white p-4.5">
             <h2 className="font-display text-lg font-bold">Classificação</h2>
             <dl className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-[15px]">
               {taxonomyLabels.map(({ key, label }) => (
@@ -160,7 +167,7 @@ async function SpeciesContent({ species }: { species: Species }) {
         </div>
       </section>
 
-      <section className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pb-12 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-col gap-5 px-4 pb-12 sm:px-6">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="font-display text-[28px] font-bold">Onde ocorre</h2>
           <span className="text-sm text-muted">
@@ -169,7 +176,7 @@ async function SpeciesContent({ species }: { species: Species }) {
         </div>
         <div className="flex flex-wrap items-stretch gap-6">
           <Placeholder
-            className="h-[400px] min-w-0 flex-[3_1_520px] rounded-2xl"
+            className="h-100 min-w-0 flex-[3_1_520px] rounded-2xl"
             label="[Mapa] área de distribuição (IUCN) + pontos do GBIF"
           />
           <ul className="flex min-w-0 flex-[2_1_300px] flex-col gap-2.5">
@@ -216,20 +223,22 @@ async function SpeciesContent({ species }: { species: Species }) {
         </div>
       </section>
 
-      <section className="mx-auto flex max-w-[1200px] flex-col gap-3.5 px-4 pb-14 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-col gap-3.5 px-4 pb-14 sm:px-6">
         <h2 className="font-display text-[28px] font-bold">Sobre a espécie</h2>
-        {species.summary && <p className="max-w-[760px] text-[17px] leading-[1.7]">{species.summary}</p>}
-        <p className="max-w-[760px] text-[17px] leading-[1.7] text-muted">
+        {species.summary && <p className="max-w-190 text-[17px] leading-[1.7]">{species.summary}</p>}
+        <p className="max-w-190 text-[17px] leading-[1.7] text-muted">
           [Resumo de história natural, habitat e ameaças. Texto global de base + complemento da fonte nacional do país
           selecionado.]
         </p>
       </section>
 
+      <DataCredits sources={creditSources} />
+
       {related.length > 0 && (
         <section className="bg-sage">
-          <div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 pt-14 pb-18 sm:px-6">
+          <div className="mx-auto flex max-w-300 flex-col gap-6 px-4 pt-14 pb-18 sm:px-6">
             <h2 className="font-display text-[28px] font-bold">Espécies relacionadas</h2>
-            <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-[18px]">
+            <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-4.5">
               {related.map(({ species: s, reason }) => (
                 <li key={s.slug} className="grid">
                   <SpeciesCard

@@ -1,14 +1,18 @@
+// Página de um bioma de um país (/pais/br/cerrado).
+// Mostra os números do bioma e a lista de espécies com filtros.
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { PageSkeleton } from "@/components/PageSkeleton";
 import { BiomeSpeciesBrowser } from "@/components/BiomeSpeciesBrowser";
+import { DataCredits } from "@/components/DataCredits";
 import { Breadcrumbs, Eyebrow, Placeholder, SectionTitle, StatCard } from "@/components/ui";
 import { continents } from "@/data/countries";
 import { threatenedCodes } from "@/data/status";
 import type { Country, NationalBiome } from "@/data/types";
-import { getCountries, getCountry, getGlobalBiome, getNationalBiome, getNationalBiomes, getSpeciesInBiome } from "@/lib/data";
+import { getCountries, getCountry, getGlobalBiome, getNationalBiome, getNationalBiomes, getSources, getSpeciesInBiome } from "@/lib/data";
 
 export async function generateStaticParams() {
   const countries = (await getCountries()).filter((c) => c.status === "disponivel");
@@ -41,9 +45,10 @@ export default async function BiomePage({ params }: PageProps<"/pais/[pais]/[bio
 
 async function BiomeContent({ country, biome }: { country: Country; biome: NationalBiome }) {
 
-  const [globalBiome, speciesList] = await Promise.all([
+  const [globalBiome, speciesList, sources] = await Promise.all([
     getGlobalBiome(biome.globalBiomeId),
     getSpeciesInBiome(country.code, biome.slug),
+    getSources(country.sourceIds),
   ]);
   const continentName = continents.find((c) => c.id === country.continent)?.name ?? "";
 
@@ -60,7 +65,7 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
   return (
     <>
       <section className="bg-forest text-[#f2f4ee]">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-7 px-4 pt-8 pb-14 sm:px-6">
+        <div className="mx-auto flex max-w-300 flex-col gap-7 px-4 pt-8 pb-14 sm:px-6">
           <Breadcrumbs
             dark
             items={[
@@ -77,7 +82,7 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
                 {biome.areaPct.toLocaleString("pt-BR", { minimumFractionDigits: 1 })}% do território
               </Eyebrow>
               <h1 className="font-display text-5xl leading-none font-bold sm:text-[64px]">{biome.name}</h1>
-              <p className="max-w-[600px] text-lg leading-relaxed text-mist">{biome.description}</p>
+              <p className="max-w-150 text-lg leading-relaxed text-mist">{biome.description}</p>
               {globalBiome && (
                 <p className="text-sm text-mist">
                   Na classificação global:{" "}
@@ -98,20 +103,22 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-4 pt-12 pb-8 sm:px-6">
+      <section className="mx-auto max-w-300 px-4 pt-12 pb-8 sm:px-6">
         <p className="mb-5 text-sm text-muted">
           Nos dados de exemplo: {cards.length} espécies, {threatened} ameaçadas na lista nacional.
         </p>
         <BiomeSpeciesBrowser species={cards} />
       </section>
 
-      <section className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pt-8 pb-22 sm:px-6">
+      <section className="mx-auto flex max-w-300 flex-col gap-5 px-4 pt-8 pb-22 sm:px-6">
         <SectionTitle
           title="Mapa do bioma"
           subtitle="Limite do bioma com os pontos de ocorrência das espécies filtradas."
         />
-        <Placeholder className="h-[440px] rounded-2xl" label="[Mapa] limite do bioma (IBGE) + pontos do GBIF" />
+        <Placeholder className="h-110 rounded-2xl" label="[Mapa] limite do bioma (IBGE) + pontos do GBIF" />
       </section>
+
+      <DataCredits sources={sources} />
     </>
   );
 }

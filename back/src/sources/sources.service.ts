@@ -30,6 +30,19 @@ export class SourcesService {
       what: f.descricao ?? '',
       url: f.url ?? '',
       scope: f.escopo,
+      ...(f.citacao ? { credit: this.toCredit(f, f.citacao) } : {}),
+    };
+  }
+
+  /** O importador grava a licença como "CC-BY 4.0 (https://...)"; aqui o link vira campo separado. */
+  private toCredit(f: Fonte, citation: string): NonNullable<Source['credit']> {
+    const licenca = f.licenca ?? 'não informada';
+    const partes = licenca.match(/^(.*?)\s*\((https?:\/\/[^)]+)\)$/);
+    return {
+      citation,
+      license: partes ? partes[1] : licenca,
+      ...(partes ? { licenseUrl: partes[2] } : {}),
+      ...(f.versao ? { version: f.versao } : {}),
     };
   }
 }

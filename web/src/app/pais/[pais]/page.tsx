@@ -1,7 +1,10 @@
+// Página de um país (/pais/br).
+// Mostra os biomas nacionais, as espécies em destaque e as fontes do país.
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { SourceCredit } from "@/components/DataCredits";
 import { PageSkeleton } from "@/components/PageSkeleton";
 import { SpeciesByBiome } from "@/components/SpeciesByBiome";
 import { Breadcrumbs, Eyebrow, SearchForm, SectionTitle, StatCard, cardHover } from "@/components/ui";
@@ -136,13 +139,14 @@ async function CountryContent({ country }: { country: Country }) {
               Somadas às fontes globais (GBIF, iNaturalist, IUCN, Catalogue of Life) usadas em todo o atlas.
             </p>
           </div>
-          <ul className="grid min-w-0 flex-[2_1_560px] grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-3">
+          <ul className="grid min-w-0 flex-[2_1_560px] grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-3">
             {sources.map((s) => (
               <li key={s.id} className="flex flex-col gap-1.5 rounded-xl border border-[#d3dbcd] bg-white p-4">
                 <a href={s.url} target="_blank" rel="noreferrer" className="font-semibold text-ink hover:text-leaf hover:underline">
                   {s.name}
                 </a>
                 <span className="text-sm leading-relaxed text-muted">{s.what}</span>
+                {s.credit && <SourceCredit credit={s.credit} />}
               </li>
             ))}
           </ul>
