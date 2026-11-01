@@ -24,7 +24,6 @@ export default async function Home() {
 
   return (
     <>
-      {/* Topo com busca e mapa-múndi */}
       <section id="mapa" className="bg-forest text-[#f2f4ee]">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-12 px-4 pt-16 pb-20 sm:px-6">
           <div className="flex min-w-0 flex-[1_1_420px] flex-col gap-6">
@@ -58,13 +57,11 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Países */}
       <section id="paises" className="mx-auto flex max-w-[1200px] scroll-mt-4 flex-col gap-6 px-4 pt-20 pb-10 sm:px-6">
         <SectionTitle title="Explore por país" subtitle="O atlas cresce um país de cada vez. Filtre por continente." />
         <CountryExplorer countries={countries} continents={continents} />
       </section>
 
-      {/* Biomas globais */}
       <section id="biomas" className="mx-auto flex max-w-[1200px] scroll-mt-4 flex-col gap-6 px-4 pt-12 pb-22 sm:px-6">
         <SectionTitle
           title="Biomas do planeta"
@@ -88,7 +85,6 @@ export default async function Home() {
         </ul>
       </section>
 
-      {/* Fontes */}
       <section id="fontes" className="scroll-mt-4 bg-sage">
         <div className="mx-auto flex max-w-[1200px] flex-col gap-7 px-4 py-18 sm:px-6">
           <SectionTitle

@@ -1,5 +1,3 @@
-// Esqueleto mostrado enquanto o conteúdo de uma página carrega.
-// Tem o mesmo formato da página real, para nada "pular" quando o conteúdo chega.
 
 function Bar({ className = "" }: { className?: string }) {
   return <div className={`animate-pulse rounded-md bg-current opacity-15 ${className}`} />;

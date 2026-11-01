@@ -8,7 +8,6 @@ export interface SpeciesWithBiomes extends SpeciesCardData {
   biomeSlugs: string[];
 }
 
-/** Grade de espécies com filtro por bioma (página do país). */
 export function SpeciesByBiome({
   species,
   biomes,

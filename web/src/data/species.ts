@@ -1,8 +1,5 @@
 import type { Species } from "./types";
 
-// Dados de EXEMPLO para montar as telas. Antes de publicar, tudo isso deve
-// vir das fontes (Catalogue of Life, IUCN, SALVE, Flora/Fauna do Brasil, GBIF).
-// Campos sem valor confirmado ficam vazios e a tela mostra um aviso.
 
 const animal = (classe: string, ordem: string, familia: string, genero: string) => ({
   reino: "Animalia",
@@ -196,7 +193,6 @@ export const species: Species[] = [
   },
 ];
 
-/** Espécies em destaque na página do país (ordem de exibição). */
 export const featuredSlugs: Record<string, string[]> = {
   BR: [
     "panthera-onca",

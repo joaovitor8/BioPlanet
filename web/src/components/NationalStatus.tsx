@@ -8,14 +8,11 @@ import { StatusBadge } from "./ui";
 export interface NationalStatusOption {
   code: string;
   name: string;
-  /** Status na lista nacional, se o país estiver integrado e a espécie avaliada. */
   status?: StatusCode;
-  /** O país já tem a lista nacional integrada no BioPlanet? */
   integrated: boolean;
   sourceName?: string;
 }
 
-/** Status de conservação nacional com seletor de país (ficha da espécie). */
 export function NationalStatus({ options }: { options: NationalStatusOption[] }) {
   const [code, setCode] = useState(options[0]?.code ?? "");
   const current = options.find((o) => o.code === code);

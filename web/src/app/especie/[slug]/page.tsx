@@ -38,9 +38,6 @@ const taxonomyLabels: { key: keyof Taxonomy; label: string }[] = [
   { key: "genero", label: "Gênero" },
 ];
 
-// A checagem de que a espécie existe fica fora do <Suspense>: depois que o
-// esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
-// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function SpeciesPage({ params }: PageProps<"/especie/[slug]">) {
   const { slug } = await params;
   const species = await getSpecies(slug);
@@ -55,7 +52,6 @@ export default async function SpeciesPage({ params }: PageProps<"/especie/[slug]
 
 async function SpeciesContent({ species }: { species: Species }) {
 
-  // Países onde a espécie ocorre, com o que já sabemos de cada um.
   const places = await Promise.all(
     species.occurrences.map(async (o) => {
       const country = await getCountryByCode(o.countryCode);
@@ -65,7 +61,6 @@ async function SpeciesContent({ species }: { species: Species }) {
         code: o.countryCode,
         country,
         biomeLinks: o.biomeSlugs.map((b) => ({ slug: b, name: biomes.find((x) => x.slug === b)?.name ?? b })),
-        // Fauna usa o catálogo de fauna e a lista de ameaça; flora, o catálogo de flora.
         distributionSource: sources.find((s) => s.id.startsWith(species.kingdom === "fauna" ? "fauna" : "flora")),
         statusSource: sources.find((s) => s.id === "salve"),
       };
@@ -96,7 +91,6 @@ async function SpeciesContent({ species }: { species: Species }) {
         />
       </div>
 
-      {/* Fotos + dados principais */}
       <section className="mx-auto flex max-w-[1200px] flex-wrap items-start gap-10 px-4 pt-6 pb-12 sm:px-6">
         <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-3">
           <Placeholder className="h-[440px] rounded-[18px]" label="[Foto] © autor · CC-BY · via iNaturalist" />
@@ -166,7 +160,6 @@ async function SpeciesContent({ species }: { species: Species }) {
         </div>
       </section>
 
-      {/* Onde ocorre */}
       <section className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 pb-12 sm:px-6">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="font-display text-[28px] font-bold">Onde ocorre</h2>
@@ -223,7 +216,6 @@ async function SpeciesContent({ species }: { species: Species }) {
         </div>
       </section>
 
-      {/* Texto */}
       <section className="mx-auto flex max-w-[1200px] flex-col gap-3.5 px-4 pb-14 sm:px-6">
         <h2 className="font-display text-[28px] font-bold">Sobre a espécie</h2>
         {species.summary && <p className="max-w-[760px] text-[17px] leading-[1.7]">{species.summary}</p>}
@@ -233,7 +225,6 @@ async function SpeciesContent({ species }: { species: Species }) {
         </p>
       </section>
 
-      {/* Relacionadas */}
       {related.length > 0 && (
         <section className="bg-sage">
           <div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-4 pt-14 pb-18 sm:px-6">

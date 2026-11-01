@@ -25,9 +25,6 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]/[biom
   return biome ? { title: `${biome.name} (${country.name})`, description: biome.description } : {};
 }
 
-// A checagem de que o país e o bioma existem fica fora do <Suspense>: depois que
-// o esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
-// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function BiomePage({ params }: PageProps<"/pais/[pais]/[bioma]">) {
   const { pais, bioma } = await params;
   const country = await getCountry(pais);

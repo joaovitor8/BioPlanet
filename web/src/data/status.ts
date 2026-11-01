@@ -11,5 +11,4 @@ export const statusLabels: Record<StatusCode, string> = {
   DD: "Dados insuficientes",
 };
 
-/** Categorias consideradas "ameaçadas" nas listas oficiais. */
 export const threatenedCodes: StatusCode[] = ["CR", "EN", "VU"];

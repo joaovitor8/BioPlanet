@@ -1,6 +1,5 @@
 import type { GlobalBiome, NationalBiome } from "./types";
 
-// Os 14 biomas terrestres da classificação WWF / RESOLVE Ecoregions.
 export const globalBiomes: GlobalBiome[] = [
   { id: "1", name: "Florestas tropicais úmidas", examples: "Amazônia, bacia do Congo, Bornéu" },
   { id: "2", name: "Florestas tropicais secas", examples: "Florestas secas do México e da Índia" },
@@ -18,7 +17,6 @@ export const globalBiomes: GlobalBiome[] = [
   { id: "14", name: "Manguezais", examples: "Costa brasileira, Sundarbans" },
 ];
 
-// Classificação nacional do Brasil (IBGE, 2019). Área = % do território.
 export const nationalBiomes: NationalBiome[] = [
   {
     slug: "amazonia",

@@ -1,9 +1,7 @@
-// Peças pequenas reaproveitadas em várias páginas.
 import Link from "next/link";
 import type { Kingdom, StatusCode } from "@/data/types";
 import { statusLabels } from "@/data/status";
 
-/** Caixa listrada no lugar de uma foto ou mapa que ainda não existe. */
 export function Placeholder({
   label,
   className = "",
@@ -46,7 +44,6 @@ export function Breadcrumbs({
                 {item.label}
               </Link>
             ) : (
-              // Só o último item é a página atual. Os outros sem link (ex.: "Fauna") são só texto.
               <span
                 aria-current={i === items.length - 1 ? "page" : undefined}
                 className={dark ? "text-[#f2f4ee]" : "text-ink"}
@@ -74,7 +71,6 @@ export function SectionTitle({ title, subtitle }: { title: string; subtitle?: st
   );
 }
 
-/** Número em destaque sobre o fundo escuro. Sem valor, mostra [N]. */
 export function StatCard({ value, label, source }: { value?: string; label: string; source: string }) {
   return (
     <div className="flex flex-col gap-1 rounded-xl bg-forest-2 p-[18px]">
@@ -105,7 +101,6 @@ export function CountryCode({ code, active = true }: { code: string; active?: bo
   );
 }
 
-// Cores por categoria de risco. Todas passam contraste com texto branco.
 const statusColors: Record<StatusCode, string> = {
   EX: "bg-black",
   EW: "bg-[#3d1f4a]",
@@ -128,7 +123,6 @@ export function StatusBadge({ code }: { code: StatusCode }) {
   );
 }
 
-/** Formulário de busca. Envia para /busca?q=... */
 export function SearchForm({
   id,
   label,
@@ -138,7 +132,6 @@ export function SearchForm({
   id: string;
   label: string;
   placeholder: string;
-  /** Termo já buscado, para a pessoa poder ajustar a busca. */
   defaultValue?: string;
 }) {
   return (
@@ -167,7 +160,6 @@ export function SearchForm({
   );
 }
 
-/** Botão em forma de pílula usado nos filtros. */
 export function FilterChip({
   label,
   pressed,

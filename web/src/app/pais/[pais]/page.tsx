@@ -16,7 +16,6 @@ import {
   getSources,
 } from "@/lib/data";
 
-// Só países já integrados têm página própria.
 export async function generateStaticParams() {
   const countries = await getCountries();
   return countries.filter((c) => c.status === "disponivel").map((c) => ({ pais: c.slug }));
@@ -28,9 +27,6 @@ export async function generateMetadata({ params }: PageProps<"/pais/[pais]">): P
   return country ? { title: `Fauna e flora do ${country.name}`, description: country.intro } : {};
 }
 
-// A checagem de que o país existe fica fora do <Suspense>: depois que o
-// esqueleto começa a ser enviado, o Next já respondeu 200 e não consegue mais
-// devolver 404. O resto do conteúdo carrega dentro do <Suspense>.
 export default async function CountryPage({ params }: PageProps<"/pais/[pais]">) {
   const { pais } = await params;
   const country = await getCountry(pais);
@@ -54,7 +50,6 @@ async function CountryContent({ country }: { country: Country }) {
   const continentName = continents.find((c) => c.id === country.continent)?.name ?? "";
   const biomeName = (slug: string) => biomes.find((b) => b.slug === slug)?.name ?? slug;
 
-  // Só manda para o navegador os campos que o cartão usa.
   const featuredCards = featured.map((s) => {
     const biomeSlugs = s.occurrences.find((o) => o.countryCode === country.code)?.biomeSlugs ?? [];
     return {
@@ -84,7 +79,6 @@ async function CountryContent({ country }: { country: Country }) {
                 placeholder="Ex.: lobo-guará, Caryocar brasiliense"
               />
             </div>
-            {/* Os números entram quando os dados forem importados. As fontes ainda são as do Brasil. */}
             <div className="grid min-w-0 flex-[1_1_380px] grid-cols-2 gap-3">
               <StatCard value={String(biomes.length)} label="biomas" source={country.biomeAuthority ?? ""} />
               <StatCard label="espécies de plantas e fungos" source="Flora e Funga do Brasil" />

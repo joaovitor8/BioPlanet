@@ -6,7 +6,6 @@ import type { Kingdom, StatusCode } from "@/data/types";
 import { SpeciesCard, type SpeciesCardData } from "./SpeciesCard";
 
 export interface BrowserSpecies extends SpeciesCardData {
-  /** Status na lista nacional do país (se houver). */
   nationalStatus?: StatusCode;
 }
 
@@ -22,7 +21,6 @@ const tabs: { id: Tab; label: string }[] = [
 const riskFilters: StatusCode[] = ["CR", "EN", "VU", "NT", "LC"];
 const riskOrder: StatusCode[] = ["EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD"];
 
-/** Lista de espécies de um bioma com abas, filtros e ordenação. */
 export function BiomeSpeciesBrowser({ species }: { species: BrowserSpecies[] }) {
   const groups = [...new Set(species.map((s) => s.group))].sort((a, b) => a.localeCompare(b, "pt-BR"));
 

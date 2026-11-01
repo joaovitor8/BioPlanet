@@ -13,8 +13,6 @@ const searchFormProps = {
   placeholder: "Ex.: onça, Araucaria, Brasil",
 };
 
-// A parte fixa da página (topo e formulário vazio) é gerada no build.
-// O que depende da URL (?q=...) fica dentro do <Suspense>: o termo no campo e os resultados.
 export default function SearchPage({ searchParams }: PageProps<"/busca">) {
   return (
     <>
@@ -40,7 +38,6 @@ async function readQuery(searchParams: PageProps<"/busca">["searchParams"]) {
   return (Array.isArray(q) ? q[0] : q)?.trim() ?? "";
 }
 
-// O key troca o campo a cada busca nova, para ele mostrar o termo atual.
 async function FilledSearchForm({ searchParams }: Pick<PageProps<"/busca">, "searchParams">) {
   const query = await readQuery(searchParams);
   return <SearchForm key={query} {...searchFormProps} defaultValue={query} />;

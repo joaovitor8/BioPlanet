@@ -34,7 +34,6 @@ export function Header() {
           <label htmlFor="idioma" className="sr-only">
             Idioma
           </label>
-          {/* Só português por enquanto. Os outros idiomas entram quando o site tiver tradução. */}
           <select
             id="idioma"
             defaultValue="pt"

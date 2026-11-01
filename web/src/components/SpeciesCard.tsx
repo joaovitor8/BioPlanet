@@ -2,14 +2,12 @@ import Link from "next/link";
 import type { Kingdom } from "@/data/types";
 import { KingdomTag, cardHover } from "./ui";
 
-/** Só o que o cartão precisa. Assim dá para mandar poucos dados para o navegador. */
 export interface SpeciesCardData {
   slug: string;
   commonName: string;
   scientificName: string;
   kingdom: Kingdom;
   group: string;
-  /** Linha extra embaixo do nome (ex.: biomas). */
   detail?: string;
 }
 
