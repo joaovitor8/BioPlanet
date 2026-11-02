@@ -73,6 +73,20 @@ export class Especie {
   @Column({ type: 'text', nullable: true })
   resumo: string | null;
 
+  // GBIF (npm run import:gbif). Só os números: os pontos de ocorrência não ficam no banco.
+
+  /** Chave da espécie no GBIF; usada no mapa de densidade. Só é guardada com match exato. */
+  @Column({ name: 'gbif_taxon_key', type: 'integer', nullable: true })
+  gbifTaxonKey: number | null;
+
+  /** Total de registros de ocorrência no GBIF, no mundo todo. */
+  @Column({ name: 'gbif_registros', type: 'integer', nullable: true })
+  gbifRegistros: number | null;
+
+  /** Quando os números do GBIF foram buscados (eles mudam toda semana). */
+  @Column({ name: 'gbif_atualizado_em', type: 'timestamptz', nullable: true })
+  gbifAtualizadoEm: Date | null;
+
   @CreateDateColumn({ name: 'criado_em', type: 'timestamptz' })
   criadoEm: Date;
 

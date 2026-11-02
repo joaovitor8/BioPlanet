@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import { DataCredits } from "@/components/DataCredits";
 import { PageSkeleton } from "@/components/PageSkeleton";
 import { PhotoGallery } from "@/components/PhotoGallery";
+import { SpeciesMap } from "@/components/SpeciesMap";
 import { NationalStatus, type NationalStatusOption } from "@/components/NationalStatus";
 import { SpeciesCard } from "@/components/SpeciesCard";
 import { Breadcrumbs, CountryCode, KingdomTag, Placeholder, StatusBadge } from "@/components/ui";
@@ -60,6 +61,7 @@ async function SpeciesContent({ species }: { species: Species }) {
       const sources = country ? await getSources(country.sourceIds) : [];
       return {
         code: o.countryCode,
+        gbifRecords: o.gbifRecords,
         country,
         biomeLinks: o.biomeSlugs.map((b) => ({ slug: b, name: biomes.find((x) => x.slug === b)?.name ?? b })),
         distributionSource: sources.find((s) => s.id.startsWith(species.kingdom === "fauna" ? "fauna" : "flora")),
@@ -155,11 +157,16 @@ async function SpeciesContent({ species }: { species: Species }) {
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="font-display text-[28px] font-bold">Onde ocorre</h2>
           <span className="text-sm text-muted">
-            {places.length} {places.length === 1 ? "país" : "países"} nos dados de exemplo · [N] registros no GBIF
+            {places.length} {places.length === 1 ? "país" : "países"} no BioPlanet
+            {species.gbif && ` · ${species.gbif.records.toLocaleString("pt-BR")} registros no GBIF`}
           </span>
         </div>
         <div className="flex flex-wrap items-stretch gap-6">
-          <Placeholder className="h-100 min-w-0 flex-[3_1_520px] rounded-2xl" label="[Mapa] área de distribuição (IUCN) + pontos do GBIF" />
+          {species.gbif ? (
+            <SpeciesMap gbif={species.gbif} name={species.commonName} />
+          ) : (
+            <Placeholder className="h-100 min-w-0 flex-[3_1_520px] rounded-2xl" label="Mapa indisponível: espécie ainda sem ligação com o GBIF" />
+          )}
 
           <ul className="flex min-w-0 flex-[2_1_300px] flex-col gap-2.5">
             {home?.country && (
@@ -184,6 +191,9 @@ async function SpeciesContent({ species }: { species: Species }) {
                   {home.distributionSource && (
                     <span className="text-xs text-muted">Fonte: {home.distributionSource.name}</span>
                   )}
+                  {home.gbifRecords !== undefined && (
+                    <span className="text-xs text-muted">{home.gbifRecords.toLocaleString("pt-BR")} registros no GBIF</span>
+                  )}
                 </div>
               </li>
             )}
@@ -195,6 +205,7 @@ async function SpeciesContent({ species }: { species: Species }) {
                   <span className="text-[15px] font-semibold text-[#3e4d44]">{p.country?.name ?? p.code}</span>
                   <span className="text-xs text-muted">
                     {p.country?.status === "em-preparacao" ? "País em preparação" : "Só dados globais por enquanto"}
+                    {p.gbifRecords !== undefined && ` · ${p.gbifRecords.toLocaleString("pt-BR")} registros no GBIF`}
                   </span>
                 </span>
               </li>

@@ -1,7 +1,8 @@
 // Página inicial (/).
 
 import { CountryExplorer } from "@/components/CountryExplorer";
-import { CountryCode, Eyebrow, Placeholder, SearchForm, SectionTitle } from "@/components/ui";
+import { CountryCode, Eyebrow, SearchForm, SectionTitle } from "@/components/ui";
+import { WorldMap } from "@/components/WorldMap";
 import { getContinents, getCountries, getGlobalBiomeIdsInCountry, getGlobalBiomes, getSources } from "@/lib/data";
 
 export default async function Home() {
@@ -30,7 +31,7 @@ export default async function Home() {
           </div>
 
           <div className="flex min-w-0 flex-[1_1_460px] flex-col gap-3">
-            <Placeholder dark className="h-90 rounded-[20px]" label="[Mapa-múndi] países clicáveis · GeoJSON Natural Earth" />
+            <WorldMap countries={countries} />
             <ul className="flex flex-wrap gap-5 text-sm text-mist" aria-label="Legenda do mapa">
               <li className="flex items-center gap-2">
                 <span aria-hidden="true" className="h-3.5 w-3.5 rounded bg-accent" />

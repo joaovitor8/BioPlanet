@@ -20,6 +20,17 @@ export interface Country {
   sourceIds: string[];
   biomeAuthority?: string;
   intro?: string;
+  /** Só no detalhe de um país (getCountry). */
+  stats?: SpeciesStats;
+}
+
+/** Contagens do banco do BioPlanet para os números das páginas de país e bioma. */
+export interface SpeciesStats {
+  /** Plantas e fungos. */
+  plants: number;
+  animals: number;
+  /** Na lista vermelha nacional como CR, EN ou VU. */
+  threatened: number;
 }
 
 export interface GlobalBiome {
@@ -35,6 +46,8 @@ export interface NationalBiome {
   areaPct: number;
   description: string;
   globalBiomeId: string;
+  /** Só no detalhe de um bioma (getNationalBiome). */
+  stats?: SpeciesStats;
 }
 
 export type Kingdom = "fauna" | "flora";
@@ -59,7 +72,10 @@ export interface Species {
   kingdom: Kingdom;
   group: string;
   taxonomy: Taxonomy;
-  occurrences: { countryCode: string; biomeSlugs: string[] }[];
+  /** gbifRecords: registros de ocorrência no país, segundo o GBIF (quando a espécie está ligada). */
+  occurrences: { countryCode: string; biomeSlugs: string[]; gbifRecords?: number }[];
+  /** Ligação com o GBIF, quando o nome bateu exatamente. taxonKey serve para o mapa de densidade. */
+  gbif?: { taxonKey: number; records: number; updatedAt: string };
   conservation: {
     global?: StatusCode;
     national: Partial<Record<string, StatusCode>>;

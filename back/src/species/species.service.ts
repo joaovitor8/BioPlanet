@@ -234,7 +234,17 @@ export class SpeciesService {
           .filter((b) => b.pais.id === o.pais.id)
           .map((b) => b.slug),
         ...(o.fonteStatus ? { statusSourceId: o.fonteStatus.slug } : {}),
+        ...(o.gbifRegistros !== null ? { gbifRecords: o.gbifRegistros } : {}),
       })),
+      ...(e.gbifTaxonKey !== null
+        ? {
+            gbif: {
+              taxonKey: e.gbifTaxonKey,
+              records: e.gbifRegistros ?? 0,
+              updatedAt: (e.gbifAtualizadoEm ?? new Date(0)).toISOString(),
+            },
+          }
+        : {}),
       conservation: {
         ...(e.statusGlobal ? { global: e.statusGlobal } : {}),
         national,

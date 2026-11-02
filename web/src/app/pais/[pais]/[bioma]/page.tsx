@@ -100,9 +100,9 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
               )}
             </div>
             <div className="grid min-w-0 flex-[1_1_360px] grid-cols-2 gap-3">
-              <StatCard label="espécies de plantas" source="Flora e Funga do Brasil" />
-              <StatCard label="espécies de animais" source="Fauna do Brasil" />
-              <StatCard label="ameaçadas (CR, EN, VU)" source="SALVE / ICMBio" />
+              <StatCard value={biome.stats?.plants} label="espécies de plantas" source="Flora e Funga do Brasil" />
+              <StatCard value={biome.stats?.animals} label="espécies de animais" source="Fauna do Brasil" />
+              <StatCard value={biome.stats?.threatened} label="ameaçadas (CR, EN, VU)" source="SALVE / ICMBio" />
               <StatCard label="registros de ocorrência" source="GBIF" />
             </div>
           </div>
@@ -111,7 +111,7 @@ async function BiomeContent({ country, biome }: { country: Country; biome: Natio
 
       <section className="mx-auto max-w-300 px-4 pt-12 pb-8 sm:px-6">
         <p className="mb-5 text-sm text-muted">
-          Nos dados de exemplo: {cards.length} espécies, {threatened} ameaçadas na lista nacional.
+          No BioPlanet: {cards.length.toLocaleString("pt-BR")} espécies, {threatened} ameaçadas na lista nacional.
         </p>
         <BiomeSpeciesBrowser species={cards} />
       </section>

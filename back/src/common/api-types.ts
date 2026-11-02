@@ -72,7 +72,18 @@ export interface Species {
     biomeSlugs: string[];
     /** Só na API: de onde veio o status nacional deste país (id de Source). */
     statusSourceId?: string;
+    /** Só na API: registros de ocorrência neste país, segundo o GBIF. */
+    gbifRecords?: number;
   }[];
+  /** Só na API: ligação com o GBIF, quando o nome bateu exatamente (npm run import:gbif). */
+  gbif?: {
+    /** Chave da espécie no GBIF; serve para o mapa de densidade. */
+    taxonKey: number;
+    /** Registros de ocorrência no mundo todo. */
+    records: number;
+    /** Quando os números foram buscados (ISO 8601). */
+    updatedAt: string;
+  };
   conservation: {
     global?: StatusCode;
     national: Partial<Record<string, StatusCode>>;
@@ -128,6 +139,21 @@ export interface NationalBiomeDetail extends NationalBiome {
 export interface CountryDetail extends Country {
   biomes: NationalBiomeDetail[];
   sources: Source[];
+  stats: SpeciesStats;
+}
+
+/** Só na API: contagens do nosso banco, para os números das páginas de país e bioma. */
+export interface SpeciesStats {
+  /** Plantas e fungos (reinos flora e funga). */
+  plants: number;
+  animals: number;
+  /** Na lista vermelha nacional como CR, EN ou VU. */
+  threatened: number;
+}
+
+/** GET /countries/:slug/biomes/:biome */
+export interface NationalBiomePage extends NationalBiomeDetail {
+  stats: SpeciesStats;
 }
 
 export interface RelatedSpecies {

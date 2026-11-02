@@ -74,10 +74,12 @@ export function SectionTitle({ title, subtitle }: { title: string; subtitle?: st
   );
 }
 
-export function StatCard({ value, label, source }: { value?: string; label: string; source: string }) {
+export function StatCard({ value, label, source }: { value?: string | number; label: string; source: string }) {
+  // Números saem no formato brasileiro (1.749); sem valor, o espaço reservado [N].
+  const texto = typeof value === "number" ? value.toLocaleString("pt-BR") : (value ?? "[N]");
   return (
     <div className="flex flex-col gap-1 rounded-xl bg-forest-2 p-4.5">
-      <span className="font-display text-3xl font-bold">{value ?? "[N]"}</span>
+      <span className="font-display text-3xl font-bold">{texto}</span>
       <span className="text-sm text-mist">{label}</span>
       <span className="text-xs text-[#9fb0a3]">{source}</span>
     </div>

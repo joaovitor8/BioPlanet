@@ -54,4 +54,8 @@ export class Ocorrencia {
   /** Aparece em "Espécies em destaque" na página do país. Também pertence ao par. */
   @Column({ type: 'boolean', default: false })
   destaque: boolean;
+
+  /** Registros de ocorrência da espécie neste país, segundo o GBIF. */
+  @Column({ name: 'gbif_registros', type: 'integer', nullable: true })
+  gbifRegistros: number | null;
 }

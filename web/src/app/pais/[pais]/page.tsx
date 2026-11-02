@@ -91,9 +91,9 @@ async function CountryContent({ country }: { country: Country }) {
             </div>
             <div className="grid min-w-0 flex-[1_1_380px] grid-cols-2 gap-3">
               <StatCard value={String(biomes.length)} label="biomas" source={country.biomeAuthority ?? ""} />
-              <StatCard label="espécies de plantas e fungos" source="Flora e Funga do Brasil" />
-              <StatCard label="espécies de animais" source="Fauna do Brasil" />
-              <StatCard label="ameaçadas na lista nacional" source="SALVE / ICMBio" />
+              <StatCard value={country.stats?.plants} label="espécies de plantas e fungos" source="Flora e Funga do Brasil" />
+              <StatCard value={country.stats?.animals} label="espécies de animais" source="Fauna do Brasil" />
+              <StatCard value={country.stats?.threatened} label="ameaçadas na lista nacional" source="SALVE / ICMBio" />
             </div>
           </div>
         </div>

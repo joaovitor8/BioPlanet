@@ -7,12 +7,25 @@ import type {
   Country,
   CountryDetail,
   CountryStatus,
-  NationalBiomeDetail,
+  NationalBiomePage,
+  SpeciesStats,
 } from '../common/api-types.js';
 import { BiomaNacional, Pais } from '../database/entities/index.js';
 import { SourcesService } from '../sources/sources.service.js';
 
 const byId = (a: { id: number }, b: { id: number }) => a.id - b.id;
+
+/** As três contagens numa consulta só. O Postgres devolve count como texto (bigint). */
+const CONTAGENS = `
+  count(*) FILTER (WHERE e.reino IN ('flora', 'funga')) AS plants,
+  count(*) FILTER (WHERE e.reino = 'fauna') AS animals,
+  count(*) FILTER (WHERE o.status_nacional IN ('CR', 'EN', 'VU')) AS threatened`;
+
+const toStats = (r: Record<keyof SpeciesStats, string>): SpeciesStats => ({
+  plants: Number(r.plants),
+  animals: Number(r.animals),
+  threatened: Number(r.threatened),
+});
 
 @Injectable()
 export class CountriesService {
@@ -47,11 +60,36 @@ export class CountriesService {
         .sort(byId)
         .map((b) => this.biomes.toNationalBiomeDetail(b, pais.codigo)),
       sources: [...pais.fontes].sort(byId).map((f) => this.sources.toSource(f)),
+      stats: await this.countryStats(pais.id),
     };
   }
 
-  /** Um bioma nacional do país, com o bioma global. */
-  async biome(slug: string, biomeSlug: string): Promise<NationalBiomeDetail> {
+  /** Espécies que ocorrem no país (uma linha de ocorrencia por espécie). */
+  private async countryStats(paisId: number) {
+    const [r] = await this.paises.query(
+      `SELECT ${CONTAGENS}
+       FROM ocorrencia o JOIN especie e ON e.id = o.especie_id
+       WHERE o.pais_id = $1`,
+      [paisId],
+    );
+    return toStats(r);
+  }
+
+  /** Espécies ligadas ao bioma; o status é o da lista do país do bioma. */
+  private async biomeStats(biomaId: number, paisId: number) {
+    const [r] = await this.paises.query(
+      `SELECT ${CONTAGENS}
+       FROM ocorrencia_bioma ob
+       JOIN especie e ON e.id = ob.especie_id
+       LEFT JOIN ocorrencia o ON o.especie_id = e.id AND o.pais_id = $2
+       WHERE ob.bioma_nacional_id = $1`,
+      [biomaId, paisId],
+    );
+    return toStats(r);
+  }
+
+  /** Um bioma nacional do país, com o bioma global e as contagens. */
+  async biome(slug: string, biomeSlug: string): Promise<NationalBiomePage> {
     const pais = await this.paises.findOneBy({ slug });
     if (!pais) throw new NotFoundException(`País "${slug}" não encontrado.`);
 
@@ -64,7 +102,10 @@ export class CountriesService {
         `Bioma "${biomeSlug}" não encontrado em ${pais.nome}.`,
       );
     }
-    return this.biomes.toNationalBiomeDetail(bioma, pais.codigo);
+    return {
+      ...this.biomes.toNationalBiomeDetail(bioma, pais.codigo),
+      stats: await this.biomeStats(bioma.id, pais.id),
+    };
   }
 
   /** Precisa da relação fontes carregada. */

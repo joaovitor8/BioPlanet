@@ -69,6 +69,14 @@ describe('API (e2e)', () => {
       ]);
     });
 
+    it('conta plantas, animais e ameaçadas (CR, EN, VU) do país', async () => {
+      const res = await get('/countries/br').expect(200);
+      expect(res.body.stats).toEqual({ plants: 7, animals: 6, threatened: 4 });
+      // País sem espécie cadastrada: zeros, não erro.
+      const nz = await get('/countries/nz').expect(200);
+      expect(nz.body.stats).toEqual({ plants: 0, animals: 0, threatened: 0 });
+    });
+
     it('responde 404 para país inexistente', async () => {
       const res = await get('/countries/xx').expect(404);
       expect(res.body.message).toBe('País "xx" não encontrado.');
@@ -85,6 +93,7 @@ describe('API (e2e)', () => {
         areaPct: 23.3,
         globalBiomeId: '7',
         globalBiome: { id: '7', name: 'Savanas e campos tropicais' },
+        stats: { plants: 4, animals: 6, threatened: 3 },
       });
     });
 
